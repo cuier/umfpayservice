@@ -1,0 +1,32 @@
+{
+  "name": "umfpayservice",
+  "version": "0.1.0",
+  "description": "umfpayservice nodejs bindings",
+  "main": "lib/service/umfService.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.19",
+    "log4js": "^2.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "sh test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cuier/umfpayservice.git"
+  },
+  "keywords": [
+    "umfpayservice",
+    "nodejs",
+    "sdk"
+  ],
+  "author": "Umf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuier/umfpayservice/issues"
+  },
+  "homepage": "https://github.com/cuier/umfpayservice#readme"
+}

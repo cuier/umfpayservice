@@ -1,0 +1,424 @@
+/**
+ * ***********************************************************************
+ * <br>description : 商户接入接口服务类
+ * @author      崔立娟
+ * @date        2017-9-7
+ * @version     1.0
+ ************************************************************************
+ */
+'use strict'
+var querystring = require('querystring')
+var log4js = require('log4js')
+log4js.configure = require('../log_start')
+var log = log4js.getLogger('')
+var Constants = require('../common/Constants')
+var netWorkUtil = require('../http/NetworkUtils')
+var plainUtil = require('../utils/PlainUtil')
+var umfUtil = require('../utils/UmfUtils')
+var signUtil = require('../utils/SignUtil')
+ // var signUtil = require('../utils/SignUtil')
+
+ function umfService() {
+     //对公共参数进行赋值
+     this.charset = "UTF-8"
+     this.sign_type = "RSA"
+     this.res_format = "HTML"
+
+
+     //商户调用..初始化时候传入联动公钥和商户私钥路径
+     this.platCertPath
+     this.merid_prikey_path
+     this.mer_id
+     
+     this.umfService = function(mer_id, platCertPath, merid_prikey_path) {
+         this.platCertPath = platCertPath
+         this.merid_prikey_path = merid_prikey_path
+         this.mer_id = mer_id
+         //将商户私钥和公钥地址保存起来
+         Constants.pkMap["platCertPath"] = platCertPath
+         Constants.pkMap[mer_id] = merid_prikey_path
+     }
+
+     //商户请求map加入请求公共参数
+     this.prepareRequestMap =  function() {
+         var RequestMap = {}
+         RequestMap["charset"] = this.charset
+         RequestMap["sign_type"] = this.sign_type
+         RequestMap["res_format"] = this.res_format
+         RequestMap["version"] = "4.0"
+         RequestMap["mer_id"] = this.mer_id
+         // console.log(img)
+         return RequestMap
+     }
+
+     /**
+      * APP---聚合支付SDK商户下单方法
+      */
+     this.mobileOrderMap = function(RequestMap){
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "pay_req"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====APP付款下单======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * APP---聚合支付SDK生成签名
+      */
+     this.generateSign = function(RequsetMap){
+         if(RequsetMap == null){
+             log.info("[UMF SDK] 商户请求参数为空!")
+             throw new Error("[UMF SDK] 商户请求参数为空!");
+         }
+         try{
+             var sign = signUtil.mobileGenerateSign(RequsetMap,this.merid_prikey_path)
+             return sign
+         }catch (e){
+             log.error(e)
+         }
+
+     }
+     /**
+      * 收款---快捷支付下单方法.
+      */
+     this.quickPayOrderMap = function(RequestMap)  {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "apply_pay_shortcut"
+         reqMap["amt_type"] = "RMB"
+         // var aaa = {
+         //     "goods_id": "",
+         //     "goods_inf": "测试商品",
+         //     "media_id": "",
+         //     "user_ip": "",
+         //     "expand": "",
+         //     // "expire_time": "",
+         //     "risk_expand": ""
+         // }
+         Object.assign(reqMap,RequestMap,aaa)
+         // console.log(reqMap)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         // console.log(params)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 收款---扫码支付（主扫）下单方法.
+      */
+     this.activeScanPaymentMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "active_scancode_order"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         log.info("reqmap朱扫")
+         log.info(reqMap)
+         // var params = signUtil.sign(reqMap,this.merid_prikey_path)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params),this.platCertPath)
+     }
+
+     /**
+      * 收款---扫码支付（被扫）下单方法.
+      */
+     this.passiveScanPaymentMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "passive_scancode_pay"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         log.info("reqmap被扫")
+         log.info(reqMap)
+         // var params = signUtil.sign(reqMap,this.merid_prikey_path)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params),this.platCertPath)
+     }
+
+     /**
+      * 收款---快捷支付向平台获取短信验证码方法.
+      */
+
+     this.quickGetMessageMap = function (RequestMap) {
+
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "sms_req_shortcut"
+         reqMap["media_type"] = "MOBILE"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====获取短信======")
+
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * 收款---快捷支付确认支付方法.
+      */
+     this.quickPayConfirmMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "confirm_pay_shortcut"
+         reqMap["media_type"] = "MOBILE"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====确认支付======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 收款---快捷支付获取银行卡列表方法.
+      */
+     this.quickQuerybankSupportMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "query_mer_bank_shortcut"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====快捷支付获取银行卡列表方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 收款---快捷支付解约方法.
+      */
+     this.quickCancelSurrenderMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "unbind_mercust_protocol_shortcut"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====快捷支付解约方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+
+     /**
+      * 订单查询---查询历史订单方法
+      */
+     this.queryhistoryOrderMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "mer_order_info_query"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====查询历史订单方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 订单查询---查询当天订单方法
+      */
+     this.querytodayOrderMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "query_order"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====查询当天订单方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 撤销---撤销方法
+      */
+     this.cancelTradeMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "mer_cancel"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====撤销方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 退款---普通退款方法
+      */
+     this.generalRefundMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "mer_refund"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====退款======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * 退款---批量转账退费方法
+      */
+     this.massTransferRefundMap = function(RequestMap) {
+         //批量转账退费
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "split_refund_req"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====批量转账退费方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * 退款---退款状态查询方法
+      */
+     this.queryRefundStateMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "mer_refund_query"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====退款状态查询方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * 退款---退费信息补录方法
+      */
+     this.remedyRefundInformationMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "refund_info_replenish"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====退费信息补录方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+     /**
+      * 付款---下单方法
+      */
+     this.paymentOrderMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "transfer_direct_req"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====付款---下单方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 付款---付款状态查询方法
+      */
+     this.queryPaymentStatusMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "transfer_query"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====付款状态查询方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 付款---余额查询方法
+      */
+     this.queryAccountBalanceMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "query_account_balance"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====付款---余额查询方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 鉴权---借记卡实名认证方法
+      */
+     this.debitCardAuthenticationMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "comm_auth"
+         reqMap["auth_type"] = "1"
+         reqMap["auth_mode"] = "0"
+         reqMap["version"] = "1.0"
+         reqMap["identity_type"] = "1"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====借记卡实名认证方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 鉴权---贷记卡实名认证方法
+      */
+     this.creditCardAuthenticationMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "comm_auth"
+         reqMap["version"] = "1.0"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====贷记卡实名认证方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+     /**
+      * 鉴权---身份认证方法
+      */
+     this.identityAuthenticationMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "comm_auth"
+         reqMap["version"] = "1.0"
+         reqMap["auth_type"] = "1"
+         Object.assign(reqMap,RequestMap)
+         log.info("=====身份认证方法======")
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         netWorkUtil.submit(querystring.stringify(params))
+     }
+
+
+
+     /**
+      * 对账---对账文件下载方法
+      * <br/>description:http_post方式请求联动后台，下载对账文件。
+      * 请求下载对账文件时，无验签串返回，故此方法中无需进行签名验证。
+      * @param reqmap 查询对账文件请求的参数
+      * @return  返回true则表示对账文件下载成功
+      * @throws Exception
+      */
+
+     this.reconciliationDownloadMap = function(RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "download_settle_file"
+         // var settle_path = RequestMap["settle_path"]
+         Object.assign(reqMap,RequestMap)
+
+         try {
+             var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+             netWorkUtil.submit(querystring.stringify(params))
+
+         } catch ( e) {
+             //对账文件下载异常
+              log.debug("[UMF SDK] 对账文件下载异常" +e);
+         }
+     }
+     //------------------------------------------------------------
+     // 异步通知
+     //------------------------------------------------------------
+     /**
+      * @param $notifyParamsStr 联动通知商户GET请求URL所带的参数
+      * @return string
+      */
+     this.doget = function(notifyParamString){
+         var map = this.notifyDataParserMap(notifyParamString)
+         var mer2UmfPlatStr = this.responseUMFMap(map)
+         return mer2UmfPlatStr
+     }
+
+
+
+     this.notifyDataParserMap = function (notifyParamString) {
+         var map = umfUtil.getDataByContent(notifyParamString)
+         var sign = map["sign"]
+         // delete map.sign_type
+         // delete map.sign
+         if(signUtil.verify_signature(map,Constants.pkMap.platCertPath)){
+             log.info("[UMF SDK] 平台通知数据验签成功")
+         }else {
+             log.info("[UMF SDK] 平台通知数据验签发生异常")
+         }
+         return map
+     }
+
+
+     this.responseUMFMap = function (map) {
+         var merMap = {}
+         merMap["mer_date"] = map["mer_date"]
+         merMap["mer_id"] = map["mer_id"]
+         merMap["order_id"] = map["order_id"]
+         merMap["ret_code"] = "0000"
+         merMap["ret_msg"] = "success"
+         merMap["version"] = "4.0"
+         var merPlain = signUtil.jsonURLParams(merMap)
+         var merSign = signUtil.sign(merPlain,this.merid_prikey_path)
+
+         var mer2UmfPlatStr = "mer_date=" + merMap["mer_date"]+ "&" +
+         "mer_id=" + merMap["mer_id"] + "&" +
+         "order_id=" + merMap["order_id"] + "&" +
+         "ret_code=0000&ret_msg=success&sign_type=RSA&version=4.0&sign=" + merSign ;
+         return mer2UmfPlatStr;
+     }
+ }
+
+ // var umfService = new umfService()
+module.exports = umfService

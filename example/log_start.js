@@ -23,7 +23,8 @@ var configure = log4js.configure({
             category:'normal',
             level:'debug'
         },
-        "saas_sdk_console":{"type":"console",
+        "saas_sdk_console":{
+            "type":"console",
             "category":"console"}
     },
 

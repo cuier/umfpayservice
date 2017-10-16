@@ -29,7 +29,7 @@ exports.getPlainMap = function (reqMap, mer_id) {
     // log.info("PlainUtil里的初始map:")
     // log.info(reqMap)
     if (validate(reqMap)){
-        log4js.getLogger('').debug("[UMF SDK] 商户请求数据必填字段校验通过")
+        log.info("[UMF SDK] 商户请求数据必填字段校验通过")
         returnMap =  getPlainAndCheckRule(reqMap,mer_id);
         log.info("[UMF SDK] 商户请求校验规则正确");
         log.info("[UMF SDK] 商户请求返回的map为:" );

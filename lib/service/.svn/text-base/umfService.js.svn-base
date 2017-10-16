@@ -9,7 +9,8 @@
 'use strict'
 var querystring = require('querystring')
 var log4js = require('log4js')
-log4js.configure = require('../log_start')
+var log_start = require('../log_start')
+// log4js.configure = require('../log_start')
 var log = log4js.getLogger('')
 var Constants = require('../common/Constants')
 var netWorkUtil = require('../http/NetworkUtils')
@@ -26,16 +27,21 @@ var signUtil = require('../utils/SignUtil')
 
 
      //商户调用..初始化时候传入联动公钥和商户私钥路径
-     this.platCertPath
-     this.merid_prikey_path
-     this.mer_id
+     // this.platCertPath
+     // this.merid_prikey_path
+     // this.mer_id
      
-     this.umfService = function(mer_id, platCertPath, merid_prikey_path) {
-         this.platCertPath = platCertPath
+     this.umfService = function(mer_id, merid_prikey_path) {
+         // Constants.pkMap["log_level"] = 'debug'
+         // Constants.pkMap["log_path"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/log"
+
+         // log4js.configure = log_start.getLogInfo('debug','/Users/MYFILE/Documents/Cuilijuan/nodejs/log')
+
+         this.platCertPath = "../60000100_key/cert_2d59.cert.pem"
          this.merid_prikey_path = merid_prikey_path
          this.mer_id = mer_id
          //将商户私钥和公钥地址保存起来
-         Constants.pkMap["platCertPath"] = platCertPath
+         Constants.pkMap["platCertPath"] = "../60000100_key/cert_2d59.cert.pem"
          Constants.pkMap[mer_id] = merid_prikey_path
      }
 
@@ -50,6 +56,50 @@ var signUtil = require('../utils/SignUtil')
          // console.log(img)
          return RequestMap
      }
+     /**
+      * Web收银台—生成get后的请求参数，商户只需要拼接URL进行get请求即可
+      */
+     this.WebFrontPagePayMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "req_front_page_pay"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         var get_url = "http://pay.soopay.net/spay/pay/payservice.do?" + querystring.stringify(params)
+         log.info("获得的URL为："+get_url)
+
+         return get_url
+     }
+     /**
+      * H5收银台—生成get后的请求参数，商户只需要拼接URL进行get请求即可
+      */
+     this.H5FrontPageMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "pay_req_h5_frontpage"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         var get_url = "http://pay.soopay.net/spay/pay/payservice.do?" + querystring.stringify(params)
+         log.info("获得的URL为："+get_url)
+
+         return get_url
+     }
+
+     /**
+      * 公众号支付–生成get后的请求参数，商户只需要拼接URL进行get请求即可
+      */
+     this.PublicPaymentMap = function (RequestMap) {
+         var reqMap = this.prepareRequestMap()
+         reqMap[Constants.SERVICE] = "publicnumber_and_verticalcode"
+         reqMap["amt_type"] = "RMB"
+         Object.assign(reqMap,RequestMap)
+         var params = plainUtil.getPlainMap(reqMap, this.mer_id)
+         var get_url = "http://pay.soopay.net/spay/pay/payservice.do?" + querystring.stringify(params)
+         log.info("获得的URL为："+get_url)
+
+         return get_url
+     }
+
 
      /**
       * APP---聚合支付SDK商户下单方法
@@ -84,20 +134,13 @@ var signUtil = require('../utils/SignUtil')
       * 收款---快捷支付下单方法.
       */
      this.quickPayOrderMap = function(RequestMap)  {
+         log4js.configure = log_start.configure
+         this.log = log4js.getLogger('')
          var reqMap = this.prepareRequestMap()
          reqMap[Constants.SERVICE] = "apply_pay_shortcut"
          reqMap["amt_type"] = "RMB"
-         // var aaa = {
-         //     "goods_id": "",
-         //     "goods_inf": "测试商品",
-         //     "media_id": "",
-         //     "user_ip": "",
-         //     "expand": "",
-         //     // "expire_time": "",
-         //     "risk_expand": ""
-         // }
-         Object.assign(reqMap,RequestMap,aaa)
-         // console.log(reqMap)
+         Object.assign(reqMap,RequestMap)
+         this.log.info("快捷支付下单方法")
          var params = plainUtil.getPlainMap(reqMap, this.mer_id)
          // console.log(params)
          netWorkUtil.submit(querystring.stringify(params))
@@ -227,6 +270,7 @@ var signUtil = require('../utils/SignUtil')
       */
      this.generalRefundMap = function(RequestMap) {
          var reqMap = this.prepareRequestMap()
+         reqMap["mer_id"] = this.mer_id
          reqMap[Constants.SERVICE] = "mer_refund"
          Object.assign(reqMap,RequestMap)
          log.info("=====退款======")
@@ -239,6 +283,7 @@ var signUtil = require('../utils/SignUtil')
      this.massTransferRefundMap = function(RequestMap) {
          //批量转账退费
          var reqMap = this.prepareRequestMap()
+         reqMap["mer_id"] = this.mer_id
          reqMap[Constants.SERVICE] = "split_refund_req"
          Object.assign(reqMap,RequestMap)
          log.info("=====批量转账退费方法======")
@@ -251,11 +296,13 @@ var signUtil = require('../utils/SignUtil')
      this.queryRefundStateMap = function(RequestMap) {
          var reqMap = this.prepareRequestMap()
          reqMap[Constants.SERVICE] = "mer_refund_query"
+         reqMap["mer_id"] = this.mer_id
          Object.assign(reqMap,RequestMap)
          log.info("=====退款状态查询方法======")
          var params = plainUtil.getPlainMap(reqMap, this.mer_id)
          netWorkUtil.submit(querystring.stringify(params))
      }
+
      /**
       * 退款---退费信息补录方法
       */
@@ -327,7 +374,7 @@ var signUtil = require('../utils/SignUtil')
          reqMap[Constants.SERVICE] = "comm_auth"
          reqMap["version"] = "1.0"
          Object.assign(reqMap,RequestMap)
-         log.info("=====贷记卡实名认证方法======")
+         this.log.info("=====贷记卡实名认证方法======")
          var params = plainUtil.getPlainMap(reqMap, this.mer_id)
          netWorkUtil.submit(querystring.stringify(params))
      }

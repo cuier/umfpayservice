@@ -1,7 +1,7 @@
 10
 
 dir
-51412
+51439
 http://cuilijuan@10.10.66.31:18080/svn/wireless/branches/SAAS_SDK/Node.JS/UMF_Nodejs_SDK/service
 http://cuilijuan@10.10.66.31:18080/svn/wireless
 
@@ -28,14 +28,14 @@ a53f2faf-d598-49f7-acbc-2508d7033fda
 
 umfService.js
 file
+51452
 
 
 
-
-2017-09-29T02:43:44.000000Z
-8f24a9b49e7948929b385bc8faabeb66
-2017-09-29T08:26:35.660079Z
-51408
+2017-10-11T06:44:14.000000Z
+6ab0dcafef7a66c4e3bc497600586031
+2017-10-11T06:44:19.897027Z
+51452
 cuilijuan
 
 
@@ -58,5 +58,5 @@ cuilijuan
 
 
 
-15445
+17551
 

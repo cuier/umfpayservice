@@ -7,22 +7,23 @@
  ************************************************************************
  */
 
+var service = require('umfpayservice')
 
-var umfUtil = require('../lib/utils/UmfUtils');
-var service = require('../lib/service/umfService')
 var testMer2Umf = new TestMer2Umf()
 var umfService = new service()
 var umfService1 = new service()
-umfService.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem")
-umfService1.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem")
+
+//初始化
+umfService.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem",true)
+umfService1.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem",true)
 
 // testMer2Umf.prepareWebFrontPagePayMap()   //web收银台
 // testMer2Umf.prepareH5FrontPageMap()   //h5收银台
 // testMer2Umf.preparePublicPaymentMap()   //公众号支付
 // testMer2Umf.prepareMobileOrderMap()    // APP支付下单
-// testMer2Umf.prepareAppSign()    //APP生成签名
+testMer2Umf.prepareAppSign()    //APP生成签名
 // testMer2Umf.prepareShortcut()       //快捷下单
-// testMer2Umf.prepareScanMap("WECHAT")   //s朱扫下单
+// testMer2Umf.prepareScanMap("WECHAT")   //主扫下单
 // testMer2Umf.preparePassiveScanMap("WECHAT")  // 被扫下单
 // testMer2Umf.prepareGetMessageMap()   //获取短信
 // testMer2Umf.preparePayFirstMap()   //确认支付
@@ -37,7 +38,7 @@ umfService1.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/N
 // testMer2Umf.prepareTransferDirect()   //付款下单
 // testMer2Umf.prepareTransferQuery()  //付款状态查询
 // testMer2Umf.prepareQueryAccountBalance()  //余额查询
-testMer2Umf.prepareidentityBankIDD()  //借记卡实名认证
+// testMer2Umf.prepareidentityBankIDD()  //借记卡实名认证
 // testMer2Umf.prepareidentityBankID() //贷记卡实名认证
 // testMer2Umf.prepareidentityAuthentication() //身份认证
 // testMer2Umf.prepareDownloadSettle()   //对账文件下载
@@ -49,9 +50,9 @@ function TestMer2Umf() {
 
     //准备一些测试必需的参数值
     this.date = new Date()
-    this.orderid = umfUtil.Format("yyyyMMddhhmm")
-    this.merdate = umfUtil.Format("yyyyMMdd")
-    this.mer_id = "60000100"
+    this.orderid = this.Format("yyyyMMddhhmm")
+    this.merdate = this.Format("yyyyMMdd")
+
     this.res_format = "HTML"
 
 
@@ -60,7 +61,6 @@ function TestMer2Umf() {
      */
     this.prepareWebFrontPagePayMap = function () {
         var reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
@@ -68,8 +68,8 @@ function TestMer2Umf() {
         reqMap["amount"] = "1"
         reqMap["goods_inf"] = "商品描述"
         reqMap["interface_type"] = "01"
-
         var web_pay_get_url = umfService.WebFrontPagePayMap(reqMap)
+        console.log("url为："+web_pay_get_url)
         return web_pay_get_url
     }
 
@@ -79,15 +79,14 @@ function TestMer2Umf() {
 
     this.prepareH5FrontPageMap = function () {
         var reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
         reqMap["goods_inf"] = "商品描述"
-        reqMap["amt_type"] = "RMB"
         var web_pay_get_url = umfService.H5FrontPageMap(reqMap)
+        console.log("url为："+web_pay_get_url)
         return web_pay_get_url
     }
 
@@ -97,15 +96,14 @@ function TestMer2Umf() {
 
     this.preparePublicPaymentMap = function(){
         var reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["notify_url"] = "http://xxx.xxx.com"
-        // reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
         reqMap["is_public_number"] = "Y"
         reqMap["goods_inf"] = "商品描述"
         var web_pay_get_url = umfService.PublicPaymentMap(reqMap)
+        console.log("url为："+web_pay_get_url)
         return web_pay_get_url
     }
     /**
@@ -113,22 +111,23 @@ function TestMer2Umf() {
      */
     this.prepareMobileOrderMap = function(){
         var reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
-        reqMap["goods_id"] = ""
         reqMap["goods_inf"] = "商品描述"
-        reqMap["media_id"] = ""
+        // reqMap["media_id"] = ""
         // reqMap["media_type"] = ""
-        reqMap["mer_priv"] = ""
-        reqMap["expand"] = ""
-        reqMap["user_ip"] = ""
+        // reqMap["mer_priv"] = ""
+        // reqMap["expand"] = ""
+        // reqMap["user_ip"] = ""
         // reqMap["expire_time"] = ""
 
-        umfService.mobileOrderMap(reqMap)
+        umfService.mobileOrderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     /**
@@ -139,144 +138,150 @@ function TestMer2Umf() {
         reqMap[ "merId"] = "60000100"
         reqMap[ "orderId"] ="201709271656"
         reqMap[ "orderDate"] = "20170927"
-        // reqMap["amount"] ="1"
-        umfService.generateSign(reqMap)
+        reqMap["amount"] ="1"
+        var sign = umfService.generateSign(reqMap)
+        console.log("App生成签名为："+sign)
     }
 
 //快捷下单
     this.prepareShortcut = function () {
         var reqMap = {}
-        // reqMap["mer_id"] = this.mer_id
         reqMap["notify_url"] = "http://xxx.xxx.com"
-        reqMap["ret_url"] = "http://xxx.xxx.com"
+        // reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
-        reqMap["mer_cust_id"] = ""//"200000000020"
+        // reqMap["mer_cust_id"] = ""//"200000000020"
         reqMap["gate_id"] = "ABC"
         reqMap["pay_type"] = "CREDITCARD"
-        reqMap[  "goods_id"] = ""
-        reqMap[  "goods_inf"] =  "测试商品"
-        reqMap[ "media_id"] = ""
-        reqMap["user_ip"] = ""
-        reqMap[ "expand"] = ""
+        // reqMap[  "goods_id"] = ""
+        // reqMap[  "goods_inf"] =  "测试商品"
+        // reqMap[ "media_id"] = ""
+        // reqMap["user_ip"] = ""
+        // reqMap[ "expand"] = ""
             // "expire_time": "",
-        reqMap["risk_expand"] = ""
+        // reqMap["risk_expand"] = ""
 
         // reqMap["media_type"] = "MOBILE"//""
-        umfService.quickPayOrderMap(reqMap)
+        umfService.quickPayOrderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //准备扫码支付（主扫）下单请求参数
     this.prepareScanMap = function (scancode_type) {
         let reqMap = {}
-        reqMap["service"] = "active_scancode_order"
-        reqMap["mer_id"] = this.mer_id
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["res_format"] = this.res_format
-        reqMap["version"] = "4.0"
         reqMap["goods_inf"] = "测试商品"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
-        reqMap["amt_type"] = "RMB"
         reqMap["scancode_type"] = scancode_type
-        umfService.activeScanPaymentMap(reqMap)
+        umfService.activeScanPaymentMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //准备扫码支付（被扫）下单请求参数
     this.preparePassiveScanMap = function (scancode_type) {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["goods_inf"] = "测试商品"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
-        reqMap["amt_type"] = "RMB"
         reqMap["auth_code"] = "283050710648432598" //填写真实的授权码
         reqMap["use_desc"] = "cesih"
         reqMap["scancode_type"] = scancode_type
-        reqMap["user_ip"] = ""
-        umfService.passiveScanPaymentMap(reqMap)
+        // reqMap["user_ip"] = ""
+        umfService.passiveScanPaymentMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //快捷支付向平台获取短信验证码请求参数
     this.prepareGetMessageMap = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["trade_no"] = "3709301427435896"   //真实的U付订单号
         reqMap["media_id"] = "1xxxxxxxxxx"
         //个人信用卡信息
-        // reqMap["valid_date"] = "2504"
-        // reqMap["cvv2"] = "188"
+        // reqMap["valid_date"] = "xxxx"
+        // reqMap["cvv2"] = "xxx"
         reqMap["card_id"] = "xxxxxxxxxxxxxxxxxxx"   
         reqMap["card_holder"] = "张三"
         reqMap["identity_type"] = "IDENTITY_CARD"
         reqMap["identity_code"] = "xxxxxxxxxxxxxxxxxx"
 
-        umfService.quickGetMessageMap(reqMap)
+        umfService.quickGetMessageMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //快捷支付中的确认支付参数
     this.preparePayFirstMap = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["trade_no"] = "3709301417364126"   //真实的U付订单号
         reqMap["verify_code"] = "964780"
         reqMap["media_id"] = "1xxxxxxxxx"   //
         reqMap["media_type"] = "MOBILE"
-        // reqMap["verify_code"] = "1234"
         reqMap["valid_date"] = "yymm"
         reqMap["cvv2"] = "xxx"
         reqMap["card_id"] = "xxxxxxxxxxxxxxxxxxx"
         reqMap["card_holder"] = "张三"
         reqMap["identity_type"] = "IDENTITY_CARD"
         reqMap["identity_code"] = "xxxxxxxxxxxxxxxxxx"
-        umfService.quickPayConfirmMap(reqMap)
+        umfService.quickPayConfirmMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
     //查询商户支持的银行列表参数
     this.prepareQuerybankSupport = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["pay_type"] = "DEBITCARD"
-        umfService.quickQuerybankSupportMap(reqMap)
+        umfService.quickQuerybankSupportMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //快捷解约参数
     this.prepareCancelSurrender = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["mer_cust_id"] = "200000000020"
-        umfService.quickCancelSurrenderMap(reqMap)
+        umfService.quickCancelSurrenderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
 //查询历史订单
     this.prepareQueryhistoryOrder = function () {
         let reqMap = {}
-        reqMap["service"] = "mer_order_info_query"
-        reqMap["charset"] = this.charset
-        reqMap["mer_id"] = this.mer_id
-        reqMap["res_format"] = this.res_format
-        reqMap["version"] = "4.0"
         reqMap["mer_date"] = "20170920"
         reqMap["order_id"] = "201709201439"
-        umfService.queryhistoryOrderMap(reqMap)
+        umfService.queryhistoryOrderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //查询当天订单
     this.prepareQueryTodayOrder = function () {
         let reqMap = {}
-        reqMap["service"] = "query_order"
-        reqMap["mer_id"] = this.mer_id
-        reqMap["res_format"] = this.res_format
-        reqMap["version"] = "4.0"
         reqMap["mer_date"] = "20170930"
         reqMap["order_id"] = "201709301427"
-        // reqMap["trade_no"] = "3709201439318553"
-        umfService.querytodayOrderMap(reqMap)
+        umfService.querytodayOrderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     // //快捷支付中的协议支付
@@ -300,16 +305,34 @@ function TestMer2Umf() {
     //退款交易
     this.prepareRefund = function () {
         let reqMap = {}
-        reqMap["service"] = "pre_auth_direct_refund"
-        // reqMap["charset"] = this.charset
-        reqMap["mer_id"] = this.mer_id
-        reqMap["version"] = "4.0"
         reqMap["mer_date"] = "20170930"
         reqMap["order_id"] = "201709301417"
         reqMap["refund_no"] = "1"
         reqMap["refund_amount"] = "1"
         reqMap["org_amount"] = "1"
-        umfService.generalRefundMap(reqMap)
+        umfService.generalRefundMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+
+    /**
+     * 退款---批量转账退费请求
+     */
+    this.prepareMassTransferRefundMap = function () {
+        let reqMap = {}
+        reqMap["mer_date"] = "20170930"
+        reqMap["order_id"] = "3709301417364126"
+        reqMap["refund_no"] = "1709131750281234"
+        reqMap["refund_amount"] = "1"
+        reqMap["org_amount"] = "1"
+        reqMap["notify_url"] = "http://www.xxx.com/xxxx.php"
+        reqMap["sub_mer_id"] = "2000"
+        reqMap["sub_order_id"] = "20144546131213"
+        umfService.massTransferRefundMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     /**
@@ -319,8 +342,10 @@ function TestMer2Umf() {
     this.test_queryRefundStateMap = function () {
         let reqMap = {}
         reqMap["refund_no"] = "1709011807010000"
-        reqMap["mer_id"] = this.mer_id
-        umfService.queryRefundStateMap(reqMap)
+        umfService.queryRefundStateMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     /**
@@ -329,36 +354,35 @@ function TestMer2Umf() {
      */
     this.test_remedyRefundInformationMap = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["refund_no"] = "1709011807010000"
         reqMap["card_holder"] = "张三"
         reqMap["card_id"] = "xxxxxxxxxxxxxxxxxxx"
         reqMap["gate_id"] = "ICBC"
         reqMap["card_branch_name"] = "ZGC"
-        umfService.remedyRefundInformationMap(reqMap)
+        umfService.remedyRefundInformationMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
 
     //撤销交易
     this.prepareCancelTrade = function () {
         let reqMap = {}
-        reqMap["service"] = "mer_cancel"
-        reqMap["charset"] = this.charset
-        reqMap["mer_id"] = this.mer_id
-        reqMap["version"] = "4.0"
         reqMap["mer_date"] = "20170920"
         reqMap["order_id"] = "201709201439" //trade_no: '3709201439318553',
         reqMap["amount"] = "1"
-        umfService.cancelTradeMap(reqMap)
+        umfService.cancelTradeMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
     /**
      * 付款---下单
      */
     this.prepareTransferDirect = function(){
         let reqMap = {}
-
-        reqMap["mer_id"] = this.mer_id
-        reqMap["notify_url"] = "http://www.baidu.com"
+        reqMap["notify_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
         reqMap["amount"] = "1"
@@ -369,27 +393,29 @@ function TestMer2Umf() {
         reqMap["recv_gate_id"] = "ICBC"
         reqMap["purpose"] = "测试"
         reqMap["bank_brhname"] = "中信银行"
-        umfService.paymentOrderMap(reqMap)
+        umfService.paymentOrderMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
     //准备付款接口查询订单请求参数
     this.prepareTransferQuery = function(){
         let reqMap = {}
-        reqMap["service"] = "transfer_query"
-        reqMap["charset"] = this.charset
-        reqMap["mer_id"] = this.mer_id
-        reqMap["version"] = "4.0"
         reqMap["order_id"] = "201709201721"
         reqMap["mer_date"] = "20170920"
-        umfService.queryPaymentStatusMap(reqMap)
+        umfService.queryPaymentStatusMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //准备付款接口查询结算账户余额请求参数
     this.prepareQueryAccountBalance = function () {
         let reqMap = {}
-        reqMap["charset"] = this.charset
-        reqMap["mer_id"] = this.mer_id
-        reqMap["version"] = "4.0"
-        umfService.queryAccountBalanceMap(reqMap)
+        umfService.queryAccountBalanceMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //准备借记卡实名认证
@@ -397,21 +423,20 @@ function TestMer2Umf() {
         let reqMap = {}
         // reqMap["mer_id"] = this.mer_id
         reqMap["order_id"] = this.orderid
-        reqMap["bank_account"] = "6217730706062344"
-        reqMap["account_name"] = "杨红英"
-        reqMap["identity_code"] = "152627199410034325"
+        reqMap["bank_account"] = "xxxxxxxxxxxxxx"
+        reqMap["account_name"] = "张三"
+        reqMap["identity_code"] = "xxxxxxxxxxxxxxxxx"
         reqMap["identity_type"] = "1"
-        reqMap["mobile_id"] = "15801365941"
-        // reqMap["version"] = "1.0"
-        // console.log(你好)
-        umfService.debitCardAuthenticationMap(reqMap)
-        // umfService1.debitCardAuthenticationMap(reqMap)
+        reqMap["mobile_id"] = "1xxxxxxxxxx"
+        umfService.debitCardAuthenticationMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据是：")
+            console.log(res)
+        })
     }
 
     //准备贷记卡实名认证  --无用
     this.prepareCreditCardAuthentication = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["order_id"] = this.orderid
         reqMap["auth_type"] = "1"
         reqMap["auth_mode"] = "0"
@@ -423,12 +448,14 @@ function TestMer2Umf() {
         reqMap["endDate"] = "yymm"
         reqMap["cvv2"] = "xxx"
         // reqMap["version"] = "1.0"
-        umfService.creditCardAuthenticationMap(reqMap)
+        umfService.creditCardAuthenticationMap(reqMap,(res)=>{
+            log.info("网络请求返回的数据：")
+            log.info(res)
+        })
     }
     //准备贷记卡实名认证
     this.prepareidentityBankID =function(){
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["order_id"] = this.orderid
         reqMap["auth_type"] = "1"
         reqMap["auth_mode"] = "0"
@@ -440,27 +467,30 @@ function TestMer2Umf() {
         reqMap["identity_code"] = "xxxxxxxxxxxxxxxxxxx"
         reqMap["identity_type"] = "1"
         reqMap["mobile_id"] = "1xxxxxxxxx"
-        umfService.creditCardAuthenticationMap(reqMap)
+
+        umfService.creditCardAuthenticationMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
     //准备身份认证请求参数----
     this.prepareidentityAuthentication = function () {
         let reqMap = {}
-        /*  reqMap["service","comm_auth");
-          reqMap["charset",charset);*/
-        reqMap["mer_id"] = "60000100"
         reqMap["auth_type"] = "1"
         reqMap["order_id"] = this.orderid
         reqMap["auth_mode"] = "3"
         reqMap["account_name"] = "张三"
         reqMap["identity_code"] = "xxxxxxxxxxxxxxxxxx"
 
-        umfService.identityAuthenticationMap(reqMap)
+        umfService.identityAuthenticationMap(reqMap,(res)=>{
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
     }
 
     //准备对账文件下载请求参数
     this.prepareDownloadSettle = function () {
         let reqMap = {}
-        reqMap["mer_id"] = this.mer_id
         reqMap["settle_date"] = "20170908"//对账日期
         reqMap["settle_path"] = "/Users/MYFILE/Desktop/"     //ENPAY:付款文件,SETTLE:结算文件
 
@@ -486,11 +516,28 @@ function TestMer2Umf() {
         var notifyNews = umfService.doget(notifyParamsStr)
     }
 
-
-
-
-
 }
+/*
+* 格式化日期方法，用于order_id和mer_date生成
+* 用户可以根据自己的需求子定义order_id和获取mer_date
+* */
+function Format(fmt) { //author: meizz
+    var that = new Date()
+    var o = {
+        "M+": that.getMonth() + 1, //月份
+        "d+": that.getDate(), //日
+        "h+": that.getHours(), //小时
+        "m+": that.getMinutes(), //分
+        "s+": that.getSeconds(), //秒
+        "q+": Math.floor((that.getMonth() + 3) / 3), //季度
+        "S": that.getMilliseconds() //毫秒
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (that.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+
 
 
 

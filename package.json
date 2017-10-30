@@ -1,6 +1,6 @@
 {
   "name": "umfpayservice",
-  "version": "0.1.0",
+  "version": "0.2.4",
   "description": "umfpayservice nodejs bindings",
   "main": "lib/service/umfService.js",
   "directories": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "sh test.sh"
+    "test": "make test"
   },
   "repository": {
     "type": "git",

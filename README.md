@@ -7,11 +7,12 @@ umfpayservice nodejs bindings
 1. 下载安装nodejs服务
 http://nodejs.cn/download/
 
-2. 下载安装IDE(推荐使用webstorm)
-http://www.jetbrains.com/webstorm/download/#section=windows
-
-3. 使用npm安装nodejs模块
+2.  使用npm安装nodejs模块
 ```shell
 npm install umfpayservice
 ```
-4.参照example进行接入
+3.参照example进行接入
+
+
+注：可从github上下载资源包：
+https://github.com/cuier/umfpayservice/

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18834200-1109-43b7-ae0a-249384a2043e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-10-30.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-10-31.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-02.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-03.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-06.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-07.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-08.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-10.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-13.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example/umfLog/sdk-2017-11-14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umfLog/sdk-2017-11-02.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/service/umfService.js" afterPath="$PROJECT_DIR$/lib/service/umfService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/utils/SignUtil.js" afterPath="$PROJECT_DIR$/lib/utils/SignUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetworkUtils.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NetworkUtils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/http/NetworkUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="-317">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="e#3333#3343#0" expanded="false" />
               </folding>
@@ -48,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="umfService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="umfService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/service/umfService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="695" column="32" lean-forward="true" selection-start-line="695" selection-start-column="32" selection-end-line="695" selection-end-column="32" />
+            <state relative-caret-position="170">
+              <caret line="721" column="24" lean-forward="true" selection-start-line="721" selection-start-column="24" selection-end-line="721" selection-end-column="24" />
               <folding>
                 <element signature="e#18784#18846#0" expanded="false" />
                 <element signature="e#18930#19014#0" expanded="false" />
@@ -61,7 +54,6 @@
                 <element signature="e#19694#20379#0" expanded="false" />
                 <element signature="e#22776#22841#0" expanded="false" />
                 <element signature="e#23043#23277#0" expanded="false" />
-                <element signature="e#23438#23614#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/example/TestMer2Umf.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1003">
-              <caret line="729" column="43" lean-forward="true" selection-start-line="729" selection-start-column="43" selection-end-line="729" selection-end-column="43" />
+              <caret line="729" column="43" lean-forward="false" selection-start-line="729" selection-start-column="43" selection-end-line="729" selection-end-column="43" />
               <folding>
                 <element signature="e#2955#3012#0" expanded="false" />
                 <element signature="e#6002#6058#0" expanded="false" />
@@ -121,8 +113,8 @@
       <file leaf-file-name="SignUtil.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/utils/SignUtil.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="80" column="46" lean-forward="false" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="127" />
+            <state relative-caret-position="88">
+              <caret line="75" column="24" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -163,6 +155,7 @@
       <find>debit_direct_pay</find>
       <find>download_settle_file</find>
       <find>Format</find>
+      <find>addChildMerSign</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -184,10 +177,10 @@
         <option value="$PROJECT_DIR$/lib/utils/CryptoUtil.js" />
         <option value="$PROJECT_DIR$/lib/common/Constants.js" />
         <option value="$PROJECT_DIR$/lib/utils/ServiceMapUtil.js" />
-        <option value="$PROJECT_DIR$/lib/utils/SignUtil.js" />
         <option value="$PROJECT_DIR$/example/TestMer2Umf.js" />
-        <option value="$PROJECT_DIR$/lib/service/umfService.js" />
         <option value="$PROJECT_DIR$/lib/http/NetworkUtils.js" />
+        <option value="$PROJECT_DIR$/lib/utils/SignUtil.js" />
+        <option value="$PROJECT_DIR$/lib/service/umfService.js" />
       </list>
     </option>
   </component>
@@ -209,9 +202,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="29" />
+    <option name="x" value="75" />
     <option name="y" value="23" />
-    <option name="width" value="1251" />
+    <option name="width" value="1205" />
     <option name="height" value="727" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -345,7 +338,13 @@
             <path>
               <item name="UMF_Server_SDK_Nodejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="UMF_Server_SDK_Nodejs" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UMF_Server_SDK_Nodejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UMF_Server_SDK_Nodejs" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -409,17 +408,18 @@
       <workItem from="1508162379019" duration="8218000" />
       <workItem from="1508241929971" duration="6673000" />
       <workItem from="1508290014001" duration="54251000" />
-      <workItem from="1509328027751" duration="86237000" />
+      <workItem from="1509328027751" duration="87265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202320000" />
+    <option name="totallyTimeSpent" value="203348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1280" height="739" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26370135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26370135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -819,14 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/SignUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="80" column="46" lean-forward="false" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/common/Constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -854,7 +846,7 @@
     <entry file="file://$PROJECT_DIR$/example/TestMer2Umf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
-          <caret line="729" column="43" lean-forward="true" selection-start-line="729" selection-start-column="43" selection-end-line="729" selection-end-column="43" />
+          <caret line="729" column="43" lean-forward="false" selection-start-line="729" selection-start-column="43" selection-end-line="729" selection-end-column="43" />
           <folding>
             <element signature="e#2955#3012#0" expanded="false" />
             <element signature="e#6002#6058#0" expanded="false" />
@@ -870,10 +862,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/http/NetworkUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#3333#3343#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/utils/SignUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="75" column="24" lean-forward="false" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/service/umfService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="695" column="32" lean-forward="true" selection-start-line="695" selection-start-column="32" selection-end-line="695" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="721" column="24" lean-forward="true" selection-start-line="721" selection-start-column="24" selection-end-line="721" selection-end-column="24" />
           <folding>
             <element signature="e#18784#18846#0" expanded="false" />
             <element signature="e#18930#19014#0" expanded="false" />
@@ -882,17 +892,6 @@
             <element signature="e#19694#20379#0" expanded="false" />
             <element signature="e#22776#22841#0" expanded="false" />
             <element signature="e#23043#23277#0" expanded="false" />
-            <element signature="e#23438#23614#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/http/NetworkUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#3333#3343#0" expanded="false" />
           </folding>
         </state>
       </provider>

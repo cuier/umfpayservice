@@ -14,5 +14,5 @@ npm install umfpayservice
 3.参照example进行接入
 
 
-注：可从github上下载资源包：
+注：可从github上下载更新资源包：
 https://github.com/cuier/umfpayservice/

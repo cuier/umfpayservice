@@ -44,13 +44,13 @@ umfService1.umfService("60038402", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/N
 // testMer2Umf.prepareDownloadSettle()   //对账文件下载
 // testMer2Umf.prepareResponsePlatformMap()   //异步通知
 // testMer2Umf.prepareGetToken()    //获取token
-// testMer2Umf.prepareAddChildMerMap()     //子商户入网
+testMer2Umf.prepareAddChildMerMap()     //子商户入网
 // testMer2Umf.prepareUploadChildFile()    //子商户入网资质上传
 // testMer2Umf.prepareChangeChildRebut()    //驳回后商户信息修改
 // testMer2Umf.prepareSelectChildMerState()   //子商户审核状态查询
 // testMer2Umf.prepareChildDoGet()    //子商户异步通知
 // testMer2Umf.prepareSplitStateMap()   //分账-分账状态查询
-testMer2Umf.prepareSplitRefundMap()  //分账-分账退费
+// testMer2Umf.prepareSplitRefundMap()  //分账-分账退费
 // testMer2Umf.prepareSplitFileDownloadMap() //分账文件下
 // testMer2Umf.preparePBankDirectMap()    // 网银直连
 // testMer2Umf.preparedebit()   //借记卡直连
@@ -591,7 +591,7 @@ function TestMer2Umf() {
     }
     /**增加商户*/
     this.prepareAddChildMerMap = function () {
-        let token = "881df2f8a736e8db48484e23c7d84bd8e5b3558fe088e2702413f19985156172"
+        let token = "e690415fc314f037ac63e4d71a742cc7fbf78a0d319f7b8f0c380bc7a0e4da2"
         let reqMap = {}
         reqMap["bankAccount"] = "4638792345247569"  //银行卡号
         reqMap["merId"] = "60038402"
@@ -613,9 +613,8 @@ function TestMer2Umf() {
         reqMap["pubPriFlag"] = "1"
         reqMap["bankBrhName"] = "中国工商银行股份有限公司张家界官黎坪支行"
         reqMap["merNotifyUrl"] = "http://xxx.xxx.com"
-        umfService.addChildMerInfo(token, reqMap, (res) => {
-
-            // console.log(res)
+        umfService1.addChildMerInfo(token, reqMap, (res) => {
+            console.log(res)
         })
     }
     /**上传资质*/
@@ -675,7 +674,9 @@ function TestMer2Umf() {
         reqMap["licenseNo"] = "91140106643546792F"
         // reqMap["licenseNo"] = "91140100074354601z"
 
-        umfService.selectChildMerState(token,reqMap,(res)=>{})
+        umfService.selectChildMerState(token,reqMap,(res)=>{
+            console.log(res)
+        })
     }
     /**
      * 子商户入网--异步通知

@@ -1,0 +1,310 @@
+[2017-11-03 09:22:31.807] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 09:22:31.810] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-03 09:22:51.744] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 09:22:51.747] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-03 09:23:11.208] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 09:23:11.212] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-03 09:23:47.921] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 09:23:47.925] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-03 09:28:27.874] [INFO] default - 网络请求的参数为：
+[2017-11-03 09:28:27.877] [INFO] default - {"grant_type":"client_credentials","client_id":"5b6d136935b89ad44142c15adf92e10df54d758a","client_secret":"13ae55d1e799f2c93bf2af2d1b6529463a77ca44"}
+[2017-11-03 09:28:28.001] [INFO] default - Status: 201
+[2017-11-03 09:28:28.004] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"f72a102f9a59aa7ba1367bb61715cb647cc03f931e1286f1faa0f02520fd3a8"}
+[2017-11-03 09:28:43.192] [INFO] default - 网络请求的参数为：
+[2017-11-03 09:28:43.196] [INFO] default - 
+[2017-11-03 09:28:43.262] [INFO] default - Status: 403
+[2017-11-03 09:28:43.264] [INFO] default - 网络请求返回{"meta":{"ret_msg":["No Signature in HTTP header."]}}
+[2017-11-03 09:58:55.498] [INFO] default - 网络请求的参数为：
+[2017-11-03 09:58:55.501] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-03 09:58:56.873] [INFO] default - Status: 201
+[2017-11-03 09:58:56.875] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"100ef981afa94d6d54741446bcc206802e787da20e71f4ece4f89ea2ce209c63"}
+[2017-11-03 10:01:33.349] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 10:01:33.356] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-03 10:12:18.503] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 10:12:18.506] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-03 11:35:22.185] [INFO] default - [UMF SDK] 平台通知数据验签成功
+[2017-11-03 13:54:31.905] [INFO] default - 网络请求的参数为：
+[2017-11-03 13:54:31.909] [INFO] default - 
+[2017-11-03 13:54:31.993] [INFO] default - Status: 0
+[2017-11-03 13:54:31.998] [INFO] default - 网络请求返回{"meta":{"ret_msg":["Token is not found"]}}
+[2017-11-03 14:03:42.233] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:03:42.240] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-03 14:03:42.353] [INFO] default - Status: 201
+[2017-11-03 14:03:42.356] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"adfba6d0b6514a6b9e1cae15c0ddc23716d8fe47b974a1f48ee1adf0112322c6"}
+[2017-11-03 14:04:02.827] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:04:02.830] [INFO] default - 
+[2017-11-03 14:04:02.892] [INFO] default - Status: 403
+[2017-11-03 14:04:02.895] [INFO] default - 网络请求返回{"meta":{"ret_msg":["No Signature in HTTP header."]}}
+[2017-11-03 14:18:31.691] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:18:31.694] [INFO] default - { merId: '60144402', licenseNo: '91140100074354601z' }
+[2017-11-03 14:18:31.700] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:18:31.701] [INFO] default - 
+[2017-11-03 14:18:31.806] [INFO] default - Status: 200
+[2017-11-03 14:18:31.809] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277433863560.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 14:18:35.509] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:18:35.512] [INFO] default - { merId: '60144402', licenseNo: '91140100074354601z' }
+[2017-11-03 14:18:35.515] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:18:35.516] [INFO] default - 
+[2017-11-03 14:18:35.567] [INFO] default - Status: 200
+[2017-11-03 14:18:35.568] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277433863615.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 14:19:13.766] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:19:13.770] [INFO] default - { merId: '60144402', licenseNo: '91140100074354601z' }
+[2017-11-03 14:20:41.099] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:20:41.100] [INFO] default - 
+[2017-11-03 14:20:42.058] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:20:42.066] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 14:20:42.077] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:20:42.077] [INFO] default - 
+[2017-11-03 14:20:42.164] [INFO] default - Status: 403
+[2017-11-03 14:20:42.168] [INFO] default - 网络请求返回{"meta":{"ret_msg":["No Signature in HTTP header."]}}
+[2017-11-03 14:20:58.268] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:20:58.272] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 14:20:58.279] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:20:58.279] [INFO] default - 
+[2017-11-03 14:20:58.361] [INFO] default - Status: 200
+[2017-11-03 14:20:58.363] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>                                                              <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277433865953.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 14:21:17.924] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:21:17.928] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 14:21:17.931] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:21:17.931] [INFO] default - 
+[2017-11-03 14:21:17.998] [INFO] default - Status: 200
+[2017-11-03 14:21:18.000] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277433866324.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 14:22:17.386] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 14:22:17.389] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 14:22:17.392] [INFO] default - 网络请求的参数为：
+[2017-11-03 14:22:17.393] [INFO] default - 
+[2017-11-03 14:22:17.454] [INFO] default - Status: 200
+[2017-11-03 14:22:17.456] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277433867340.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 15:56:07.326] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 15:56:07.328] [INFO] default - { bankAccount: 'oKDB4x32CfO6HYI/FmSxOCUrva8E+K0EmzMDkwOgvFOFwp7jZvA/R2779g0dahsZ+9khdwZuIfjWZH//0UjPvFpGOPgclPYM5od+fUi6ZbbdYeTxgHXmd361q6q0izmlx2ZuyuuebSFZdKmQ99VMpodI7/0nPXEXtXjARWYAwDI=',
+  merId: '60144402',
+  merName: 'tCI1pIPlp1xLmZY454hx1oNaGWZKZzt9f/VKWGzym9iU5Jorwuaa8F7+jhG62IlCoNp3g5f/7CqE/oGvhweI3177IO6BBEbhZFcb9E0VvuD2XKreaHziFHrB7EjwcK/aHtlbmnw8D5odCWbqXnqwLEJEXmFNrW4DgkEWSXY8uNY=',
+  merType: '1',
+  contActsName: 'WyWcqjrnwrKyH403pAMNah/nvRo1SKGJDLlGZPh6hu/vJVltTvJHx39+HeCCuqDYcbQEtlYP4a+NKlpGfrN1+1ba8cSinu5mxB9pvlkDvaZowlBW/dV7MFASmaRAl8xq6jWQiEWCIkTRjt0As02ssDvsZU7Vi6x4xN92wlsBtW8=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '92140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'Z5IDnd9TMPtPj6rXEesTT8Zlecnawz4O8dUFbf0Jcbyeu/EnN7arLhPtGy92c8Iq1D43J5Ee3oSKXA/8T1cKhYJMSI+URi1G+Bk6/oB0WpJ8gWd/wnSPM9dBQfU+qlVm4IrA1N+ptnefB5KiIPMpnExa9d9JUgx5l3r6KtzC+Hs=',
+  cardNo: 'WyENYMdWME1SrDni/ph/qoBjOdZB/SWXkZ7RAoJMzAcfcQMfNX0JdOUGcZDukfU9cCEbMiXyIyK8NLWyuAE83WFhc4qHN1i1UWJnD8fdgLPfPCY9wu43EXcnm4D5y3jVd/R3W9Kqv5YAObUamikN9bPFmMacOrU//qBw5+kKPtE=',
+  bankName: 'Q8HHDSFFWf3MEJ6SU+vvxjwO3eo6YLoDyYXoacDf4EIcsnYOLgt7zdOQKMaaJqqrtcSuGcWe69KWYQhv+76+5Ho9z9SIChRRkLnxVRSCSP038LBe5paAsWSqcTn4hnQph5gzStzD5YSNxpT8lm1VjhWKZWBU61EQACJrgyfMWIg=',
+  province: '010',
+  areaCode: '010',
+  pubPriFlag: '1',
+  bankBrhName: 'eoclmaEaKKsEWHYQakN8ggsm6aPGzpcDzpmabJpFtvH12YO9mwmwFJZGTo1BSqqQaLKK2+/et8+3GzamSU8NT+mbcwWgndAOqgBDjzpMIgcMNzd6uu785imQlXV9ijG3NSP7VlOfanith8dJ12pVdepi6Myzzb1H/nvcYavrPWk=',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-03 15:56:07.336] [INFO] default - 网络请求的参数为：
+[2017-11-03 15:56:07.337] [INFO] default - {"bankAccount":"oKDB4x32CfO6HYI/FmSxOCUrva8E+K0EmzMDkwOgvFOFwp7jZvA/R2779g0dahsZ+9khdwZuIfjWZH//0UjPvFpGOPgclPYM5od+fUi6ZbbdYeTxgHXmd361q6q0izmlx2ZuyuuebSFZdKmQ99VMpodI7/0nPXEXtXjARWYAwDI=","merId":"60144402","merName":"tCI1pIPlp1xLmZY454hx1oNaGWZKZzt9f/VKWGzym9iU5Jorwuaa8F7+jhG62IlCoNp3g5f/7CqE/oGvhweI3177IO6BBEbhZFcb9E0VvuD2XKreaHziFHrB7EjwcK/aHtlbmnw8D5odCWbqXnqwLEJEXmFNrW4DgkEWSXY8uNY=","merType":"1","contActsName":"WyWcqjrnwrKyH403pAMNah/nvRo1SKGJDLlGZPh6hu/vJVltTvJHx39+HeCCuqDYcbQEtlYP4a+NKlpGfrN1+1ba8cSinu5mxB9pvlkDvaZowlBW/dV7MFASmaRAl8xq6jWQiEWCIkTRjt0As02ssDvsZU7Vi6x4xN92wlsBtW8=","mobileNo":"13911698741","licenseType":"1","licenseNo":"92140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"Z5IDnd9TMPtPj6rXEesTT8Zlecnawz4O8dUFbf0Jcbyeu/EnN7arLhPtGy92c8Iq1D43J5Ee3oSKXA/8T1cKhYJMSI+URi1G+Bk6/oB0WpJ8gWd/wnSPM9dBQfU+qlVm4IrA1N+ptnefB5KiIPMpnExa9d9JUgx5l3r6KtzC+Hs=","cardNo":"WyENYMdWME1SrDni/ph/qoBjOdZB/SWXkZ7RAoJMzAcfcQMfNX0JdOUGcZDukfU9cCEbMiXyIyK8NLWyuAE83WFhc4qHN1i1UWJnD8fdgLPfPCY9wu43EXcnm4D5y3jVd/R3W9Kqv5YAObUamikN9bPFmMacOrU//qBw5+kKPtE=","bankName":"Q8HHDSFFWf3MEJ6SU+vvxjwO3eo6YLoDyYXoacDf4EIcsnYOLgt7zdOQKMaaJqqrtcSuGcWe69KWYQhv+76+5Ho9z9SIChRRkLnxVRSCSP038LBe5paAsWSqcTn4hnQph5gzStzD5YSNxpT8lm1VjhWKZWBU61EQACJrgyfMWIg=","province":"010","areaCode":"010","pubPriFlag":"1","bankBrhName":"eoclmaEaKKsEWHYQakN8ggsm6aPGzpcDzpmabJpFtvH12YO9mwmwFJZGTo1BSqqQaLKK2+/et8+3GzamSU8NT+mbcwWgndAOqgBDjzpMIgcMNzd6uu785imQlXV9ijG3NSP7VlOfanith8dJ12pVdepi6Myzzb1H/nvcYavrPWk=","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-03 15:56:07.982] [INFO] default - Status: 0
+[2017-11-03 15:56:07.984] [INFO] default - 网络请求返回{"meta":{"ret_msg":["Token is not found"]}}
+[2017-11-03 15:56:19.100] [INFO] default - 网络请求的参数为：
+[2017-11-03 15:56:19.104] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-03 15:56:19.207] [INFO] default - Status: 201
+[2017-11-03 15:56:19.209] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"dfaa7dc95198aab0909786e2e11870117e0504751ec0db73d5a92776f7d0b859"}
+[2017-11-03 15:56:57.916] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 15:56:57.919] [INFO] default - { bankAccount: 'Zzb25jF0SBhzKBalVyZ3UUJ9GYCIK7dDLghxuJ0+LymMjwFlXlXX8vMzHTIs1yFz9VcDVDvsxpE2lTNr0pni18AEXHXrz2hdBVG+YK9XFF2GaM1+6+zJqRz6PFidpL+PJONC5BvL2yxMJD22lLqsESfeBezsY6+KA2+AoaK9P2Q=',
+  merId: '60038402',
+  merName: 'fc7IPp1UqMc8NDAjG5ay+2gpnnfqOgT1HorsCAMw7v0bhZD6csHWRMhUL8Wxo2CinljoHvYTt3UvcARSH9R8LBfmD/0fLMNH9e34Da/eotWWbf3ASObqFy5pa3OBZTzFKaOecCgZy68Z2Fyj7r/dRVzXrKZ9ddNMdyQTl83zaik=',
+  merType: '1',
+  contActsName: 'ToK1Jt55AR3DLg4erRhhrQh9kYv7MhwYbEyS4tLzfTd0Gx6SdOxMjTGk0Y0tFJ/rtu6EPdqNdKIOvpzc5A/XcEZl342Px+zjIr3fGh50RYeKuRkkRizKka202gNXjMNil8ypOikkiqGEMuSEbEbC3IqvE7mB111ChQFkawgqwGo=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '92140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'Y7KfDtTaugjZGpgNXicN4jRoUJyRcRVP+1XX3jrlVpOrjnW2u9g++NRmltm3ccxunWpXKuUsRng4ZFDUkucNQ2YPJq2Zq8MXJ31FWFh6JaC3AP5rZBIfTChZ15lxVtEm28nzUL6G2Z1pHc2Oo4VDpTlV9zWAQgqJyohbwtCxusI=',
+  cardNo: 'YJysbaNd239E9EIp2BJ7WTmYkzX132xjXwrBT2kTiBbt21NupBqdH+KybqsiuqNFY1Qme8rQO8g0z4Y9swLYvfzZDgnzk/dMTDDByZlzKfef/iHmc6yY2LLL6yijpcS/+qUn6mo2eDRyGOYgYm9ugttOEpeqtDBhYcqU4HqAm54=',
+  bankName: 'oSrdcmRlesPg7uE/W46dnNisAkhKNgDSvUlxz2i8qvuutCwUoE/CjZ2s/04IHLDjZBUOYbWPCFLgDJNRkziIpw+rZyePzjih0uZfpHdjEoIohSwMDNS4nLOTXX9b3ldv0FBFwBttHX6giVTr3Orf86gZzu2O8LNEcAeb7EZa6iI=',
+  province: '010',
+  areaCode: '010',
+  pubPriFlag: '1',
+  bankBrhName: 'OT1RRr1lK7KUC1U3a2hdWjtUFTNLG0pT2AarB9LudggsTx672jt0oghzWCKPowcSkHbNe9OUSt8GdocO1Qg5x257l5bYuDrKOxiu+YV58EO5Pv+eOcgPpoIq3Q3MNfaiplnUhthoTQpDoPR6z10UKWauj5vF3gziy/aipyeiP9w=',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-03 15:56:57.924] [INFO] default - 网络请求的参数为：
+[2017-11-03 15:56:57.924] [INFO] default - {"bankAccount":"Zzb25jF0SBhzKBalVyZ3UUJ9GYCIK7dDLghxuJ0+LymMjwFlXlXX8vMzHTIs1yFz9VcDVDvsxpE2lTNr0pni18AEXHXrz2hdBVG+YK9XFF2GaM1+6+zJqRz6PFidpL+PJONC5BvL2yxMJD22lLqsESfeBezsY6+KA2+AoaK9P2Q=","merId":"60038402","merName":"fc7IPp1UqMc8NDAjG5ay+2gpnnfqOgT1HorsCAMw7v0bhZD6csHWRMhUL8Wxo2CinljoHvYTt3UvcARSH9R8LBfmD/0fLMNH9e34Da/eotWWbf3ASObqFy5pa3OBZTzFKaOecCgZy68Z2Fyj7r/dRVzXrKZ9ddNMdyQTl83zaik=","merType":"1","contActsName":"ToK1Jt55AR3DLg4erRhhrQh9kYv7MhwYbEyS4tLzfTd0Gx6SdOxMjTGk0Y0tFJ/rtu6EPdqNdKIOvpzc5A/XcEZl342Px+zjIr3fGh50RYeKuRkkRizKka202gNXjMNil8ypOikkiqGEMuSEbEbC3IqvE7mB111ChQFkawgqwGo=","mobileNo":"13911698741","licenseType":"1","licenseNo":"92140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"Y7KfDtTaugjZGpgNXicN4jRoUJyRcRVP+1XX3jrlVpOrjnW2u9g++NRmltm3ccxunWpXKuUsRng4ZFDUkucNQ2YPJq2Zq8MXJ31FWFh6JaC3AP5rZBIfTChZ15lxVtEm28nzUL6G2Z1pHc2Oo4VDpTlV9zWAQgqJyohbwtCxusI=","cardNo":"YJysbaNd239E9EIp2BJ7WTmYkzX132xjXwrBT2kTiBbt21NupBqdH+KybqsiuqNFY1Qme8rQO8g0z4Y9swLYvfzZDgnzk/dMTDDByZlzKfef/iHmc6yY2LLL6yijpcS/+qUn6mo2eDRyGOYgYm9ugttOEpeqtDBhYcqU4HqAm54=","bankName":"oSrdcmRlesPg7uE/W46dnNisAkhKNgDSvUlxz2i8qvuutCwUoE/CjZ2s/04IHLDjZBUOYbWPCFLgDJNRkziIpw+rZyePzjih0uZfpHdjEoIohSwMDNS4nLOTXX9b3ldv0FBFwBttHX6giVTr3Orf86gZzu2O8LNEcAeb7EZa6iI=","province":"010","areaCode":"010","pubPriFlag":"1","bankBrhName":"OT1RRr1lK7KUC1U3a2hdWjtUFTNLG0pT2AarB9LudggsTx672jt0oghzWCKPowcSkHbNe9OUSt8GdocO1Qg5x257l5bYuDrKOxiu+YV58EO5Pv+eOcgPpoIq3Q3MNfaiplnUhthoTQpDoPR6z10UKWauj5vF3gziy/aipyeiP9w=","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-03 15:56:58.087] [INFO] default - Status: 200
+[2017-11-03 15:56:58.090] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"92140106643546792F","meta":{"ret_code":"0000","ret_msg":["子商户入网已受理，请上传资质"]}}&d4J7DuNQJ/z2Hsduff+nAaffyDTPEXlaG/FuwqmLPMWDG1HfaR7fd2ldrKDFcMzKVVA/45PHFluNGhFBrkB65oYWnz5ZfSHqepBJj5QN1B0mzTatb/4evKLLWTT0/+U1G4IHh4Lv2kJ3WpXl3IKQ0ZWnrMhQ24BFztyI3V1MsJc=
+[2017-11-03 15:58:02.403] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 15:58:02.407] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 15:58:02.416] [INFO] default - 网络请求的参数为：
+[2017-11-03 15:58:02.417] [INFO] default - 
+[2017-11-03 15:58:03.512] [INFO] default - Status: 200
+[2017-11-03 15:58:03.514] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434037394.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 16:28:50.655] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 16:28:50.663] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 16:28:50.682] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:28:50.684] [INFO] default - 
+[2017-11-03 16:28:50.845] [INFO] default - Status: 200
+[2017-11-03 16:28:50.847] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434071882.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 16:29:05.066] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 16:29:05.070] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 16:29:05.074] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:29:05.074] [INFO] default - 
+[2017-11-03 16:29:05.182] [INFO] default - Status: 200
+[2017-11-03 16:29:05.188] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434072138.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 16:29:19.035] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 16:29:19.038] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 16:29:19.042] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:29:19.042] [INFO] default - 
+[2017-11-03 16:29:19.241] [INFO] default - Status: 200
+[2017-11-03 16:29:19.243] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434072342.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 16:31:14.266] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:31:14.273] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-03 16:31:14.407] [INFO] default - Status: 201
+[2017-11-03 16:31:14.410] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"9a48b17c46fff3d3c6105ef896515ee771505c07b5f6d3d9dc923360f5dc54b"}
+[2017-11-03 16:31:37.240] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 16:31:37.245] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 16:31:37.252] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:31:37.252] [INFO] default - 
+[2017-11-03 16:31:37.353] [INFO] default - Status: 200
+[2017-11-03 16:31:37.355] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434075003.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 16:31:53.845] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 16:31:53.855] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 16:31:53.869] [INFO] default - 网络请求的参数为：
+[2017-11-03 16:31:53.870] [INFO] default - 
+[2017-11-03 16:31:53.963] [INFO] default - Status: 200
+[2017-11-03 16:31:53.966] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434075195.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 17:27:28.905] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 17:27:28.910] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 17:27:28.916] [INFO] default - 网络请求的参数为：
+[2017-11-03 17:27:28.917] [INFO] default - 
+[2017-11-03 17:27:29.012] [INFO] default - Status: 200
+[2017-11-03 17:27:29.017] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434134434.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 17:43:24.668] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 17:43:24.674] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 17:43:24.680] [INFO] default - 网络请求的参数为：
+[2017-11-03 17:43:24.680] [INFO] default - 
+[2017-11-03 17:43:24.751] [INFO] default - Status: 200
+[2017-11-03 17:43:24.753] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434148912.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 17:44:19.436] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 17:44:19.440] [INFO] default - { merId: '60038402', licenseNo: '91140106643546792F' }
+[2017-11-03 17:44:19.446] [INFO] default - 网络请求的参数为：
+[2017-11-03 17:44:19.447] [INFO] default - 
+[2017-11-03 17:44:19.534] [INFO] default - Status: 200
+[2017-11-03 17:44:19.537] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434149794.</td></tr></table></td></tr></table></body></html>>
+[2017-11-03 17:44:48.682] [INFO] default - 网络请求的参数为：
+[2017-11-03 17:44:48.686] [INFO] default - 
+[2017-11-03 17:44:48.784] [INFO] default - Status: 200
+[2017-11-03 17:44:48.787] [INFO] default - 网络请求返回<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=utf-8"/><title>错误</title></head><body><H2>错误</H2><table summary="Error" border="0" bgcolor="#FEEE7A" cellpadding="0" cellspacing="0" width="400"><tr><td><table summary="Error" border="0" cellpadding="3" cellspacing="1"><tr valign="top" bgcolor="#FBFFDF" align="left"><td><STRONG>错误</STRONG></td></tr><tr valign="top" bgcolor="#FFFFFF"><td>此页无法显示。更多信息请联系技术支持部门。<br/>事件 ID 为：5624800277434150369.</td></tr></table></td></tr></table></body></html>
+[2017-11-03 17:50:10.769] [INFO] default - 网络请求的参数为：
+[2017-11-03 17:50:10.771] [INFO] default - 
+[2017-11-03 17:50:10.893] [INFO] default - Status: 200
+[2017-11-03 17:50:10.895] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","checkState":"3","rejectReason":"areaCode:不符合现在的市级划分;","subMerId":"","meta":{"ret_code":"0000","ret_msg":["操作成功"]}}&SfAB85RYkaRMvDfiwLyTvt70gx3DSqUPhjuinvz1RJtXe7sgFDy5vGyZTfwwrpUOiMSoI2mkrh7+5DrL7CKbyYW26YY7t1s7WK+dG3ABZYbXq9kPtUULJJIEkZDTTfDJ+EC5eppVPYPcxTj653MngPnYaJDeniUZ83fHqbUaOCQ=
+[2017-11-03 18:01:19.630] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:01:19.633] [INFO] default - 
+[2017-11-03 18:01:19.766] [INFO] default - Status: 200
+[2017-11-03 18:01:19.769] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","checkState":"3","rejectReason":"areaCode:不符合现在的市级划分;","subMerId":"","meta":{"ret_code":"0000","ret_msg":["操作成功"]}}&SfAB85RYkaRMvDfiwLyTvt70gx3DSqUPhjuinvz1RJtXe7sgFDy5vGyZTfwwrpUOiMSoI2mkrh7+5DrL7CKbyYW26YY7t1s7WK+dG3ABZYbXq9kPtUULJJIEkZDTTfDJ+EC5eppVPYPcxTj653MngPnYaJDeniUZ83fHqbUaOCQ=
+[2017-11-03 18:01:56.121] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:01:56.125] [INFO] default - { bankAccount: 'wxYayn1hg1Jlncg63RtWfpM0JYbA27ng7X7bgbDIGIQjrMk2KMNmJTghtyu+aYIdnz+bESdc9vcDbubQ5VFOBEPb2nZbvZ4+hT7WGc3WihcnRnBp9WYIuAzYm3CxgkeOgZRijwLjgGTLNPO/ym3bIOHTczcI021gil5QcQXD8Xg=',
+  merId: '60038402',
+  merName: 'Zyrs+dKLgvqEqkOZ4aTVvRIRWGi45goyLs959oZAFxRQP1vPcSc9gGuSUKtvicFvG0fvcXX0L7ACahKqm4lKFmKVB2jqpnJwirG1tDda38AXWbqwogX2mjjdvlja/9mf2xDtm0JulHawcG56vW7qUzzU99YwuFCw4rBPuO80/q8=',
+  merType: '1',
+  contActsName: 'ECFpdGxJmLGerRZ4McKyyY2a4YNu4xjn9QwoBKH3Zinaf3KwcO1Oyf5+5NCwR2PsKSDwzPNMRd2lQOQwDhDSmo+IbnShD1dEYnc3BSkXuV0WOooi0Q0eQt/dxYvbfN5zTYHnmRA3tHNdL3+9Rng8igt8eNE0+zfYlz5ubc1VbwY=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '91140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'nK+++RqyDZ26QpTA/RfyuvFKc0gVnmSlsJLvniFEqgFN9HuKgKr2SAx5Ab7Fkd7eGCgDN4ktnZ0H9K9XcQAeyFE7+By4MogCZ8APSOk8dhAyt6M3wKopb/SDe9/CLbcFEnyK1CVND9b9EapSM97APvUCZNThQUe9WlXjp27Xjf4=',
+  cardNo: 'rlv0O2vAIqt6Nmpds93ux/VoMJg+OaHhemdmWIU5ZgBMNn7IFdmUuV4aYt0wpkBPUsB+zxqiOyO/0ZSr0Wah2uinOZ15J4K6CFTlbzqCwUvv5ksaYYC2kJ4A1CZGaygNUUrITQ2CTw9FmTTbbF+esR/4XS8/2ei9mKDZ+tRU3LU=',
+  bankName: 'lSfDPyboVEZm1lOkB/GtlUvYOp3V778ejNWqHjRqf1BmoRNsENk6E8BEtEmD/iQtEgmVSKQDSu5uYhy9FDDGEk7r42A3ZaSeMTKp7LixvbQJZTqzJv1C3DeYzBOZi9yN3gx0Gyql3dGiKjMWRarE/eEbBt3/WhjfzBOfEsYAleA=',
+  province: '010',
+  areaCode: '010',
+  pubPriFlag: '1',
+  bankBrhName: 'gHglhtzkAbEN2T4/qOBjUgGMpaTYr81JO1lgaINwo+TD8+iWDYok3R1ZR7xMWsBMPA4NI/IGkbEkprhbZdIV8x9ggJv2I4PC+1X21MCwU9gCX8nLbWodHL3jt5tfcbqNy8VbqJ1jE+4h5UTtNGfkyZcRYnpJMyf/YFMRZqb3AQk=',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-03 18:01:56.131] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:01:56.131] [INFO] default - {"bankAccount":"wxYayn1hg1Jlncg63RtWfpM0JYbA27ng7X7bgbDIGIQjrMk2KMNmJTghtyu+aYIdnz+bESdc9vcDbubQ5VFOBEPb2nZbvZ4+hT7WGc3WihcnRnBp9WYIuAzYm3CxgkeOgZRijwLjgGTLNPO/ym3bIOHTczcI021gil5QcQXD8Xg=","merId":"60038402","merName":"Zyrs+dKLgvqEqkOZ4aTVvRIRWGi45goyLs959oZAFxRQP1vPcSc9gGuSUKtvicFvG0fvcXX0L7ACahKqm4lKFmKVB2jqpnJwirG1tDda38AXWbqwogX2mjjdvlja/9mf2xDtm0JulHawcG56vW7qUzzU99YwuFCw4rBPuO80/q8=","merType":"1","contActsName":"ECFpdGxJmLGerRZ4McKyyY2a4YNu4xjn9QwoBKH3Zinaf3KwcO1Oyf5+5NCwR2PsKSDwzPNMRd2lQOQwDhDSmo+IbnShD1dEYnc3BSkXuV0WOooi0Q0eQt/dxYvbfN5zTYHnmRA3tHNdL3+9Rng8igt8eNE0+zfYlz5ubc1VbwY=","mobileNo":"13911698741","licenseType":"1","licenseNo":"91140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"nK+++RqyDZ26QpTA/RfyuvFKc0gVnmSlsJLvniFEqgFN9HuKgKr2SAx5Ab7Fkd7eGCgDN4ktnZ0H9K9XcQAeyFE7+By4MogCZ8APSOk8dhAyt6M3wKopb/SDe9/CLbcFEnyK1CVND9b9EapSM97APvUCZNThQUe9WlXjp27Xjf4=","cardNo":"rlv0O2vAIqt6Nmpds93ux/VoMJg+OaHhemdmWIU5ZgBMNn7IFdmUuV4aYt0wpkBPUsB+zxqiOyO/0ZSr0Wah2uinOZ15J4K6CFTlbzqCwUvv5ksaYYC2kJ4A1CZGaygNUUrITQ2CTw9FmTTbbF+esR/4XS8/2ei9mKDZ+tRU3LU=","bankName":"lSfDPyboVEZm1lOkB/GtlUvYOp3V778ejNWqHjRqf1BmoRNsENk6E8BEtEmD/iQtEgmVSKQDSu5uYhy9FDDGEk7r42A3ZaSeMTKp7LixvbQJZTqzJv1C3DeYzBOZi9yN3gx0Gyql3dGiKjMWRarE/eEbBt3/WhjfzBOfEsYAleA=","province":"010","areaCode":"010","pubPriFlag":"1","bankBrhName":"gHglhtzkAbEN2T4/qOBjUgGMpaTYr81JO1lgaINwo+TD8+iWDYok3R1ZR7xMWsBMPA4NI/IGkbEkprhbZdIV8x9ggJv2I4PC+1X21MCwU9gCX8nLbWodHL3jt5tfcbqNy8VbqJ1jE+4h5UTtNGfkyZcRYnpJMyf/YFMRZqb3AQk=","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-03 18:01:56.192] [INFO] default - Status: 0
+[2017-11-03 18:01:56.194] [INFO] default - 网络请求返回{"meta":{"ret_msg":["Token is not found"]}}
+[2017-11-03 18:03:05.379] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:03:05.382] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-03 18:03:05.473] [INFO] default - Status: 201
+[2017-11-03 18:03:05.479] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"8e2f4217534b92c377886ffcee12f4f4a8df613264a58f9c31dd3cef6be7ec51"}
+[2017-11-03 18:03:29.486] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:03:29.490] [INFO] default - { bankAccount: 'ZUnXBiO4V7ibfOipvQdmtze2sSKYZYHotrluSPA/nuuSIHDbbMg117jXE98DmDZNclhM49uD5D2/kp0Rq8V2TtZibKSLORHLVpt1Q6/Ij2JU5uYV1uSUY7DvK20dfF1f+JWDpYaIhbbEyS/t9E1bTcRwqX4X4s7HTyLqNjfZOiE=',
+  merId: '60038402',
+  merName: 'Sn16ijMtNlmTQw1XmZvpZTRa2WBu4hAxRaW6/Y3l2Mpmvv2NgmsEfqzJce6+pUocuB2Kzfrb0z/TGPuCiFUgd6/wFjky0UYaiMw9UJ235cMkdUap6mv2Isf2jJYK1QDzGBXq/swqGSErblXAc0+aZiT4X3ujm+qNcUz4xKpZZsE=',
+  merType: '1',
+  contActsName: 'LL0QBnyDAQvw8+79iGyqmVrk3GVbHlunxzI9JWh7xWeQyWRD5hgnlPzroPjgPKmGQ9DbxtZC00CGQFD5obNj4sSowCrW+lm3yCN0qFj2PZ4U/3KF6NhzMIAdOMlI1jtJB14jZIB8Xs3WfQMZOTlFlSNwWjwlknLD0ScdNbN/OVY=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '91140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'WRyCNCbRwoZNimnRoxTkRMlrq4W2pcog1ANcKDzVHoZ5etpmWEsWbTURZ/FIOUz42Wou2HOpdgjfqi2H58tOozgQPSk+XR7lJf/z3/IU9WMGTkjYoRUx4FbqtZYhFMgkF27t4rIJY62T8X+DioVAVbGkNVOrdYj1SetGRpzV3l4=',
+  cardNo: 'EEhUbPvRts6L77xxcbBEkkfJ2aJ/R/ZwkKvmmZW59FNiEiJpT1RfvOQRatoQrqee8KtXbyHvGADfCtOVpig57SJ+jGBryy6d9DFaMDjscy5HGLqP2DeorCLhw5HmZqEc60ltBe3MYmAprk8cKKCuwQ04BG465rmz8TLx8xReu3U=',
+  bankName: 'gEECRC+8/OPAi9bWcOaRwnQwgLAIdrzfyDgMODUXeAmw+d6PWtEucGO8Sf1lRoBVm1hC4EccTeZQzjudikPkPA6rYdLfl619AjI4KTWj/TP0/6tjujQXG9aHhnAo0mYlZ+1XB4CeyXIaPgmCM42oOVGSeZqHS0BKzauViVJIdHo=',
+  province: '010',
+  areaCode: '010',
+  pubPriFlag: '1',
+  bankBrhName: 'WoWSAjz18dAcsZp1ZCzHmG+Rv1S+qRx7aASQsraVAPH9IczgK1Cucms1hGZyGAvJ3Re2uOxM3myEqFxAnHxRZ4qqBWtbQDXF0XodYHh+WBkwW3J/axOZfg6XsNM6MiLu8vzEjDZ0F02m7EXyHSQPdBIl1fapA7/I8Xmz1FMoxpQ=',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-03 18:03:29.495] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:03:29.495] [INFO] default - {"bankAccount":"ZUnXBiO4V7ibfOipvQdmtze2sSKYZYHotrluSPA/nuuSIHDbbMg117jXE98DmDZNclhM49uD5D2/kp0Rq8V2TtZibKSLORHLVpt1Q6/Ij2JU5uYV1uSUY7DvK20dfF1f+JWDpYaIhbbEyS/t9E1bTcRwqX4X4s7HTyLqNjfZOiE=","merId":"60038402","merName":"Sn16ijMtNlmTQw1XmZvpZTRa2WBu4hAxRaW6/Y3l2Mpmvv2NgmsEfqzJce6+pUocuB2Kzfrb0z/TGPuCiFUgd6/wFjky0UYaiMw9UJ235cMkdUap6mv2Isf2jJYK1QDzGBXq/swqGSErblXAc0+aZiT4X3ujm+qNcUz4xKpZZsE=","merType":"1","contActsName":"LL0QBnyDAQvw8+79iGyqmVrk3GVbHlunxzI9JWh7xWeQyWRD5hgnlPzroPjgPKmGQ9DbxtZC00CGQFD5obNj4sSowCrW+lm3yCN0qFj2PZ4U/3KF6NhzMIAdOMlI1jtJB14jZIB8Xs3WfQMZOTlFlSNwWjwlknLD0ScdNbN/OVY=","mobileNo":"13911698741","licenseType":"1","licenseNo":"91140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"WRyCNCbRwoZNimnRoxTkRMlrq4W2pcog1ANcKDzVHoZ5etpmWEsWbTURZ/FIOUz42Wou2HOpdgjfqi2H58tOozgQPSk+XR7lJf/z3/IU9WMGTkjYoRUx4FbqtZYhFMgkF27t4rIJY62T8X+DioVAVbGkNVOrdYj1SetGRpzV3l4=","cardNo":"EEhUbPvRts6L77xxcbBEkkfJ2aJ/R/ZwkKvmmZW59FNiEiJpT1RfvOQRatoQrqee8KtXbyHvGADfCtOVpig57SJ+jGBryy6d9DFaMDjscy5HGLqP2DeorCLhw5HmZqEc60ltBe3MYmAprk8cKKCuwQ04BG465rmz8TLx8xReu3U=","bankName":"gEECRC+8/OPAi9bWcOaRwnQwgLAIdrzfyDgMODUXeAmw+d6PWtEucGO8Sf1lRoBVm1hC4EccTeZQzjudikPkPA6rYdLfl619AjI4KTWj/TP0/6tjujQXG9aHhnAo0mYlZ+1XB4CeyXIaPgmCM42oOVGSeZqHS0BKzauViVJIdHo=","province":"010","areaCode":"010","pubPriFlag":"1","bankBrhName":"WoWSAjz18dAcsZp1ZCzHmG+Rv1S+qRx7aASQsraVAPH9IczgK1Cucms1hGZyGAvJ3Re2uOxM3myEqFxAnHxRZ4qqBWtbQDXF0XodYHh+WBkwW3J/axOZfg6XsNM6MiLu8vzEjDZ0F02m7EXyHSQPdBIl1fapA7/I8Xmz1FMoxpQ=","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-03 18:03:29.668] [INFO] default - Status: 200
+[2017-11-03 18:03:29.671] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","meta":{"ret_code":"0000","ret_msg":["子商户入网信息信息修改成功"]}}&hLysC3aKFvw9RmkYi5yK7VSUCs87cicJqYwi+CxwLKYL0hrQBtUT0rME6QhJyyaVY/OUJAUAtv+GSTflxhI/lLuz1AdJPuNVmOHgNskQkp1ZW4oFo/DD3HOTn6D5V+yNSSGOZK7aYd5lXFJS1kzXCv4qmi0estMsobv8YwAlyno=
+[2017-11-03 18:06:52.059] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:06:52.062] [INFO] default - 
+[2017-11-03 18:06:52.209] [INFO] default - Status: 200
+[2017-11-03 18:06:52.212] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","checkState":"0","rejectReason":"","subMerId":"","meta":{"ret_code":"0000","ret_msg":["查询成功"]}}&eLSStlGlnbtR4qBS0BZRv2DFac8Qn22A3+nfLOsquOlVKVLE4TqN/OGnWI7ShzXBoDFiQIcHXkyyzZPJu4xnsFtbZ955gxQ6vdk3PZFBbgdTBJrgPM3mD+NYRWr6OIFwyHU5IPgTx4LY083l76DO02LZX6+Nr6odxysaqQGLnSA=
+[2017-11-03 18:07:09.921] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:07:09.924] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-03 18:08:54.067] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:08:54.070] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-03 18:09:10.419] [INFO] default - [UMF SDK] 平台通知数据验签成功
+[2017-11-03 18:09:10.427] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:09:10.427] [INFO] default - { merId: '60188102',
+  licenseNo: '91140100743546792Z',
+  ret_code: '0000' }
+[2017-11-03 18:09:10.428] [ERROR] default - TypeError: path must be a string or Buffer
+    at TypeError (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.readFileSync (fs.js:509:33)
+    at SignUtil.sign (/Users/MYFILE/Documents/Cuilijuan/UMF_Server_SDK_Nodejs/lib/utils/SignUtil.js:35:33)
+    at umfService.responseChildNotifyMap (/Users/MYFILE/Documents/Cuilijuan/UMF_Server_SDK_Nodejs/lib/service/umfService.js:666:29)
+    at TestMer2Umf.prepareChildDoGet (/Users/MYFILE/Documents/Cuilijuan/UMF_Server_SDK_Nodejs/example/TestMer2Umf.js:624:41)
+    at Object.<anonymous> (/Users/MYFILE/Documents/Cuilijuan/UMF_Server_SDK_Nodejs/example/TestMer2Umf.js:51:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+[2017-11-03 18:10:17.605] [INFO] default - [UMF SDK] 平台通知数据验签成功
+[2017-11-03 18:10:17.617] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:10:17.618] [INFO] default - { merId: '60188102',
+  licenseNo: '91140100743546792Z',
+  ret_code: '0000' }
+[2017-11-03 18:15:00.285] [INFO] default - [UMF SDK] 平台通知数据验签成功
+[2017-11-03 18:15:00.288] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:15:00.288] [INFO] default - { merId: '60188102',
+  licenseNo: '91140100743546792Z',
+  ret_code: '0000' }
+[2017-11-03 18:17:55.249] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:17:55.253] [INFO] default - { bankAccount: 'hlejUwZyKL9Sl79JXBMDjo4tvmjmJZXOkLUy6dnSos1JOrer/1XWrN2/ywzKDdOg3MTfKJ/deK8ZTUm5tLssVLR6EZVIjwcY2MlmCHswsG8z3VqkQFpaizqIwVdzsSsYYzOoQly5SyOpmqEQIzUKsaUa4A5yzopayjfhgNcFOBQ=',
+  merId: '60038402',
+  merName: 'GNPUQnUvDL9wWv1TYRYWkGu6WUwu/IJx6EUQqfs2U4mYZLrtzNNA+5ljlukN6mLJITVnMMF04jVKaknm2pT/D2ALU33x2F/I8HkQ0mrF++mtKp8qf7p6xJ3MPzWTWIu8oF4RBYdGM9Uug2zjse50ODAjwFdS+mh1+xIK52VZrY4=',
+  merType: '1',
+  contActsName: 'jmuRQtZEd1AI6PREziu7W9enwm/UBUhAbpOkJsLYHF8U+91a5zY4UzLs0N4JxDv/VTe9WWS6xahCvtDDOzUgHvgC2TDI4j3ey8hVyPaRbjjILbv7upmr72/3ADlKJF0h40BjH7QF+E7g1qztdL6ky/7p1lHftHdc/Bm80yXG6k8=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '91140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'lK7Q0ewyztIIoomHCimQIYw8ZM1IqtuErtg4gjKKebDDvlXBwHTWTXeebv9llnNUyFHQxymfwaXWTea9T3JCqswNsokMwR/kEovZ9j83PqpDw3p/gG9JuBWqctsbjqBTCcBnJ3CSx9womBiodVLpu8P41z5+TtXaaB4oSJ+N93k=',
+  cardNo: 'EDLpmNAivi9yY9N7AyNe8/v7kThnOknkzs+uFV47g3/YHRyOpJaosmppz85rLtIt+fovsitx0DkP+oku50+1wPRasarHeAqNVWz9eXse9e5VtTfgogo1xMjddwKkm1rP0y8n7x/1lfADPB8wrA9NOwhyYu1sRhtAgA5PxO8ra7Q=',
+  bankName: 'bh5Xi6uOrp/I+l+I9XA62F00ATP1aY3BWJZdfSko99HKih/ojl0+GM12iKSOrIAyOWbblnfzJHyalEuKAZ+i/nNNp0wdkUpKZgoY/00f10ldwdmr3jntlE+Ls07lF5i8Nj8whF/D5031u6QNliaZiT5/+g688qH/DDD3B+uDs+k=',
+  province: '010',
+  areaCode: '010',
+  pubPriFlag: '1',
+  bankBrhName: 'H0e+GCxMd4SCQRmiHRZbnxTLAQafYcIe+0f7htjwovRTfy/ILleV1xT9N9haK80DjpzT+xLOv1/jAKcViZ7X1qbeRLAUgp5ZOugA0otHP5GBPB4yUuPgAymmsp/xcaiDK7TiljdodBW7BvSRYwJNPEbQxTGhYxjsFa90uFnuIlk=',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-03 18:17:55.258] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:17:55.259] [INFO] default - {"bankAccount":"hlejUwZyKL9Sl79JXBMDjo4tvmjmJZXOkLUy6dnSos1JOrer/1XWrN2/ywzKDdOg3MTfKJ/deK8ZTUm5tLssVLR6EZVIjwcY2MlmCHswsG8z3VqkQFpaizqIwVdzsSsYYzOoQly5SyOpmqEQIzUKsaUa4A5yzopayjfhgNcFOBQ=","merId":"60038402","merName":"GNPUQnUvDL9wWv1TYRYWkGu6WUwu/IJx6EUQqfs2U4mYZLrtzNNA+5ljlukN6mLJITVnMMF04jVKaknm2pT/D2ALU33x2F/I8HkQ0mrF++mtKp8qf7p6xJ3MPzWTWIu8oF4RBYdGM9Uug2zjse50ODAjwFdS+mh1+xIK52VZrY4=","merType":"1","contActsName":"jmuRQtZEd1AI6PREziu7W9enwm/UBUhAbpOkJsLYHF8U+91a5zY4UzLs0N4JxDv/VTe9WWS6xahCvtDDOzUgHvgC2TDI4j3ey8hVyPaRbjjILbv7upmr72/3ADlKJF0h40BjH7QF+E7g1qztdL6ky/7p1lHftHdc/Bm80yXG6k8=","mobileNo":"13911698741","licenseType":"1","licenseNo":"91140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"lK7Q0ewyztIIoomHCimQIYw8ZM1IqtuErtg4gjKKebDDvlXBwHTWTXeebv9llnNUyFHQxymfwaXWTea9T3JCqswNsokMwR/kEovZ9j83PqpDw3p/gG9JuBWqctsbjqBTCcBnJ3CSx9womBiodVLpu8P41z5+TtXaaB4oSJ+N93k=","cardNo":"EDLpmNAivi9yY9N7AyNe8/v7kThnOknkzs+uFV47g3/YHRyOpJaosmppz85rLtIt+fovsitx0DkP+oku50+1wPRasarHeAqNVWz9eXse9e5VtTfgogo1xMjddwKkm1rP0y8n7x/1lfADPB8wrA9NOwhyYu1sRhtAgA5PxO8ra7Q=","bankName":"bh5Xi6uOrp/I+l+I9XA62F00ATP1aY3BWJZdfSko99HKih/ojl0+GM12iKSOrIAyOWbblnfzJHyalEuKAZ+i/nNNp0wdkUpKZgoY/00f10ldwdmr3jntlE+Ls07lF5i8Nj8whF/D5031u6QNliaZiT5/+g688qH/DDD3B+uDs+k=","province":"010","areaCode":"010","pubPriFlag":"1","bankBrhName":"H0e+GCxMd4SCQRmiHRZbnxTLAQafYcIe+0f7htjwovRTfy/ILleV1xT9N9haK80DjpzT+xLOv1/jAKcViZ7X1qbeRLAUgp5ZOugA0otHP5GBPB4yUuPgAymmsp/xcaiDK7TiljdodBW7BvSRYwJNPEbQxTGhYxjsFa90uFnuIlk=","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-03 18:17:55.392] [INFO] default - Status: 200
+[2017-11-03 18:17:55.394] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","meta":{"ret_code":"0000","ret_msg":["子商户入网信息信息修改成功"]}}&hLysC3aKFvw9RmkYi5yK7VSUCs87cicJqYwi+CxwLKYL0hrQBtUT0rME6QhJyyaVY/OUJAUAtv+GSTflxhI/lLuz1AdJPuNVmOHgNskQkp1ZW4oFo/DD3HOTn6D5V+yNSSGOZK7aYd5lXFJS1kzXCv4qmi0estMsobv8YwAlyno=
+[2017-11-03 18:18:01.542] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-03 18:18:01.545] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-03 18:18:51.956] [INFO] default - 网络请求的参数为：
+[2017-11-03 18:18:51.958] [INFO] default - 
+[2017-11-03 18:18:52.046] [INFO] default - Status: 200
+[2017-11-03 18:18:52.048] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"91140106643546792F","checkState":"2","rejectReason":"","subMerId":"20000080","meta":{"ret_code":"0000","ret_msg":["查询成功"]}}&FKilzIrm3uRtzrvl2IG0159sag+qUEa4LZJcaRkqVYo0wjXxWpFVdLt2WlXnnrjD3marsEAVM8BeroMXn83ICF/pMCwQZSyKY+/xSaJfleh88sQJ7PbRBR00v/FRLXwcHcqi5BjIRH9QHcVXTKL3NiSkc8XFDQdph24/bg3y6eI=

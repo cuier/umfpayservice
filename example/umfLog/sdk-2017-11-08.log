@@ -1,0 +1,33 @@
+[2017-11-08 11:29:26.039] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-08 11:29:26.050] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-08 11:29:26.051] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-08 11:29:26.052] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711081129',
+  mer_date: '20171108',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述' }
+[2017-11-08 11:29:26.065] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-08 11:29:26.065] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-08 11:29:26.065] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711081129',
+  mer_date: '20171108',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述',
+  sign_type: 'RSA',
+  sign: 'eQFos+DxEkmYxUz1MtknAakr3wMjZQZwQWw3yL5wD3JSe/TOP0m+Sbf3jruoCzw78ZOnqg7XP5Jm7kv1laC6JAHwBjuLL5GIS0aTgIjJ4LULd0u0ru2yd9dRAtPvIawQ8fipB/F6pTBgtGy7SS2UOJrBW51J0X36k86WaNv/n4Q=' }
+[2017-11-08 11:29:26.066] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=publicnumber_and_verticalcode&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711081129&mer_date=20171108&amount=1&is_public_number=Y&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&sign_type=RSA&sign=eQFos%2BDxEkmYxUz1MtknAakr3wMjZQZwQWw3yL5wD3JSe%2FTOP0m%2BSbf3jruoCzw78ZOnqg7XP5Jm7kv1laC6JAHwBjuLL5GIS0aTgIjJ4LULd0u0ru2yd9dRAtPvIawQ8fipB%2FF6pTBgtGy7SS2UOJrBW51J0X36k86WaNv%2Fn4Q%3D

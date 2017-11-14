@@ -1,0 +1,21 @@
+[2017-11-02 17:56:11.162] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 17:56:11.165] [INFO] default - { bankAccount: 'E3Yw9zh5r8Pz3rhwso0zgqVCCBDGJ6Uc2UE8mrUch3yT6ExWGIdpG4d2C6xtYwn5GKaGczZfW6MYuQi/GtnxoxC3QAbZcO+R69sKP2bZS4OzJvBKzLiSgfNzJgh/shu4Z3Z6i6aFcFmY00CIfNJbrnKPnuBRtpiqtiv57yPd0xQ=',
+  merId: '60144402',
+  merName: 'Ilu+F3PHB9WA4Kr3uOy4L5rOhruPT7JaCVlvQxvnJZKqDeDFpBhZ2/KHSklZki8NTHDIzbrj3ZjbBhHWLPt8j1WO/iYCUOun2IuFTL6jjw/BYTk1CywAMow7UuWv4fCoGeyL8NFmN4VtDRi1PCADJioLvGrRIIdy2nzJcZCbC90=',
+  merType: '1',
+  contActsName: 'iOThXMmx5BPt/EsmgQKSyW9kg6lYb3D9sjBiOjV+ZervFz4DwABL+84FcB77XoLNnsdP+cf5Eg+I/lYyPDActZkmWhfnZxzO7qDtq9vlHPLN5qn62eRchESM7wlnk1GbFstEGq6I0I1dhUrjwQNO0ehzZdQvysHl5T/50LgMAFo=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '92140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'KGUOWbgK9+dWcg4ObpoXa0svmhzOEJ/Re/G4K98Q9Eu5UGw9U5Rla2SiESlEtM61Wia3ZIr2Q9t0Olwy2vMg/r2XISik4hvYnr95jm9Yns6STvUGfCQq7vRpFTCwQtnhUn5CBMv2E9XM5JO9EPObV04xVMSt1xeSdF8r0Wa4gI0=',
+  cardNo: 'IjiDrSEEVrjAmk1jSrQRnM5iL2MhIL0HlsgJlXXi1wyfwmZrBFRRoQItOkeKIB/Cdz4HANlvKtMhHVg9YB4ynVStKYoPjPYc5bP7mhhSsY9pRW9Xqi1wK4+TthloX/uVAy9Gx7CtNAtbj33022gExWGbVcj5WcQ0654Oitrhpww=',
+  bankName: 'PNRdOa1nx00uNe5bgXmdQ5m9kGHqC6oQ5aphZf0I9LxfIM69zkrzS6QI8yExLDkpPwvBsat6AGpgTd9oaa38ecGyklOQen+Tl/5kHy1fnKgIqd61oAAVfbEwMScn5zdxwEJPZLvofINDumIetP0ujCSNHLbTN9jvbH2kHWZZYL0=',
+  province: '010',
+  areaCode: '010',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-02 17:56:11.170] [INFO] default - 网络请求的参数为：
+[2017-11-02 17:56:11.171] [INFO] default - {"bankAccount":"E3Yw9zh5r8Pz3rhwso0zgqVCCBDGJ6Uc2UE8mrUch3yT6ExWGIdpG4d2C6xtYwn5GKaGczZfW6MYuQi/GtnxoxC3QAbZcO+R69sKP2bZS4OzJvBKzLiSgfNzJgh/shu4Z3Z6i6aFcFmY00CIfNJbrnKPnuBRtpiqtiv57yPd0xQ=","merId":"60144402","merName":"Ilu+F3PHB9WA4Kr3uOy4L5rOhruPT7JaCVlvQxvnJZKqDeDFpBhZ2/KHSklZki8NTHDIzbrj3ZjbBhHWLPt8j1WO/iYCUOun2IuFTL6jjw/BYTk1CywAMow7UuWv4fCoGeyL8NFmN4VtDRi1PCADJioLvGrRIIdy2nzJcZCbC90=","merType":"1","contActsName":"iOThXMmx5BPt/EsmgQKSyW9kg6lYb3D9sjBiOjV+ZervFz4DwABL+84FcB77XoLNnsdP+cf5Eg+I/lYyPDActZkmWhfnZxzO7qDtq9vlHPLN5qn62eRchESM7wlnk1GbFstEGq6I0I1dhUrjwQNO0ehzZdQvysHl5T/50LgMAFo=","mobileNo":"13911698741","licenseType":"1","licenseNo":"92140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"KGUOWbgK9+dWcg4ObpoXa0svmhzOEJ/Re/G4K98Q9Eu5UGw9U5Rla2SiESlEtM61Wia3ZIr2Q9t0Olwy2vMg/r2XISik4hvYnr95jm9Yns6STvUGfCQq7vRpFTCwQtnhUn5CBMv2E9XM5JO9EPObV04xVMSt1xeSdF8r0Wa4gI0=","cardNo":"IjiDrSEEVrjAmk1jSrQRnM5iL2MhIL0HlsgJlXXi1wyfwmZrBFRRoQItOkeKIB/Cdz4HANlvKtMhHVg9YB4ynVStKYoPjPYc5bP7mhhSsY9pRW9Xqi1wK4+TthloX/uVAy9Gx7CtNAtbj33022gExWGbVcj5WcQ0654Oitrhpww=","bankName":"PNRdOa1nx00uNe5bgXmdQ5m9kGHqC6oQ5aphZf0I9LxfIM69zkrzS6QI8yExLDkpPwvBsat6AGpgTd9oaa38ecGyklOQen+Tl/5kHy1fnKgIqd61oAAVfbEwMScn5zdxwEJPZLvofINDumIetP0ujCSNHLbTN9jvbH2kHWZZYL0=","province":"010","areaCode":"010","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-02 17:56:12.555] [INFO] default - Status: 200
+[2017-11-02 17:56:12.557] [INFO] default - 网络请求返回{"merId":"60144402","licenseNo":"92140106643546792F","meta":{"ret_code":"00060879","ret_msg":["解密支付要素失败"]}}&HeCN29R/2lWqLl/4FkvRiRBVaUSzHbVh6W/Y/gH7ZILsi56onCM1e0+a4Tm540Ca3f5jOgvwk41dQilwxVSgSfw2KboaIbP25B4UAmAtZetyjrL3yo5lZCKNMmU9Su/AagLxOHpe2n1aCb9t1gWIvllnO73CwhpI+lmxTEMM6bM=

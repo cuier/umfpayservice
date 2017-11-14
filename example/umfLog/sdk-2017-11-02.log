@@ -1,0 +1,393 @@
+[2017-11-02 09:26:53.840] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:26:53.844] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:27:15.604] [INFO] default - 网络请求的参数为：
+[2017-11-02 09:27:15.608] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 09:27:15.718] [INFO] default - Status: 201
+[2017-11-02 09:27:15.721] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"d9c3063dbef5ea407d67a377ce692d35c43652b082a4704a76ba7e34240d0583"}
+[2017-11-02 09:27:34.362] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:27:34.366] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:48:16.192] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:48:16.196] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:49:03.976] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:49:03.980] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:50:27.780] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:50:27.785] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:52:21.627] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:52:21.631] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:53:28.550] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:53:28.554] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:54:20.495] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:54:20.499] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:54:52.032] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:54:52.036] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:56:48.640] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:56:48.643] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 09:56:57.783] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 09:56:57.787] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:02:34.555] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:02:34.559] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:02:34.648] [INFO] default - Status: 500
+[2017-11-02 10:02:34.651] [INFO] default - 网络请求返回<html>
+<head><title>500 Servlet Exception</title></head>
+<body>
+<h1>500 Servlet Exception</h1>
+<code><pre>
+<script language='javascript' type='text/javascript'>
+function show() { document.getElementById('trace').style.display = ''; }
+</script>
+<a style="text-decoration" href="javascript:show();">[show]</a> org.apache.commons.fileupload.FileUploadException: the request was rejected
+because no multipart boundary was found
+<span id="trace" style="display:none">
+org.springframework.web.multipart.MultipartException: Could not parse multipart
+servlet request; nested exception is org.apache.commons.fileupload.FileUploadException:
+the request was rejected because no multipart boundary was found
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:165)
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:142)
+	at com.umpay.spayrest.filter.SignFilter.doFilter(SignFilter.java:69)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.OAuthFilter.doFilter(OAuthFilter.java:57)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.LogHelperFilter.doFilter(LogHelperFilter.java:47)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.caucho.server.webapp.WebAppFilterChain.doFilter(WebAppFilterChain.java:156)
+	at com.caucho.server.webapp.AccessLogFilterChain.doFilter(AccessLogFilterChain.java:95)
+	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:289)
+	at com.caucho.server.http.HttpRequest.handleRequest(HttpRequest.java:838)
+	at com.caucho.network.listen.TcpSocketLink.dispatchRequest(TcpSocketLink.java:1349)
+	at com.caucho.network.listen.TcpSocketLink.handleRequest(TcpSocketLink.java:1305)
+	at com.caucho.network.listen.TcpSocketLink.handleRequestsImpl(TcpSocketLink.java:1289)
+	at com.caucho.network.listen.TcpSocketLink.handleRequests(TcpSocketLink.java:1197)
+	at com.caucho.network.listen.TcpSocketLink.handleAcceptTaskImpl(TcpSocketLink.java:993)
+	at com.caucho.network.listen.ConnectionTask.runThread(ConnectionTask.java:117)
+	at com.caucho.network.listen.ConnectionTask.run(ConnectionTask.java:93)
+	at com.caucho.network.listen.SocketLinkThreadLauncher.handleTasks(SocketLinkThreadLauncher.java:169)
+	at com.caucho.network.listen.TcpSocketAcceptThread.run(TcpSocketAcceptTh
+[2017-11-02 10:02:34.652] [INFO] default - 网络请求返回read.java:61)
+	at com.caucho.env.thread2.ResinThread2.runTasks(ResinThread2.java:173)
+	at com.caucho.env.thread2.ResinThread2.run(ResinThread2.java:118)
+Caused by: org.apache.commons.fileupload.FileUploadException: the request
+was rejected because no multipart boundary was found
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.&lt;init>(FileUploadBase.java:931)
+	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:331)
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:349)
+	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:126)
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:158)
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:142)
+	at com.umpay.spayrest.filter.SignFilter.doFilter(SignFilter.java:69)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.OAuthFilter.doFilter(OAuthFilter.java:57)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.LogHelperFilter.doFilter(LogHelperFilter.java:47)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.caucho.server.webapp.WebAppFilterChain.doFilter(WebAppFilterChain.java:156)
+	at com.caucho.server.webapp.AccessLogFilterChain.doFilter(AccessLogFilterChain.java:95)
+	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:289)
+	at com.caucho.server.http.HttpRequest.handleRequest(HttpRequest.java:838)
+	at com.caucho.network.listen.TcpSocketLink.dispatchRequest(TcpSocketLink.java:1349)
+	at com.caucho.network.listen.TcpSocketLink.handleRequest(TcpSocketLink.java:1305)
+	at com.caucho.network.listen.TcpSocketLink.handleRequestsImpl(TcpSocketLink.java:1289)
+	at com.caucho.network.listen.TcpSocketLink.handleRequests(TcpSocketLink.java:1197)
+	at com.caucho.network.listen.TcpSocketLink.handleAcceptTaskImpl(TcpSocketLink.java:993)
+	at com.caucho.network.listen.ConnectionTask.runThread(ConnectionTask.java:117)
+	at com.caucho.network.listen.ConnectionTask.run(ConnectionTask.java:93)
+	at com.caucho.network.listen.SocketLinkThreadLauncher.handleTasks(SocketLinkThreadLauncher.java:169)
+	at com.caucho.network.listen.TcpSocketAcceptThread.run(TcpSocketAcceptThread.java:61)
+	at com.caucho.env.thread2.ResinThread2.runTasks(ResinThread2.java:173)
+	at com.caucho.env.thread2.ResinThread2.run(ResinThread2.java:118)
+</span>
+</pre></code>
+<p /><hr />
+<small>
+Resin/4.0.48
+Server: 'app-0'
+</small>
+</body></html>
+
+[2017-11-02 10:03:09.048] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:03:09.051] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:03:09.139] [INFO] default - Status: 500
+[2017-11-02 10:03:09.141] [INFO] default - 网络请求返回<html>
+<head><title>500 Servlet Exception</title></head>
+<body>
+<h1>500 Servlet Exception</h1>
+<code><pre>
+<script language='javascript' type='text/javascript'>
+function show() { document.getElementById('trace').style.display = ''; }
+</script>
+<a style="text-decoration" href="javascript:show();">[show]</a> java.lang.NullPointerException
+<span id="trace" style="display:none">
+java.lang.NullPointerException
+	at com.umpay.spayrest.filter.SignFilter.doFilter(SignFilter.java:67)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.OAuthFilter.doFilter(OAuthFilter.java:57)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.LogHelperFilter.doFilter(LogHelperFilter.java:47)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.caucho.server.webapp.WebAppFilterChain.doFilter(WebAppFilterChain.java:156)
+	at com.caucho.server.webapp.AccessLogFilterChain.doFilter(AccessLogFilterChain.java:95)
+	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:289)
+	at com.caucho.server.http.HttpRequest.handleRequest(HttpRequest.java:838)
+	at com.caucho.network.listen.TcpSocketLink.dispatchRequest(TcpSocketLink.java:1349)
+	at com.caucho.network.listen.TcpSocketLink.handleRequest(TcpSocketLink.java:1305)
+	at com.caucho.network.listen.TcpSocketLink.handleRequestsImpl(TcpSocketLink.java:1289)
+	at com.caucho.network.listen.TcpSocketLink.handleRequests(TcpSocketLink.java:1197)
+	at com.caucho.network.listen.TcpSocketLink.handleAcceptTaskImpl(TcpSocketLink.java:993)
+	at com.caucho.network.listen.ConnectionTask.runThread(ConnectionTask.java:117)
+	at com.caucho.network.listen.ConnectionTask.run(ConnectionTask.java:93)
+	at com.caucho.network.listen.SocketLinkThreadLauncher.handleTasks(SocketLinkThreadLauncher.java:169)
+	at com.caucho.network.listen.TcpSocketAcceptThread.run(TcpSocketAcceptThread.java:61)
+	at com.caucho.env.thread2.ResinThread2.runTasks(ResinThread2.java:173)
+	at com.caucho.env.thread2.ResinThread2.run(ResinThread2.java:118)
+</span>
+</pre></code>
+<p /><hr />
+<small>
+Resin/4.0.48
+Server: 'app-0'
+</small>
+</body></html>
+
+[2017-11-02 10:04:22.206] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:04:22.210] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:04:22.289] [INFO] default - Status: 500
+[2017-11-02 10:04:22.292] [INFO] default - 网络请求返回<html>
+<head><title>500 Servlet Exception</title></head>
+<body>
+<h1>500 Servlet Exception</h1>
+<code><pre>
+<script language='javascript' type='text/javascript'>
+function show() { document.getElementById('trace').style.display = ''; }
+</script>
+<a style="text-decoration" href="javascript:show();">[show]</a> java.lang.NullPointerException
+<span id="trace" style="display:none">
+java.lang.NullPointerException
+	at com.umpay.spayrest.filter.SignFilter.doFilter(SignFilter.java:67)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.OAuthFilter.doFilter(OAuthFilter.java:57)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.umpay.spayrest.filter.LogHelperFilter.doFilter(LogHelperFilter.java:47)
+	at com.caucho.server.dispatch.FilterFilterChain.doFilter(FilterFilterChain.java:89)
+	at com.caucho.server.webapp.WebAppFilterChain.doFilter(WebAppFilterChain.java:156)
+	at com.caucho.server.webapp.AccessLogFilterChain.doFilter(AccessLogFilterChain.java:95)
+	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:289)
+	at com.caucho.server.http.HttpRequest.handleRequest(HttpRequest.java:838)
+	at com.caucho.network.listen.TcpSocketLink.dispatchRequest(TcpSocketLink.java:1349)
+	at com.caucho.network.listen.TcpSocketLink.handleRequest(TcpSocketLink.java:1305)
+	at com.caucho.network.listen.TcpSocketLink.handleRequestsImpl(TcpSocketLink.java:1289)
+	at com.caucho.network.listen.TcpSocketLink.handleRequests(TcpSocketLink.java:1197)
+	at com.caucho.network.listen.TcpSocketLink.handleAcceptTaskImpl(TcpSocketLink.java:993)
+	at com.caucho.network.listen.ConnectionTask.runThread(ConnectionTask.java:117)
+	at com.caucho.network.listen.ConnectionTask.run(ConnectionTask.java:93)
+	at com.caucho.network.listen.SocketLinkThreadLauncher.handleTasks(SocketLinkThreadLauncher.java:169)
+	at com.caucho.network.listen.TcpSocketAcceptThread.run(TcpSocketAcceptThread.java:61)
+	at com.caucho.env.thread2.ResinThread2.runTasks(ResinThread2.java:173)
+	at com.caucho.env.thread2.ResinThread2.run(ResinThread2.java:118)
+</span>
+</pre></code>
+<p /><hr />
+<small>
+Resin/4.0.48
+Server: 'app-0'
+</small>
+</body></html>
+
+[2017-11-02 10:10:04.482] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:10:04.487] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:16:57.243] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:16:57.247] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:23:02.057] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:23:02.060] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:23:29.279] [INFO] default - 网络请求的参数为：
+[2017-11-02 10:23:29.283] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 10:23:29.421] [INFO] default - Status: 201
+[2017-11-02 10:23:29.425] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"9433cc8c520b80de229b1c230f4bb61bfba3d7d9c33ac74422438ab08b22f4e4"}
+[2017-11-02 10:23:44.893] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:23:44.896] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:24:09.524] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:24:09.528] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:24:19.292] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:24:19.296] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:24:40.070] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:24:40.075] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:25:00.848] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:25:00.851] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 10:27:42.045] [INFO] default - 网络请求的参数为：
+[2017-11-02 10:27:42.050] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 10:28:00.143] [ERROR] default - { Error: read ETIMEDOUT
+    at exports._errnoException (util.js:1020:11)
+    at TCP.onread (net.js:568:26) code: 'ETIMEDOUT', errno: 'ETIMEDOUT', syscall: 'read' }
+[2017-11-02 10:29:51.730] [INFO] default - 网络请求的参数为：
+[2017-11-02 10:29:51.733] [INFO] default - {"grant_type":"client_credentials","client_id":"5b6d136935b89ad44142c15adf92e10df54d758a","client_secret":"13ae55d1e799f2c93bf2af2d1b6529463a77ca44"}
+[2017-11-02 10:30:09.866] [ERROR] default - { Error: read ETIMEDOUT
+    at exports._errnoException (util.js:1020:11)
+    at TCP.onread (net.js:568:26) code: 'ETIMEDOUT', errno: 'ETIMEDOUT', syscall: 'read' }
+[2017-11-02 10:49:02.587] [INFO] default - 网络请求的参数为：
+[2017-11-02 10:49:02.591] [INFO] default - {"grant_type":"client_credentials","client_id":"5b6d136935b89ad44142c15adf92e10df54d758a","client_secret":"13ae55d1e799f2c93bf2af2d1b6529463a77ca44"}
+[2017-11-02 10:49:20.714] [ERROR] default - { Error: read ETIMEDOUT
+    at exports._errnoException (util.js:1020:11)
+    at TCP.onread (net.js:568:26) code: 'ETIMEDOUT', errno: 'ETIMEDOUT', syscall: 'read' }
+[2017-11-02 10:49:23.044] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:49:23.048] [INFO] default - { licenseNo: '91140106643546792F', merId: '60144402' }
+[2017-11-02 10:54:11.737] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:54:11.741] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 10:55:31.351] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:55:31.354] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 10:56:01.977] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 10:56:01.981] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 11:02:56.793] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 11:02:56.797] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 11:08:46.427] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 11:08:46.430] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 13:36:27.874] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 13:36:27.878] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:01:37.104] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:01:37.107] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:06:52.314] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:06:52.319] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:14:48.855] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:14:48.859] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:21:18.194] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:21:18.198] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:58:29.649] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:58:29.654] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 14:59:21.098] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 14:59:21.101] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:26:56.066] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:26:56.069] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:27:34.468] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:27:34.479] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:28:02.836] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:28:02.839] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:28:17.609] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:28:17.612] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:28:44.099] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:28:44.103] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:29:25.582] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:29:25.585] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:30:45.309] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:30:45.315] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 15:44:25.662] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:44:25.667] [INFO] default - { licenseNo: '91140100743546792S', merId: '60188102' }
+[2017-11-02 15:45:00.460] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:45:00.464] [INFO] default - { licenseNo: '91140100743546792S', merId: '60188102' }
+[2017-11-02 15:58:56.157] [INFO] default - 网络请求的参数为：
+[2017-11-02 15:58:56.160] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 15:58:56.166] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:58:56.166] [INFO] default - { licenseNo: '91140100743546792S', merId: '60038402' }
+[2017-11-02 15:58:56.246] [INFO] default - Status: 201
+[2017-11-02 15:58:56.249] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"6ba1283216d4fe754ba866783c54a142dfc0c7f34c29aa45bd90ae8236ad4200"}
+[2017-11-02 15:59:18.282] [INFO] default - 网络请求的参数为：
+[2017-11-02 15:59:18.286] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 15:59:18.360] [INFO] default - Status: 201
+[2017-11-02 15:59:18.362] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"e97a813e3d026a86deb1737ac9e7bbba9c5180b790e156799995978a8dd26a04"}
+[2017-11-02 15:59:35.499] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 15:59:35.503] [INFO] default - { licenseNo: '91140100743546792S', merId: '60038402' }
+[2017-11-02 16:00:08.251] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:00:08.254] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:01:26.234] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:01:26.238] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:01:51.540] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:01:51.545] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:02:00.044] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:02:00.047] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:13:15.314] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:13:15.318] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:13:18.655] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:13:18.659] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:13:42.923] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:13:42.927] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:14:00.998] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:14:01.002] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:14:09.623] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:14:09.627] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:14:16.153] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:14:16.157] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:14:22.815] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:14:22.819] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:18:14.891] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:18:14.895] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:18:24.509] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:18:24.513] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:21:15.561] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:21:15.565] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:21:50.727] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:21:50.731] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:27:37.344] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:27:37.348] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:28:06.287] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:28:06.291] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:28:14.699] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:28:14.704] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:28:57.787] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:28:57.791] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:33:39.149] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:33:39.153] [INFO] default - { licenseNo: '91140106643546792F', merId: '60038402' }
+[2017-11-02 16:37:34.624] [INFO] default - 网络请求的参数为：
+[2017-11-02 16:37:34.628] [INFO] default - {"grant_type":"client_credentials","client_id":"79756098a6d291260523f6199ddfc4bc0875ccf6","client_secret":"f642ab9bd929ab0d7f802e12dc689e416d4b8e6a"}
+[2017-11-02 16:37:36.005] [INFO] default - Status: 0
+[2017-11-02 16:38:06.965] [INFO] default - 网络请求的参数为：
+[2017-11-02 16:38:06.968] [INFO] default - {"grant_type":"client_credentials","client_id":"5b6d136935b89ad44142c15adf92e10df54d758a","client_secret":"13ae55d1e799f2c93bf2af2d1b6529463a77ca44"}
+[2017-11-02 16:38:07.101] [INFO] default - Status: 201
+[2017-11-02 16:38:07.104] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"48fda52ea1ee7071579a43d1322939163376a5c5d627027c4eb0e9e433a98ff1"}
+[2017-11-02 16:39:22.376] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:39:22.380] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 16:39:52.061] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:39:52.065] [INFO] default - { licenseNo: '91140100743546701H', merId: '60144402' }
+[2017-11-02 16:45:17.963] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:45:17.966] [INFO] default - { bankAccount: 'cQJtP6ctPp8EhOW73Wcwu5EnmJL0lBXEtIRAoOJGvJ35C+nN1akjC+AaS30RGSuOqqNN3FDcRsix4+HqtuVx49teTwLgdvBSCIzpTYYp4Mu7JREUm9elJkRIA0zenHyKTAFJyLHvmyCdZfU/6OMo/3AADmtIV1LD9jT6s42MTk8=',
+  merId: '60038402',
+  merName: 'HeQcdnaITFbQkLvFmoxpPh9bc9+5oSBy5QW0lNBSzQj38o9DSKcKIEPfQW2UnqgAAJ+cXb+EY4ZzYsyyLHcRwe+sJGCxtNyqWM6RIUjKQSiyVjRcgReFxESDSvus6VoIXA7/rMnouswjekhb8tWEu8aOxyG8dY+SaK4SLjeELmA=',
+  merType: '1',
+  contActsName: 'QQ8X7BLJ5HEH8TUOdUg8WD3hP+cVsQ7YuSDz/7q2v0khEUNH3GNMrlgPuWUy5esYjGNG3GB4CvHXeDo5iUx+3H+6bS8xAYYjhtWfR/vA3v8lWKPoma+16bIbeuSs+EJ3HJr+Z37YcWsuPORMlxFhv9LTFljGpPGnVpjXYD9+XDA=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '92140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'uytPhgnsUoWrD8QUIAVAUixnmXR1X4qelEIDjr676ClMvnVzSYD8akBV5ChX0EvpXXA5NaO6cA6+hX2CqJ2ko+ln1OWYsMvCc0Et5y0sIdN6zqB+ePNHkG/cY2FqZciTh+/yMUS5wR2BSdXEHimp9EZarrMfo8gaGKElf2q52zg=',
+  cardNo: 'HqjjaThbmC3CjQoYins5RBZXxBKc3z/8cXnQn6tg2GIMKChA66+gSZQNQaSK1MaOUnnEXh+VLmLUaOVw4uFJZQV0oCRbzPl7w/ANJg3LzYitstJceK9G2ha536Nbl03zsObK7S3wUbRJYX1Xs04UONmEnPLjpBADwuuaRZfcESo=',
+  bankName: 'dzICwYQCfJVuedbR7M+rz73Ey5+5KL2gpF4MJkCUvZzxOaT7rh18jvsmyK37n5RqIcgCDgHOq1bZZn9bXMJHU1w4HCFEOvHrvilnYJFohqLtDrbCxsHM7tvWs7DqaMsTRnYMt245wcPR7KHFm9AdDlTktqe5gxlG1Ys7fKVLPPU=',
+  province: '010',
+  areaCode: '010',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-02 16:45:17.971] [INFO] default - 网络请求的参数为：
+[2017-11-02 16:45:17.971] [INFO] default - {"bankAccount":"cQJtP6ctPp8EhOW73Wcwu5EnmJL0lBXEtIRAoOJGvJ35C+nN1akjC+AaS30RGSuOqqNN3FDcRsix4+HqtuVx49teTwLgdvBSCIzpTYYp4Mu7JREUm9elJkRIA0zenHyKTAFJyLHvmyCdZfU/6OMo/3AADmtIV1LD9jT6s42MTk8=","merId":"60038402","merName":"HeQcdnaITFbQkLvFmoxpPh9bc9+5oSBy5QW0lNBSzQj38o9DSKcKIEPfQW2UnqgAAJ+cXb+EY4ZzYsyyLHcRwe+sJGCxtNyqWM6RIUjKQSiyVjRcgReFxESDSvus6VoIXA7/rMnouswjekhb8tWEu8aOxyG8dY+SaK4SLjeELmA=","merType":"1","contActsName":"QQ8X7BLJ5HEH8TUOdUg8WD3hP+cVsQ7YuSDz/7q2v0khEUNH3GNMrlgPuWUy5esYjGNG3GB4CvHXeDo5iUx+3H+6bS8xAYYjhtWfR/vA3v8lWKPoma+16bIbeuSs+EJ3HJr+Z37YcWsuPORMlxFhv9LTFljGpPGnVpjXYD9+XDA=","mobileNo":"13911698741","licenseType":"1","licenseNo":"92140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"uytPhgnsUoWrD8QUIAVAUixnmXR1X4qelEIDjr676ClMvnVzSYD8akBV5ChX0EvpXXA5NaO6cA6+hX2CqJ2ko+ln1OWYsMvCc0Et5y0sIdN6zqB+ePNHkG/cY2FqZciTh+/yMUS5wR2BSdXEHimp9EZarrMfo8gaGKElf2q52zg=","cardNo":"HqjjaThbmC3CjQoYins5RBZXxBKc3z/8cXnQn6tg2GIMKChA66+gSZQNQaSK1MaOUnnEXh+VLmLUaOVw4uFJZQV0oCRbzPl7w/ANJg3LzYitstJceK9G2ha536Nbl03zsObK7S3wUbRJYX1Xs04UONmEnPLjpBADwuuaRZfcESo=","bankName":"dzICwYQCfJVuedbR7M+rz73Ey5+5KL2gpF4MJkCUvZzxOaT7rh18jvsmyK37n5RqIcgCDgHOq1bZZn9bXMJHU1w4HCFEOvHrvilnYJFohqLtDrbCxsHM7tvWs7DqaMsTRnYMt245wcPR7KHFm9AdDlTktqe5gxlG1Ys7fKVLPPU=","province":"010","areaCode":"010","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-02 16:45:18.299] [INFO] default - Status: 200
+[2017-11-02 16:45:18.302] [INFO] default - 网络请求返回{"merId":"60038402","licenseNo":"92140106643546792F","meta":{"ret_code":"00060879","ret_msg":["解密支付要素失败"]}}&ifWzWWU3hTqQOK8Sz3wnklGzMkncluZbYf+hyzt6dQ7FWMbl7kAEsBY23yWX6FvFTPmv+Z2rThudfxGxReUBMeBMIkX9GRXl4gELQHgOYY3jBo1PafamYK0LDUwh6moJA3betCKIECltj+AkPr9TxDJ7ktEOGYu/2cEwgh+pIjY=
+[2017-11-02 16:47:52.869] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 16:47:52.872] [INFO] default - { bankAccount: 'nCsd+y3GJ80+8ayg/50XuUxvgUAcLWlUszaZq8Vo4iGgJL4b/qE0KvrisiPcSC1l6stBNsAah8/DOiD9VML5loIz8HTsEKHmI2YqUY8FU4mvhSmK0pDI9ra1c3n8ZXQenXik1I4N91bIoI+lJq5uFeiETzWLf1/U2J0sBqvRaRU=',
+  merId: '60144402',
+  merName: 'nDEWca+P9ZDeQHVQ7/7FJo/JGhkgZuNUg7/OH4/PFpBtaceergtymzPJHFBqHpMALpnIvdGXYO+JM323aMayx7VVfdTqFlM3oK7jZ5iywM1JAuezd333lVQafdMg8S5ytZ9PtNi96lsNKcwOXxE+FBVs1cc90STrQIABepzoEq0=',
+  merType: '1',
+  contActsName: 'aZNVVltOHW5Ft2M5vyXbl5eRsE0j+BubulWAeOTkOebcke5xhwlOFbN6bSV0jxdWFVdmAYmW4HSD48xR/ppTloq9Vh6RF59EHwbXYYpDiCICIbxFJi+g/18n+YDK+/SFlhGlLFnUvFEuT57Pht6PhHNXy+nIzacBG34D/H3WmD8=',
+  mobileNo: '13911698741',
+  licenseType: '1',
+  licenseNo: '92140106643546792F',
+  organizationId: '',
+  taxPayerNum: '',
+  lawyer: 'v7F4U8ioP4yeJys6VMMJfaRWefjZNQofCcxmnUjDxpT+BLrug0ntBboyYZHNgh0TFwGvcHpeqcJ3dgsdqHHKWDIlGCk7mIMu2vg4tqRmXE4ssXoPR3jeadkgK7/r9hDzSM0bof6I7ysgTPCZ7sN48N8ibzu7GwqQ0KCMvGfBJC8=',
+  cardNo: 'Kov0HfIwVlKHQPKPfns0eKGmXpK6KCMlM8x9K4MUjH0jNceUqrat1PPe1aamobpLTYoz7zqEGMnDA4/LSEFcWUTva1wlnRhywGdPvdaf9WPVKEiq5QNU8fuLP5IpTuZEnZnXJqdCdVZd2oGaCXM5d1nkziQEjadzPIZzvtyMmok=',
+  bankName: 'WEbUEV2raaIqW8c/BLKqF10Ym8vuU264xRC9ZszwZbCeIKepSc7+cT2KyhK2TwPMifsEcM7lTHmQj0HrdtFKKQfRTKD+Ov6wvZCZc+zxHRGZnWF0JvVky1EPJy95D8VvqsBE/Un4E4p4LBk2sr6Q1qGIfMxlhNddAX/10VXQRDY=',
+  province: '010',
+  areaCode: '010',
+  merNotifyUrl: 'http://xxx.xxx.com' }
+[2017-11-02 16:47:52.877] [INFO] default - 网络请求的参数为：
+[2017-11-02 16:47:52.877] [INFO] default - {"bankAccount":"nCsd+y3GJ80+8ayg/50XuUxvgUAcLWlUszaZq8Vo4iGgJL4b/qE0KvrisiPcSC1l6stBNsAah8/DOiD9VML5loIz8HTsEKHmI2YqUY8FU4mvhSmK0pDI9ra1c3n8ZXQenXik1I4N91bIoI+lJq5uFeiETzWLf1/U2J0sBqvRaRU=","merId":"60144402","merName":"nDEWca+P9ZDeQHVQ7/7FJo/JGhkgZuNUg7/OH4/PFpBtaceergtymzPJHFBqHpMALpnIvdGXYO+JM323aMayx7VVfdTqFlM3oK7jZ5iywM1JAuezd333lVQafdMg8S5ytZ9PtNi96lsNKcwOXxE+FBVs1cc90STrQIABepzoEq0=","merType":"1","contActsName":"aZNVVltOHW5Ft2M5vyXbl5eRsE0j+BubulWAeOTkOebcke5xhwlOFbN6bSV0jxdWFVdmAYmW4HSD48xR/ppTloq9Vh6RF59EHwbXYYpDiCICIbxFJi+g/18n+YDK+/SFlhGlLFnUvFEuT57Pht6PhHNXy+nIzacBG34D/H3WmD8=","mobileNo":"13911698741","licenseType":"1","licenseNo":"92140106643546792F","organizationId":"","taxPayerNum":"","lawyer":"v7F4U8ioP4yeJys6VMMJfaRWefjZNQofCcxmnUjDxpT+BLrug0ntBboyYZHNgh0TFwGvcHpeqcJ3dgsdqHHKWDIlGCk7mIMu2vg4tqRmXE4ssXoPR3jeadkgK7/r9hDzSM0bof6I7ysgTPCZ7sN48N8ibzu7GwqQ0KCMvGfBJC8=","cardNo":"Kov0HfIwVlKHQPKPfns0eKGmXpK6KCMlM8x9K4MUjH0jNceUqrat1PPe1aamobpLTYoz7zqEGMnDA4/LSEFcWUTva1wlnRhywGdPvdaf9WPVKEiq5QNU8fuLP5IpTuZEnZnXJqdCdVZd2oGaCXM5d1nkziQEjadzPIZzvtyMmok=","bankName":"WEbUEV2raaIqW8c/BLKqF10Ym8vuU264xRC9ZszwZbCeIKepSc7+cT2KyhK2TwPMifsEcM7lTHmQj0HrdtFKKQfRTKD+Ov6wvZCZc+zxHRGZnWF0JvVky1EPJy95D8VvqsBE/Un4E4p4LBk2sr6Q1qGIfMxlhNddAX/10VXQRDY=","province":"010","areaCode":"010","merNotifyUrl":"http://xxx.xxx.com"}
+[2017-11-02 16:47:53.298] [INFO] default - Status: 200
+[2017-11-02 16:47:53.301] [INFO] default - 网络请求返回{"merId":"60144402","licenseNo":"92140106643546792F","meta":{"ret_code":"00060879","ret_msg":["解密支付要素失败"]}}&HeCN29R/2lWqLl/4FkvRiRBVaUSzHbVh6W/Y/gH7ZILsi56onCM1e0+a4Tm540Ca3f5jOgvwk41dQilwxVSgSfw2KboaIbP25B4UAmAtZetyjrL3yo5lZCKNMmU9Su/AagLxOHpe2n1aCb9t1gWIvllnO73CwhpI+lmxTEMM6bM=
+[2017-11-02 17:58:39.198] [INFO] default - 网络请求的参数为：
+[2017-11-02 17:58:39.205] [INFO] default - {"grant_type":"client_credentials","client_id":"5b6d136935b89ad44142c15adf92e10df54d758a","client_secret":"13ae55d1e799f2c93bf2af2d1b6529463a77ca44"}
+[2017-11-02 17:58:39.358] [INFO] default - Status: 201
+[2017-11-02 17:58:39.362] [INFO] default - 网络请求返回{"expires_in":3600,"access_token":"b8c9eb9c3e397d599751bda250e1823c077c4591f073b8fe5cf4cc2345eada1"}
+[2017-11-02 17:58:54.940] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 17:58:54.943] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-02 18:11:05.155] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 18:11:05.159] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-02 18:14:02.013] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 18:14:02.017] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-02 18:15:40.062] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 18:15:40.067] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-02 18:18:13.926] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 18:18:13.930] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }
+[2017-11-02 18:19:34.454] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-02 18:19:34.458] [INFO] default - { licenseNo: '91140100743546701z', merId: '60144402' }

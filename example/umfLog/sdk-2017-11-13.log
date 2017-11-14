@@ -1,0 +1,273 @@
+[2017-11-13 18:07:56.151] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-13 18:07:56.155] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 18:07:56.156] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 18:07:56.156] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711131807',
+  mer_date: '20171113',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述' }
+[2017-11-13 18:07:56.162] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 18:07:56.162] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 18:07:56.162] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711131807',
+  mer_date: '20171113',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述',
+  sign_type: 'RSA',
+  sign: 'Fl85z9C6cqHl7WjDJ/OM7Eg1mr9F05NV0Bs0+VvSad3pmpOydMrq7P6LXt806Nv6d7RUKt8IdLYTMVV6Tcmn3l9/gAN2VfdFsvnj7I1r9skyNy4O7R1vBTgKteodEDRsnZS2gItJ+a/sPupiK9Dlycv9TBSlS8H1NASbPvlJMS8=' }
+[2017-11-13 18:07:56.163] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=publicnumber_and_verticalcode&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711131807&mer_date=20171113&amount=1&is_public_number=Y&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&sign_type=RSA&sign=Fl85z9C6cqHl7WjDJ%2FOM7Eg1mr9F05NV0Bs0%2BVvSad3pmpOydMrq7P6LXt806Nv6d7RUKt8IdLYTMVV6Tcmn3l9%2FgAN2VfdFsvnj7I1r9skyNy4O7R1vBTgKteodEDRsnZS2gItJ%2Ba%2FsPupiK9Dlycv9TBSlS8H1NASbPvlJMS8%3D
+[2017-11-13 18:07:56.165] [INFO] default - =====分账请求针对标准分账的延时分账======
+[2017-11-13 18:07:56.165] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 18:07:56.166] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 18:07:56.166] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'split_req',
+  order_id: '6262051263',
+  mer_date: '20171106' }
+[2017-11-13 18:07:56.167] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 18:07:56.167] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 18:07:56.167] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'split_req',
+  order_id: '6262051263',
+  mer_date: '20171106',
+  sign_type: 'RSA',
+  sign: 'WIYpqYgvbiyetgWzPJdOutfphHKpyEUTT+6wlQ5ftrtLfYWRN9bA15li4RsE7M6nDB2ioRTrK5wnDv/6MPOG5ANsb9dX0Ini3JzOJ4G56jRn1r2Xn67LbbumjN0oteWMFoJht4eoWTcnb37hxW4E6x3jObp+hCLLwoCIAgpXgeI=' }
+[2017-11-13 18:07:56.168] [INFO] default - 网络请求的参数为：
+[2017-11-13 18:07:56.168] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=split_req&order_id=6262051263&mer_date=20171106&sign_type=RSA&sign=WIYpqYgvbiyetgWzPJdOutfphHKpyEUTT%2B6wlQ5ftrtLfYWRN9bA15li4RsE7M6nDB2ioRTrK5wnDv%2F6MPOG5ANsb9dX0Ini3JzOJ4G56jRn1r2Xn67LbbumjN0oteWMFoJht4eoWTcnb37hxW4E6x3jObp%2BhCLLwoCIAgpXgeI%3D
+[2017-11-13 18:07:56.367] [INFO] default - Status: 200
+[2017-11-13 18:07:56.422] [INFO] default - 验签通过
+[2017-11-13 18:08:45.932] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-13 18:08:45.937] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 18:08:45.938] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 18:08:45.938] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711131808',
+  mer_date: '20171113',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述' }
+[2017-11-13 18:08:45.952] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 18:08:45.952] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 18:08:45.952] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'publicnumber_and_verticalcode',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  order_id: '201711131808',
+  mer_date: '20171113',
+  amount: '1',
+  is_public_number: 'Y',
+  goods_inf: '商品描述',
+  sign_type: 'RSA',
+  sign: 'KPhDJ4efwJEqxknptVCtpcb5Su3tXHtqA8967VtED+9dsUx+0y5WX4wQ9l44IqeJpbM3FWCj65Rt7B9mpT9TknSF5s8Gt2X5XLznXq9JFwDW8DzY2cEzCRyVp7wNT8YgQFG8a/obmv1ELOma2sOdFSX7MDEmoYCxdMfXSA7sD4o=' }
+[2017-11-13 18:08:45.955] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=publicnumber_and_verticalcode&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711131808&mer_date=20171113&amount=1&is_public_number=Y&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&sign_type=RSA&sign=KPhDJ4efwJEqxknptVCtpcb5Su3tXHtqA8967VtED%2B9dsUx%2B0y5WX4wQ9l44IqeJpbM3FWCj65Rt7B9mpT9TknSF5s8Gt2X5XLznXq9JFwDW8DzY2cEzCRyVp7wNT8YgQFG8a%2Fobmv1ELOma2sOdFSX7MDEmoYCxdMfXSA7sD4o%3D
+[2017-11-13 18:08:45.957] [INFO] default - =====分账请求针对标准分账的延时分账======
+[2017-11-13 18:08:45.957] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 18:08:45.958] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 18:08:45.958] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'split_req',
+  order_id: '6262051263',
+  mer_date: '20171106' }
+[2017-11-13 18:08:45.959] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 18:08:45.959] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 18:08:45.960] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'split_req',
+  order_id: '6262051263',
+  mer_date: '20171106',
+  sign_type: 'RSA',
+  sign: 'WIYpqYgvbiyetgWzPJdOutfphHKpyEUTT+6wlQ5ftrtLfYWRN9bA15li4RsE7M6nDB2ioRTrK5wnDv/6MPOG5ANsb9dX0Ini3JzOJ4G56jRn1r2Xn67LbbumjN0oteWMFoJht4eoWTcnb37hxW4E6x3jObp+hCLLwoCIAgpXgeI=' }
+[2017-11-13 18:08:45.961] [INFO] default - 网络请求的参数为：
+[2017-11-13 18:08:45.961] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=split_req&order_id=6262051263&mer_date=20171106&sign_type=RSA&sign=WIYpqYgvbiyetgWzPJdOutfphHKpyEUTT%2B6wlQ5ftrtLfYWRN9bA15li4RsE7M6nDB2ioRTrK5wnDv%2F6MPOG5ANsb9dX0Ini3JzOJ4G56jRn1r2Xn67LbbumjN0oteWMFoJht4eoWTcnb37hxW4E6x3jObp%2BhCLLwoCIAgpXgeI%3D
+[2017-11-13 18:08:46.195] [INFO] default - Status: 200
+[2017-11-13 18:08:46.269] [INFO] default - 验签通过
+[2017-11-13 19:42:55.063] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-13 19:42:55.068] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 19:42:55.069] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 19:42:55.069] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131942',
+  mer_date: '20171113',
+  amount: '1',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>' }
+[2017-11-13 19:42:55.082] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 19:42:55.082] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 19:42:55.083] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131942',
+  mer_date: '20171113',
+  amount: '1',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>',
+  sign_type: 'RSA',
+  sign: 'b0Gx/QBm6M1KuVCyBo3dxOmn4wm0v37q1727wYchBa4u6Rhqs6QPhDUqNUfjaAH1kMpTYWDTpNc/TU+wYOkDekrBAz+cbiCF22/eL49rrKQmgXLIauunTBUxhPvJxKFDO5nNMdVGLxwNgQ4vxSRt5OUbsITHwGUFuB+oHtHked4=' }
+[2017-11-13 19:42:55.086] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=req_front_page_pay&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&ret_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711131942&mer_date=20171113&amount=1&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&interface_type=01&comamt_type=1&split_category=2&split_type=21&split_data=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csplit_data%3E%3Csplit%3E%3Csplit_mer_id%3E60038400%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092012%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3Csplit%3E%3Csplit_mer_id%3E20000000%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092013%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3C%2Fsplit_data%3E&sign_type=RSA&sign=b0Gx%2FQBm6M1KuVCyBo3dxOmn4wm0v37q1727wYchBa4u6Rhqs6QPhDUqNUfjaAH1kMpTYWDTpNc%2FTU%2BwYOkDekrBAz%2BcbiCF22%2FeL49rrKQmgXLIauunTBUxhPvJxKFDO5nNMdVGLxwNgQ4vxSRt5OUbsITHwGUFuB%2BoHtHked4%3D
+[2017-11-13 19:43:34.223] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-13 19:43:34.230] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 19:43:34.231] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 19:43:34.232] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131943',
+  mer_date: '20171113',
+  amount: '2',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>' }
+[2017-11-13 19:43:34.245] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 19:43:34.245] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 19:43:34.245] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131943',
+  mer_date: '20171113',
+  amount: '2',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>',
+  sign_type: 'RSA',
+  sign: 'l7bDrJJfgZSNWkZdZL5wQiy+oTlTK+4/ihiliXS6x+bHtJ73nkEa8cvsBHQmzvJwIlNmHIix27aSOloiK6n2raKKcvzipymH4uKylxRyVBLqo7eowjsXLWtH29Q4lAM5HHTU37FHHZU6q0b1IaGti9ipmB4kZXhcZgm6/AvqmEY=' }
+[2017-11-13 19:43:34.248] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=req_front_page_pay&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&ret_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711131943&mer_date=20171113&amount=2&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&interface_type=01&comamt_type=1&split_category=2&split_type=21&split_data=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csplit_data%3E%3Csplit%3E%3Csplit_mer_id%3E60038400%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092012%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3Csplit%3E%3Csplit_mer_id%3E20000000%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092013%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3C%2Fsplit_data%3E&sign_type=RSA&sign=l7bDrJJfgZSNWkZdZL5wQiy%2BoTlTK%2B4%2FihiliXS6x%2BbHtJ73nkEa8cvsBHQmzvJwIlNmHIix27aSOloiK6n2raKKcvzipymH4uKylxRyVBLqo7eowjsXLWtH29Q4lAM5HHTU37FHHZU6q0b1IaGti9ipmB4kZXhcZgm6%2FAvqmEY%3D
+[2017-11-13 19:44:38.560] [INFO] default - [UMF SDK]商户请求的服务字段不做字段校验！
+[2017-11-13 19:44:38.565] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 19:44:38.566] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 19:44:38.567] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131944',
+  mer_date: '20171113',
+  amount: '2',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>' }
+[2017-11-13 19:44:38.574] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 19:44:38.574] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 19:44:38.574] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'req_front_page_pay',
+  amt_type: 'RMB',
+  notify_url: 'http://xxx.xxx.com',
+  ret_url: 'http://xxx.xxx.com',
+  order_id: '201711131944',
+  mer_date: '20171113',
+  amount: '2',
+  goods_inf: '商品描述',
+  interface_type: '01',
+  comamt_type: '1',
+  split_category: '2',
+  split_type: '21',
+  split_data: '<?xml version="1.0" encoding="UTF-8"?><split_data><split><split_mer_id>60038400</split_mer_id><split_order_id>17092012</split_order_id><split_amount>1</split_amount></split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id><split_amount>1</split_amount></split></split_data>',
+  sign_type: 'RSA',
+  sign: 'cqlNXx0Uen2SMaZuFrDLbvkvND4hR4mRzFsXqBRHx6ehj9eISDM0dPGCtR6/QzpvvDt4xpIokRCXKRoJBnD3Hb2rqOHDjCe+WW47IYn3JQqRSnoOVg3WQ3aPnHvV2WuGHtwL4crOV/J2GpdJorp9zyaBI5Gek6U9/OsgehFeT/U=' }
+[2017-11-13 19:44:38.578] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60038402&service=req_front_page_pay&amt_type=RMB&notify_url=http%3A%2F%2Fxxx.xxx.com&ret_url=http%3A%2F%2Fxxx.xxx.com&order_id=201711131944&mer_date=20171113&amount=2&goods_inf=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&interface_type=01&comamt_type=1&split_category=2&split_type=21&split_data=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csplit_data%3E%3Csplit%3E%3Csplit_mer_id%3E60038400%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092012%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3Csplit%3E%3Csplit_mer_id%3E20000000%3C%2Fsplit_mer_id%3E%3Csplit_order_id%3E17092013%3C%2Fsplit_order_id%3E%3Csplit_amount%3E1%3C%2Fsplit_amount%3E%3C%2Fsplit%3E%3C%2Fsplit_data%3E&sign_type=RSA&sign=cqlNXx0Uen2SMaZuFrDLbvkvND4hR4mRzFsXqBRHx6ehj9eISDM0dPGCtR6%2FQzpvvDt4xpIokRCXKRoJBnD3Hb2rqOHDjCe%2BWW47IYn3JQqRSnoOVg3WQ3aPnHvV2WuGHtwL4crOV%2FJ2GpdJorp9zyaBI5Gek6U9%2FOsgehFeT%2FU%3D
+[2017-11-13 19:46:36.683] [INFO] default - =====分账请求针对标准分账的延时分账======
+[2017-11-13 19:46:36.690] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-13 19:46:36.692] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-13 19:46:36.693] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'split_req',
+  order_id: '201711131944',
+  mer_date: '20171113' }
+[2017-11-13 19:46:36.703] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-13 19:46:36.703] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-13 19:46:36.703] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'split_req',
+  order_id: '201711131944',
+  mer_date: '20171113',
+  sign_type: 'RSA',
+  sign: 's5kdbtNIbGiMQHfb7SQaTHr2nndVXPppWhrr7l7aj3Xx7D9Yq5+cGLhB3sHm6QsApNplxH9KvHt/jrUWU/Ryxoq9hCTluACw86dw9jFeNSuUOVWwi/dp4C7LcD+Z2HhOU58xHFegqiUzEyh/mGR1ty/YiSzuXckCWLrilSqhEb4=' }
+[2017-11-13 19:46:36.705] [INFO] default - 网络请求的参数为：
+[2017-11-13 19:46:36.705] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60038402&service=split_req&order_id=201711131944&mer_date=20171113&sign_type=RSA&sign=s5kdbtNIbGiMQHfb7SQaTHr2nndVXPppWhrr7l7aj3Xx7D9Yq5%2BcGLhB3sHm6QsApNplxH9KvHt%2FjrUWU%2FRyxoq9hCTluACw86dw9jFeNSuUOVWwi%2Fdp4C7LcD%2BZ2HhOU58xHFegqiUzEyh%2FmGR1ty%2FYiSzuXckCWLrilSqhEb4%3D
+[2017-11-13 19:46:37.348] [INFO] default - Status: 200
+[2017-11-13 19:46:37.382] [INFO] default - 验签通过

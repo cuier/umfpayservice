@@ -1,6 +1,6 @@
 {
   "name": "umfpayservice",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "umfpayservice nodejs bindings",
   "main": "lib/service/umfService.js",
   "directories": {
@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "iconv-lite": "^0.4.19",
-    "log4js": "^2.3.3"
+    "log4js": "^2.3.3",
+    "request": "latest",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {

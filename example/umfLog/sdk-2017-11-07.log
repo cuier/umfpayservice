@@ -1,0 +1,902 @@
+[2017-11-07 14:33:57.838] [INFO] default - =====网银直连======
+[2017-11-07 14:33:57.846] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:33:57.847] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:33:57.847] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071433',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:33:57.858] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:33:57.859] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:33:57.859] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60038402',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071433',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'r6bwhdI63SCqU+eP23GT4Or3HVxZvPohGdO3BvutdsOVi+pdkl96zDkIOFIpWEBfyKFT1NshXZvBs6GC22hxJ9z0HFKxv78/QYqcv5GZ+5lTZPyQkQ7uk8DtoY0SWc7Ozm2CKi9X+GFLD8fwEuGN+cjePgSWoTE7B5swAQGd0FU=' }
+[2017-11-07 14:33:57.860] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:33:57.860] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60038402&service=pay_req_split_direct&amt_type=RMB&order_id=201711071433&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=r6bwhdI63SCqU%2BeP23GT4Or3HVxZvPohGdO3BvutdsOVi%2Bpdkl96zDkIOFIpWEBfyKFT1NshXZvBs6GC22hxJ9z0HFKxv78%2FQYqcv5GZ%2B5lTZPyQkQ7uk8DtoY0SWc7Ozm2CKi9X%2BGFLD8fwEuGN%2BcjePgSWoTE7B5swAQGd0FU%3D
+[2017-11-07 14:33:58.142] [INFO] default - Status: 500
+[2017-11-07 14:33:58.147] [INFO] default - 后台返回签名为空
+[2017-11-07 14:33:58.147] [INFO] default - 验签失败
+[2017-11-07 14:33:58.149] [INFO] default - 后台返回签名为空
+[2017-11-07 14:33:58.153] [INFO] default - 验签失败
+[2017-11-07 14:33:58.155] [INFO] default - 后台返回签名为空
+[2017-11-07 14:33:58.155] [INFO] default - 验签失败
+[2017-11-07 14:35:58.669] [INFO] default - =====网银直连======
+[2017-11-07 14:35:58.679] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:35:58.680] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:35:58.680] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071435',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:35:58.688] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:35:58.689] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:35:58.689] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071435',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'f32wtjLvXLI/E4gU6bosN1Z2kCjLI4EqtyD9QKhcV1UGuIiLogK5/mx32eNc/nJQkq/Lng4NTZHR3mUmUKqiT2gAwUk5arCytnGuS6TPeT6HTMg0ie2KOE1EdsUBqVGW60OP10fzEcNXg+rZUXB/X3eYghEskpSc+Yks60+A/PM=' }
+[2017-11-07 14:35:58.692] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:35:58.693] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071435&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=f32wtjLvXLI%2FE4gU6bosN1Z2kCjLI4EqtyD9QKhcV1UGuIiLogK5%2Fmx32eNc%2FnJQkq%2FLng4NTZHR3mUmUKqiT2gAwUk5arCytnGuS6TPeT6HTMg0ie2KOE1EdsUBqVGW60OP10fzEcNXg%2BrZUXB%2FX3eYghEskpSc%2BYks60%2BA%2FPM%3D
+[2017-11-07 14:35:59.215] [INFO] default - Status: 302
+[2017-11-07 14:35:59.218] [INFO] default - 后台返回签名为空
+[2017-11-07 14:35:59.218] [INFO] default - 验签失败
+[2017-11-07 14:39:55.417] [INFO] default - =====网银直连======
+[2017-11-07 14:39:55.420] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:39:55.421] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:39:55.421] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071439',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:39:55.426] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:39:55.426] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:39:55.427] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071439',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'uK/jlTgbpL3dTKBX+FZ/236jQ0UdlrrBT74cDiS+7s9m+L88o3J9E7XjGUKZvq9jGhJ4SlaX9YaXQrNd2Ud3UUEAj/INv7lj1xFS+pEcrTvDUNiAbg4MWoxKQKyVxCTFW/tPGqI4RQjTD4FWHMWgI8pHIRctHHMuXib9rhfQd38=' }
+[2017-11-07 14:39:55.428] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:39:55.428] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071439&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=uK%2FjlTgbpL3dTKBX%2BFZ%2F236jQ0UdlrrBT74cDiS%2B7s9m%2BL88o3J9E7XjGUKZvq9jGhJ4SlaX9YaXQrNd2Ud3UUEAj%2FINv7lj1xFS%2BpEcrTvDUNiAbg4MWoxKQKyVxCTFW%2FtPGqI4RQjTD4FWHMWgI8pHIRctHHMuXib9rhfQd38%3D
+[2017-11-07 14:39:55.634] [INFO] default - Status: 302
+[2017-11-07 14:43:50.451] [INFO] default - 后台返回签名为空
+[2017-11-07 14:43:50.451] [INFO] default - 验签失败
+[2017-11-07 14:43:51.301] [INFO] default - =====网银直连======
+[2017-11-07 14:43:51.305] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:43:51.307] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:43:51.308] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071443',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:43:51.315] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:43:51.315] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:43:51.315] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071443',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'nQoORID5Nm023Yr6YWsULVw1R0O5zOAiNwkT3OF1kjehcnpM6R+0rlSUc5UgCojW6/hCePUyswzv+kbsfsf7uIej2VhFtGwKCfp20f3Yf6AbO7p+K/d7OcSRp68NTpxXIuEWjnT8OtyqlRATiTFIglvZrUvzdFcqMqLf7uWhKIE=' }
+[2017-11-07 14:43:51.317] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:43:51.317] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071443&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=nQoORID5Nm023Yr6YWsULVw1R0O5zOAiNwkT3OF1kjehcnpM6R%2B0rlSUc5UgCojW6%2FhCePUyswzv%2Bkbsfsf7uIej2VhFtGwKCfp20f3Yf6AbO7p%2BK%2Fd7OcSRp68NTpxXIuEWjnT8OtyqlRATiTFIglvZrUvzdFcqMqLf7uWhKIE%3D
+[2017-11-07 14:43:51.424] [INFO] default - Status: 404
+[2017-11-07 14:43:51.428] [INFO] default - 后台返回签名为空
+[2017-11-07 14:43:51.428] [INFO] default - 验签失败
+[2017-11-07 14:44:00.716] [INFO] default - =====网银直连======
+[2017-11-07 14:44:00.720] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:44:00.721] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:44:00.721] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:44:00.725] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:44:00.725] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:44:00.726] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'BmlvlOXoSoAww/wQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W/9NPavSSjcWkR+FMC/D71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0/esupkDSQmrWmUveAXyeJq5f59DkBxp/p8j7OD5yJ02/8ypxsxHkOCzvMB3Y=' }
+[2017-11-07 14:44:00.726] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:44:00.727] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071444&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=BmlvlOXoSoAww%2FwQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W%2F9NPavSSjcWkR%2BFMC%2FD71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0%2FesupkDSQmrWmUveAXyeJq5f59DkBxp%2Fp8j7OD5yJ02%2F8ypxsxHkOCzvMB3Y%3D
+[2017-11-07 14:44:01.467] [INFO] default - Status: 404
+[2017-11-07 14:44:15.535] [INFO] default - 后台返回签名为空
+[2017-11-07 14:44:15.535] [INFO] default - 验签失败
+[2017-11-07 14:44:40.674] [INFO] default - =====网银直连======
+[2017-11-07 14:44:40.678] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:44:40.679] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:44:40.679] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:44:40.684] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:44:40.684] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:44:40.684] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'BmlvlOXoSoAww/wQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W/9NPavSSjcWkR+FMC/D71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0/esupkDSQmrWmUveAXyeJq5f59DkBxp/p8j7OD5yJ02/8ypxsxHkOCzvMB3Y=' }
+[2017-11-07 14:44:40.685] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:44:40.685] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071444&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=BmlvlOXoSoAww%2FwQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W%2F9NPavSSjcWkR%2BFMC%2FD71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0%2FesupkDSQmrWmUveAXyeJq5f59DkBxp%2Fp8j7OD5yJ02%2F8ypxsxHkOCzvMB3Y%3D
+[2017-11-07 14:44:41.044] [INFO] default - Status: 302
+[2017-11-07 14:44:41.047] [INFO] default - 后台返回签名为空
+[2017-11-07 14:44:41.047] [INFO] default - 验签失败
+[2017-11-07 14:44:46.006] [INFO] default - =====网银直连======
+[2017-11-07 14:44:46.012] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:44:46.013] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:44:46.013] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:44:46.017] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:44:46.017] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:44:46.017] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'BmlvlOXoSoAww/wQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W/9NPavSSjcWkR+FMC/D71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0/esupkDSQmrWmUveAXyeJq5f59DkBxp/p8j7OD5yJ02/8ypxsxHkOCzvMB3Y=' }
+[2017-11-07 14:44:46.018] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:44:46.018] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071444&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=BmlvlOXoSoAww%2FwQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W%2F9NPavSSjcWkR%2BFMC%2FD71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0%2FesupkDSQmrWmUveAXyeJq5f59DkBxp%2Fp8j7OD5yJ02%2F8ypxsxHkOCzvMB3Y%3D
+[2017-11-07 14:44:46.223] [INFO] default - Status: 302
+[2017-11-07 14:44:56.322] [INFO] default - 后台返回签名为空
+[2017-11-07 14:44:56.324] [INFO] default - 验签失败
+[2017-11-07 14:44:58.672] [INFO] default - =====网银直连======
+[2017-11-07 14:44:58.676] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:44:58.676] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:44:58.677] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:44:58.680] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:44:58.681] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:44:58.681] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071444',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'BmlvlOXoSoAww/wQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W/9NPavSSjcWkR+FMC/D71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0/esupkDSQmrWmUveAXyeJq5f59DkBxp/p8j7OD5yJ02/8ypxsxHkOCzvMB3Y=' }
+[2017-11-07 14:44:58.681] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:44:58.682] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071444&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=BmlvlOXoSoAww%2FwQGovCSqtAsweJRubTk0CBGPhM1Ets7Y9Uq26cth2W%2F9NPavSSjcWkR%2BFMC%2FD71lbZ9mvdBTkOVb5X9gzUXHDjZ35Z0Y6vaI0%2FesupkDSQmrWmUveAXyeJq5f59DkBxp%2Fp8j7OD5yJ02%2F8ypxsxHkOCzvMB3Y%3D
+[2017-11-07 14:45:55.467] [INFO] default - =====网银直连======
+[2017-11-07 14:45:55.471] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:45:55.472] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:45:55.472] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071445',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:45:55.476] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:45:55.476] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:45:55.476] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071445',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'kyIP6QjFxybHzArwPKEs12ANjzVA4j3Hykb4gDQrpvDhvjR9+TMDcZ4Rh/UB3IY6kUvO6pl/SF10rfJD5TGQVaWqhqjJR3IxWlEiYZayG/Z7npmi2+8gRIDRct6kijPKJUp+EcWfIJDn5pDrWgRixTduI7s6Rpoqz6scgB1jKsc=' }
+[2017-11-07 14:45:55.477] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:45:55.478] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071445&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=kyIP6QjFxybHzArwPKEs12ANjzVA4j3Hykb4gDQrpvDhvjR9%2BTMDcZ4Rh%2FUB3IY6kUvO6pl%2FSF10rfJD5TGQVaWqhqjJR3IxWlEiYZayG%2FZ7npmi2%2B8gRIDRct6kijPKJUp%2BEcWfIJDn5pDrWgRixTduI7s6Rpoqz6scgB1jKsc%3D
+[2017-11-07 14:45:55.700] [INFO] default - Status: 302
+[2017-11-07 14:45:55.704] [INFO] default - 后台返回签名为空
+[2017-11-07 14:45:55.704] [INFO] default - 验签失败
+[2017-11-07 14:46:00.116] [INFO] default - =====网银直连======
+[2017-11-07 14:46:00.120] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:46:00.121] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:46:00.121] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071446',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:46:00.125] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:46:00.125] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:46:00.125] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071446',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'gql5OkmX8xNSI4aHWSeYK048IXVVGS47Lpm2D5Q7vmJBhCkzR63vBmAUuYLnPfh+ZCxxTe2DtoyVPWA1ydKpR535pFc838xwSRkVdzGzp8SfuN5nZkAa1dnf9LumC+heSRf851P4hwW49YfHw5ZdmuRBp7jHYsGCCYqwmecZUtk=' }
+[2017-11-07 14:46:00.126] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:46:00.126] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071446&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=gql5OkmX8xNSI4aHWSeYK048IXVVGS47Lpm2D5Q7vmJBhCkzR63vBmAUuYLnPfh%2BZCxxTe2DtoyVPWA1ydKpR535pFc838xwSRkVdzGzp8SfuN5nZkAa1dnf9LumC%2BheSRf851P4hwW49YfHw5ZdmuRBp7jHYsGCCYqwmecZUtk%3D
+[2017-11-07 14:46:58.682] [INFO] default - Status: 302
+[2017-11-07 14:47:35.822] [INFO] default - 后台返回签名为空
+[2017-11-07 14:47:35.823] [INFO] default - 验签失败
+[2017-11-07 14:47:35.824] [INFO] default - 后台返回签名为空
+[2017-11-07 14:47:35.825] [INFO] default - 验签失败
+[2017-11-07 14:48:09.800] [INFO] default - =====网银直连======
+[2017-11-07 14:48:09.804] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:48:09.805] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:48:09.806] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071448',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:48:09.810] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:48:09.810] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:48:09.810] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071448',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'ftgqlxqwP94aGbCw24P+qyDSqUVN4AEf/VIrFicLIPl4igX0KAIpV4aFeEFNKeP+dRc73G/Kl6b+MtK/C+nhTkKovwEprnOQ+8WEanWYjVj3aF2oPFZrXx17XoGZ0uHwFHT0dBiFHWwZSZt3aQ6MP7388VmeexTK9v5XVb7kWuI=' }
+[2017-11-07 14:48:09.811] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:48:09.812] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071448&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=ftgqlxqwP94aGbCw24P%2BqyDSqUVN4AEf%2FVIrFicLIPl4igX0KAIpV4aFeEFNKeP%2BdRc73G%2FKl6b%2BMtK%2FC%2BnhTkKovwEprnOQ%2B8WEanWYjVj3aF2oPFZrXx17XoGZ0uHwFHT0dBiFHWwZSZt3aQ6MP7388VmeexTK9v5XVb7kWuI%3D
+[2017-11-07 14:48:09.936] [INFO] default - Status: 302
+[2017-11-07 14:48:09.940] [INFO] default - 后台返回签名为空
+[2017-11-07 14:48:09.940] [INFO] default - 验签失败
+[2017-11-07 14:48:09.941] [INFO] default - 后台返回签名为空
+[2017-11-07 14:48:09.943] [INFO] default - 验签失败
+[2017-11-07 14:57:47.940] [INFO] default - =====网银直连======
+[2017-11-07 14:57:47.943] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 14:57:47.944] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 14:57:47.944] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071457',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 14:57:47.950] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 14:57:47.950] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 14:57:47.950] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071457',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'nTeZkHWtDbL/HwYmGXKpjkAVDmutRJsitS6TXmeNFcnY3YDyX1KiLg95hTpzT15/0FpdkfRC24ZvJobRa+/yeSguWwlWvTTZ/7kNA5OCmZh/4qi/F0pELWMFQD3wpcgWjwG7/giljJr7AD0gc4fLcqOoBrDDT0MNql3/n72BXgY=' }
+[2017-11-07 14:57:47.952] [INFO] default - 网络请求的参数为：
+[2017-11-07 14:57:47.952] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071457&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=nTeZkHWtDbL%2FHwYmGXKpjkAVDmutRJsitS6TXmeNFcnY3YDyX1KiLg95hTpzT15%2F0FpdkfRC24ZvJobRa%2B%2FyeSguWwlWvTTZ%2F7kNA5OCmZh%2F4qi%2FF0pELWMFQD3wpcgWjwG7%2FgiljJr7AD0gc4fLcqOoBrDDT0MNql3%2Fn72BXgY%3D
+[2017-11-07 14:57:48.093] [INFO] default - Status: 302
+[2017-11-07 14:57:48.096] [INFO] default - 后台返回签名为空
+[2017-11-07 14:57:48.097] [INFO] default - 验签失败
+[2017-11-07 14:57:48.098] [INFO] default - 后台返回签名为空
+[2017-11-07 14:57:48.099] [INFO] default - 验签失败
+[2017-11-07 15:00:23.547] [INFO] default - =====网银直连======
+[2017-11-07 15:00:23.550] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 15:00:23.552] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 15:00:23.552] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071500',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 15:00:23.558] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 15:00:23.558] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 15:00:23.558] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071500',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'bDgF7g1ejLOU1s2UUl8HtSdgssdQVN8WJ0Y73BrJlFsT0Q3Opl232pjfa/LIeODiXkevjRERIJqQnbSXyoqyzX1Xt1kVuifCVdIUrZZiam40PUQGK+pNykWEXsT+e49PVZWPevq4sr6HaNueVY9RxaMYWxlw2DM+vzxys6HMopo=' }
+[2017-11-07 15:00:23.560] [INFO] default - 网络请求的参数为：
+[2017-11-07 15:00:23.560] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071500&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=bDgF7g1ejLOU1s2UUl8HtSdgssdQVN8WJ0Y73BrJlFsT0Q3Opl232pjfa%2FLIeODiXkevjRERIJqQnbSXyoqyzX1Xt1kVuifCVdIUrZZiam40PUQGK%2BpNykWEXsT%2Be49PVZWPevq4sr6HaNueVY9RxaMYWxlw2DM%2Bvzxys6HMopo%3D
+[2017-11-07 15:00:23.791] [INFO] default - Status: 302
+[2017-11-07 15:00:23.798] [INFO] default - 后台返回签名为空
+[2017-11-07 15:00:23.798] [INFO] default - 验签失败
+[2017-11-07 15:00:42.546] [INFO] default - =====网银直连======
+[2017-11-07 15:00:42.550] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 15:00:42.551] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 15:00:42.551] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071500',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 15:00:42.554] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 15:00:42.555] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 15:00:42.555] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071500',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'bDgF7g1ejLOU1s2UUl8HtSdgssdQVN8WJ0Y73BrJlFsT0Q3Opl232pjfa/LIeODiXkevjRERIJqQnbSXyoqyzX1Xt1kVuifCVdIUrZZiam40PUQGK+pNykWEXsT+e49PVZWPevq4sr6HaNueVY9RxaMYWxlw2DM+vzxys6HMopo=' }
+[2017-11-07 15:00:42.556] [INFO] default - 网络请求的参数为：
+[2017-11-07 15:00:42.556] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071500&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=bDgF7g1ejLOU1s2UUl8HtSdgssdQVN8WJ0Y73BrJlFsT0Q3Opl232pjfa%2FLIeODiXkevjRERIJqQnbSXyoqyzX1Xt1kVuifCVdIUrZZiam40PUQGK%2BpNykWEXsT%2Be49PVZWPevq4sr6HaNueVY9RxaMYWxlw2DM%2Bvzxys6HMopo%3D
+[2017-11-07 15:00:42.768] [INFO] default - Status: 302
+[2017-11-07 15:04:27.035] [INFO] default - 后台返回签名为空
+[2017-11-07 15:04:27.039] [INFO] default - 验签失败
+[2017-11-07 15:04:28.888] [INFO] default - =====网银直连======
+[2017-11-07 15:04:28.893] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 15:04:28.894] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 15:04:28.894] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071504',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 15:04:28.898] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 15:04:28.899] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 15:04:28.899] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711071504',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'P+1xxvTg6mM93QwRCpICZfJEErd+MgsAjhWpqhhkTqdnxltcnuahVOCaetPkpTdpHI4x3axGbDYT7GvZrINg1Sz8G1wGi3+LmtixQiBOF2ZplNPX2VaxTWWf27Mm4tTGH0fq5fsdEaE5TviTyUQgdxL6xFCsQcPt1vndSBm/0Wg=' }
+[2017-11-07 15:04:28.900] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711071504&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=P%2B1xxvTg6mM93QwRCpICZfJEErd%2BMgsAjhWpqhhkTqdnxltcnuahVOCaetPkpTdpHI4x3axGbDYT7GvZrINg1Sz8G1wGi3%2BLmtixQiBOF2ZplNPX2VaxTWWf27Mm4tTGH0fq5fsdEaE5TviTyUQgdxL6xFCsQcPt1vndSBm%2F0Wg%3D
+[2017-11-07 20:08:31.702] [INFO] default - =====借记卡直连======
+[2017-11-07 20:08:31.705] [ERROR] default - service=debit_direct_pay[UMF SDK]商户请求中pay_type字段必传
+[2017-11-07 20:08:31.706] [ERROR] default - [UMF SDK] 商户请求信息[object Object]在进行必填字段校验发生异常
+[2017-11-07 20:08:31.707] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?
+[2017-11-07 20:11:58.307] [INFO] default - =====借记卡直连======
+[2017-11-07 20:11:58.312] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:11:58.379] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:11:58.387] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072011',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'b2K7t0xvptkXH2Y1wsBWvE0kKELqA6Z4RP+UvHsIUOxyRLEY3G9agtpZWyLTRUkf7qRgZqeiLAYVdLwFT85MOedEb++YdZwX76aTFDpHnEfhJ++giiOsMKECaRmLSjUNHMOpZ7VwYZSZMju8uycIbad4Oi9Me2VqGs92JAVkl10=',
+  identity_type: '1',
+  identity_code: 'O6kJLY6tcK05y1oLhdyfnCtNEMQ/sCExStH4hXivvcDjL37cH195vcYvNRuhLRnIdmlzE5xKOfaNTdrV0xdJeca7hua0ClQwhNAl90CjAdQporkozpM3xbL9IlH2Kn9bI0Hj3QMLWLrsl6vxb4b0gPh2bW7wq6yj/sOx7hZdR/s=',
+  card_holder: 'IaB7vLgogBj72UgeQf6mYHaD/YBJl+BgoOLhfmDTDJIVsdeuCrWNhkEOfBsrvKBqx6wFabc6sK3S7jJuexn2zG25teekmhPkqEVllRuw7qhCVKHaZStyp4TLXu9IqPTAPW2ducZUGuIoT3mWJRDyuUCIkvZT0NrMvTjZyULXWOs=' }
+[2017-11-07 20:11:58.403] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:11:58.404] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:11:58.405] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072011',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'b2K7t0xvptkXH2Y1wsBWvE0kKELqA6Z4RP+UvHsIUOxyRLEY3G9agtpZWyLTRUkf7qRgZqeiLAYVdLwFT85MOedEb++YdZwX76aTFDpHnEfhJ++giiOsMKECaRmLSjUNHMOpZ7VwYZSZMju8uycIbad4Oi9Me2VqGs92JAVkl10=',
+  identity_type: '1',
+  identity_code: 'O6kJLY6tcK05y1oLhdyfnCtNEMQ/sCExStH4hXivvcDjL37cH195vcYvNRuhLRnIdmlzE5xKOfaNTdrV0xdJeca7hua0ClQwhNAl90CjAdQporkozpM3xbL9IlH2Kn9bI0Hj3QMLWLrsl6vxb4b0gPh2bW7wq6yj/sOx7hZdR/s=',
+  card_holder: 'IaB7vLgogBj72UgeQf6mYHaD/YBJl+BgoOLhfmDTDJIVsdeuCrWNhkEOfBsrvKBqx6wFabc6sK3S7jJuexn2zG25teekmhPkqEVllRuw7qhCVKHaZStyp4TLXu9IqPTAPW2ducZUGuIoT3mWJRDyuUCIkvZT0NrMvTjZyULXWOs=',
+  sign_type: 'RSA',
+  sign: 'itfKsno56mQrqPniLFwNtb1QQqRZzn9LU0rIINyrU2HS3Jtwoz8hPFguIiOdDxZnImZXXA2sjw30t605tu18JjreJRv7dLXtlIjiBs9tIvmzYvhDp9rs2cN1SMEhN6sLZONEzkNUghVYqU1PegEBoP8BZhbuyR5dtHXdks5zN+E=' }
+[2017-11-07 20:11:58.407] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=debit_direct_pay&amt_type=RMB&pay_type=DEBITCARD&order_id=201711072011&mer_date=20171107&amount=1&card_id=b2K7t0xvptkXH2Y1wsBWvE0kKELqA6Z4RP%2BUvHsIUOxyRLEY3G9agtpZWyLTRUkf7qRgZqeiLAYVdLwFT85MOedEb%2B%2BYdZwX76aTFDpHnEfhJ%2B%2BgiiOsMKECaRmLSjUNHMOpZ7VwYZSZMju8uycIbad4Oi9Me2VqGs92JAVkl10%3D&identity_type=1&identity_code=O6kJLY6tcK05y1oLhdyfnCtNEMQ%2FsCExStH4hXivvcDjL37cH195vcYvNRuhLRnIdmlzE5xKOfaNTdrV0xdJeca7hua0ClQwhNAl90CjAdQporkozpM3xbL9IlH2Kn9bI0Hj3QMLWLrsl6vxb4b0gPh2bW7wq6yj%2FsOx7hZdR%2Fs%3D&card_holder=IaB7vLgogBj72UgeQf6mYHaD%2FYBJl%2BBgoOLhfmDTDJIVsdeuCrWNhkEOfBsrvKBqx6wFabc6sK3S7jJuexn2zG25teekmhPkqEVllRuw7qhCVKHaZStyp4TLXu9IqPTAPW2ducZUGuIoT3mWJRDyuUCIkvZT0NrMvTjZyULXWOs%3D&sign_type=RSA&sign=itfKsno56mQrqPniLFwNtb1QQqRZzn9LU0rIINyrU2HS3Jtwoz8hPFguIiOdDxZnImZXXA2sjw30t605tu18JjreJRv7dLXtlIjiBs9tIvmzYvhDp9rs2cN1SMEhN6sLZONEzkNUghVYqU1PegEBoP8BZhbuyR5dtHXdks5zN%2BE%3D
+[2017-11-07 20:17:45.379] [INFO] default - =====借记卡直连======
+[2017-11-07 20:17:45.398] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:17:45.469] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:17:45.471] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072017',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'egj7LfpJgqx/9uAHckJSXl+HB0NEqwPuCBDRpf08ck6LYbIfLr7VBgJUoQYEkdMqMm9GxO8h/h1tnwkjE4j8dhur1N7oRl1SNH13XNKH9syufe2U2CCneWRkcVaSNFX1DRMl0GNoEvj4D1f2UEdksbxtenJrJZWaomjF28vb84E=',
+  identity_type: '1',
+  identity_code: 'A/jl828tuaTldHBClNE7r+txQa3Vf+zye4Ik0AWn8ecnlTwNG/R/tRLr4eqHH9RVTRGquZBbg1h/RSmcOpgYEcCax5Q2a1DDvCX3n6IKO4AY5MBPLuAB43Ty6CQHL4I8MqIiV86m5E2EPvRlMsCJwLWRQ24r7WlW1yMW6vYtsjQ=',
+  card_holder: 'sbmt4wJwsmT7WRT7v0HjLmd7nX8kbQsJb9zYNHbHf+MqSMCtUMrK7RJCSkoT67nsPfv3Ag64KDlKoT9EOHSFVQOvG6n5a7nQZLkY8T5g3byLHn9IWRwBz2YZ1alClbGr5h6PMmj2h9BVPQEbiS+jlB5Cbkc6bZzf6D3i9F+/qtw=' }
+[2017-11-07 20:17:45.495] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:17:45.496] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:17:45.497] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072017',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'egj7LfpJgqx/9uAHckJSXl+HB0NEqwPuCBDRpf08ck6LYbIfLr7VBgJUoQYEkdMqMm9GxO8h/h1tnwkjE4j8dhur1N7oRl1SNH13XNKH9syufe2U2CCneWRkcVaSNFX1DRMl0GNoEvj4D1f2UEdksbxtenJrJZWaomjF28vb84E=',
+  identity_type: '1',
+  identity_code: 'A/jl828tuaTldHBClNE7r+txQa3Vf+zye4Ik0AWn8ecnlTwNG/R/tRLr4eqHH9RVTRGquZBbg1h/RSmcOpgYEcCax5Q2a1DDvCX3n6IKO4AY5MBPLuAB43Ty6CQHL4I8MqIiV86m5E2EPvRlMsCJwLWRQ24r7WlW1yMW6vYtsjQ=',
+  card_holder: 'sbmt4wJwsmT7WRT7v0HjLmd7nX8kbQsJb9zYNHbHf+MqSMCtUMrK7RJCSkoT67nsPfv3Ag64KDlKoT9EOHSFVQOvG6n5a7nQZLkY8T5g3byLHn9IWRwBz2YZ1alClbGr5h6PMmj2h9BVPQEbiS+jlB5Cbkc6bZzf6D3i9F+/qtw=',
+  sign_type: 'RSA',
+  sign: 'YK2po+BP2ybWGNpVCtDAc43BKTQ5foieMGq2hegzumhKjW8HR8yu9LMAhXmMX4u6qqv/C6kXhzAVR7z2HWu5NNeDqRlKkfATpvXbaCzGiLbc2T8ySwl0vq7t7Aef+lAuxsAaiYOROffr8k9dRfNdP4e4te4ieoytvHMOTiCIums=' }
+[2017-11-07 20:17:45.505] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=debit_direct_pay&amt_type=RMB&pay_type=DEBITCARD&order_id=201711072017&mer_date=20171107&amount=1&card_id=egj7LfpJgqx%2F9uAHckJSXl%2BHB0NEqwPuCBDRpf08ck6LYbIfLr7VBgJUoQYEkdMqMm9GxO8h%2Fh1tnwkjE4j8dhur1N7oRl1SNH13XNKH9syufe2U2CCneWRkcVaSNFX1DRMl0GNoEvj4D1f2UEdksbxtenJrJZWaomjF28vb84E%3D&identity_type=1&identity_code=A%2Fjl828tuaTldHBClNE7r%2BtxQa3Vf%2Bzye4Ik0AWn8ecnlTwNG%2FR%2FtRLr4eqHH9RVTRGquZBbg1h%2FRSmcOpgYEcCax5Q2a1DDvCX3n6IKO4AY5MBPLuAB43Ty6CQHL4I8MqIiV86m5E2EPvRlMsCJwLWRQ24r7WlW1yMW6vYtsjQ%3D&card_holder=sbmt4wJwsmT7WRT7v0HjLmd7nX8kbQsJb9zYNHbHf%2BMqSMCtUMrK7RJCSkoT67nsPfv3Ag64KDlKoT9EOHSFVQOvG6n5a7nQZLkY8T5g3byLHn9IWRwBz2YZ1alClbGr5h6PMmj2h9BVPQEbiS%2BjlB5Cbkc6bZzf6D3i9F%2B%2Fqtw%3D&sign_type=RSA&sign=YK2po%2BBP2ybWGNpVCtDAc43BKTQ5foieMGq2hegzumhKjW8HR8yu9LMAhXmMX4u6qqv%2FC6kXhzAVR7z2HWu5NNeDqRlKkfATpvXbaCzGiLbc2T8ySwl0vq7t7Aef%2BlAuxsAaiYOROffr8k9dRfNdP4e4te4ieoytvHMOTiCIums%3D
+[2017-11-07 20:27:21.147] [INFO] default - =====信用卡直连======
+[2017-11-07 20:27:21.150] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:27:21.176] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:27:21.176] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072027',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'Cog9fHcAwuikUtiHdrSYpRQQ14MeAVEwkKzDeilnw/FOCPyPEuDwfxrVaaaj4PcvJghYwLzeL4NEvXwmW9ZcxUQ6AvAJo82IAnZHl0JDKNqxhvuqfJHhr1SYVw9JxTxpt1N60Jb3MOjbj2bcGJMUB45yzf3lEADfRnFQSivx5HA=',
+  valid_date: 'Ajgfj+OlRtVFWBfsfEdL7ZU596aObvJrLNwejF+X85+HAIx2spoId5RJWYPjj3XCYLDKcuZwUaAj4O3JySIXxMe4syo0/OZg69wf9o116k5UNnypmV2MHunQCiLdGfVVQtSvONDAxi7y28m4zvX9IDwQ5Z78WdtHsPab6omH68M=',
+  cvv2: 'Mh0Nx4oeSh3HdqV8viVWGD/ZaXtvuXxLZvhR763fTUgD2tscofrK4kYoHjf64ZOB3aWWkLyCogI4V4s5R33VY6+QnCBrFUzALkYYoXnfW3KRQZ1LX2el4/0grlOOFmXGbXXfVdqOAHwBHmKDkYTZz6o2tR5KDyw+3Q8b4DWD7M4=' }
+[2017-11-07 20:27:21.180] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:27:21.180] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:27:21.181] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072027',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'Cog9fHcAwuikUtiHdrSYpRQQ14MeAVEwkKzDeilnw/FOCPyPEuDwfxrVaaaj4PcvJghYwLzeL4NEvXwmW9ZcxUQ6AvAJo82IAnZHl0JDKNqxhvuqfJHhr1SYVw9JxTxpt1N60Jb3MOjbj2bcGJMUB45yzf3lEADfRnFQSivx5HA=',
+  valid_date: 'Ajgfj+OlRtVFWBfsfEdL7ZU596aObvJrLNwejF+X85+HAIx2spoId5RJWYPjj3XCYLDKcuZwUaAj4O3JySIXxMe4syo0/OZg69wf9o116k5UNnypmV2MHunQCiLdGfVVQtSvONDAxi7y28m4zvX9IDwQ5Z78WdtHsPab6omH68M=',
+  cvv2: 'Mh0Nx4oeSh3HdqV8viVWGD/ZaXtvuXxLZvhR763fTUgD2tscofrK4kYoHjf64ZOB3aWWkLyCogI4V4s5R33VY6+QnCBrFUzALkYYoXnfW3KRQZ1LX2el4/0grlOOFmXGbXXfVdqOAHwBHmKDkYTZz6o2tR5KDyw+3Q8b4DWD7M4=',
+  sign_type: 'RSA',
+  sign: 'BwsmZ9lvazqh7rzeqERXFpvjpLHwjLs2/iNwPEPGtySD0lXsBI/pkdmYwPJcGJXTg1/XJZMMNBO8CA2+5BeHrLINPDIP1hwoEdlzLi+l3P23UGn0tpS3E/OXxRzccA3BCdVhZs1XaYVlfT13buyRHcPIttlv24oYwGhdAKO0iY0=' }
+[2017-11-07 20:27:21.185] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072027&mer_date=20171107&amount=1&card_id=Cog9fHcAwuikUtiHdrSYpRQQ14MeAVEwkKzDeilnw%2FFOCPyPEuDwfxrVaaaj4PcvJghYwLzeL4NEvXwmW9ZcxUQ6AvAJo82IAnZHl0JDKNqxhvuqfJHhr1SYVw9JxTxpt1N60Jb3MOjbj2bcGJMUB45yzf3lEADfRnFQSivx5HA%3D&valid_date=Ajgfj%2BOlRtVFWBfsfEdL7ZU596aObvJrLNwejF%2BX85%2BHAIx2spoId5RJWYPjj3XCYLDKcuZwUaAj4O3JySIXxMe4syo0%2FOZg69wf9o116k5UNnypmV2MHunQCiLdGfVVQtSvONDAxi7y28m4zvX9IDwQ5Z78WdtHsPab6omH68M%3D&cvv2=Mh0Nx4oeSh3HdqV8viVWGD%2FZaXtvuXxLZvhR763fTUgD2tscofrK4kYoHjf64ZOB3aWWkLyCogI4V4s5R33VY6%2BQnCBrFUzALkYYoXnfW3KRQZ1LX2el4%2F0grlOOFmXGbXXfVdqOAHwBHmKDkYTZz6o2tR5KDyw%2B3Q8b4DWD7M4%3D&sign_type=RSA&sign=BwsmZ9lvazqh7rzeqERXFpvjpLHwjLs2%2FiNwPEPGtySD0lXsBI%2FpkdmYwPJcGJXTg1%2FXJZMMNBO8CA2%2B5BeHrLINPDIP1hwoEdlzLi%2Bl3P23UGn0tpS3E%2FOXxRzccA3BCdVhZs1XaYVlfT13buyRHcPIttlv24oYwGhdAKO0iY0%3D
+[2017-11-07 20:29:20.333] [INFO] default - =====信用卡直连======
+[2017-11-07 20:29:20.338] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:29:20.379] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:29:20.385] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072029',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'TuOhnP1jiQs73TZ+r9TK9Lhf+Hj0iucgKFU54ATM7L4sqMBN1JN9IiJFJnrnw5loLuphPWpbk5M8EPFpYT0Uk9cg6DGpLAmxLHBKWnkgjw63gAGP7PvNjsjam7VNTwJT2b0wIU4q+lvo06huuYq7cf7pj4ElJOkVwGu27MKEqD4=',
+  valid_date: 'aJMra/maf+8uQNkmHsgWr04LDEITFUD2zho2dgjShq7FC9O+jqQFNm/7lbznB95grcPEJ2AWfJj2lLxroa2mB+KaJUDwx3aBLyyOgXcepnzfAkMawk9ZOOsTI52RsnB/fQhKPSmtbinw3JqDzUwx/jLWOZUCf6qojnJ9fD1PdnI=',
+  cvv2: 'AcW/anOCOxAxOn5evN4tQnEcqJm15FmBmyXTD3cZm+yhGEkq0PG7eV58eRWjac+WH8RqVjICOg0qbdFJXi1Xa6uC1CMvAB/Yj5+aXw7vWYHP2iq3xDukK5k3LNme/RbvUuUJQNK+xl7iGu2CVf1V5RhQgxX2l26crjhc/UwyLpY=' }
+[2017-11-07 20:29:20.397] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:29:20.398] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:29:20.398] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072029',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'TuOhnP1jiQs73TZ+r9TK9Lhf+Hj0iucgKFU54ATM7L4sqMBN1JN9IiJFJnrnw5loLuphPWpbk5M8EPFpYT0Uk9cg6DGpLAmxLHBKWnkgjw63gAGP7PvNjsjam7VNTwJT2b0wIU4q+lvo06huuYq7cf7pj4ElJOkVwGu27MKEqD4=',
+  valid_date: 'aJMra/maf+8uQNkmHsgWr04LDEITFUD2zho2dgjShq7FC9O+jqQFNm/7lbznB95grcPEJ2AWfJj2lLxroa2mB+KaJUDwx3aBLyyOgXcepnzfAkMawk9ZOOsTI52RsnB/fQhKPSmtbinw3JqDzUwx/jLWOZUCf6qojnJ9fD1PdnI=',
+  cvv2: 'AcW/anOCOxAxOn5evN4tQnEcqJm15FmBmyXTD3cZm+yhGEkq0PG7eV58eRWjac+WH8RqVjICOg0qbdFJXi1Xa6uC1CMvAB/Yj5+aXw7vWYHP2iq3xDukK5k3LNme/RbvUuUJQNK+xl7iGu2CVf1V5RhQgxX2l26crjhc/UwyLpY=',
+  sign_type: 'RSA',
+  sign: 'rlmM/2BbpeJjlqlnajbuB4q7/XxsE8xgQvrSwer6rMcuEtVY1byBSrVKQSA5fA5xYLlGlTqG9kxjHTFoTsDmIZjkrAEb960aKmvnx2k4Z2KigdhmsTiZHJOMOlWAPLKdVHMbQ/nP3cdNq0JKVYbj/6eBKop3IRdjB0SRan5pfeQ=' }
+[2017-11-07 20:29:20.402] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:29:20.403] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072029&mer_date=20171107&amount=1&card_id=TuOhnP1jiQs73TZ%2Br9TK9Lhf%2BHj0iucgKFU54ATM7L4sqMBN1JN9IiJFJnrnw5loLuphPWpbk5M8EPFpYT0Uk9cg6DGpLAmxLHBKWnkgjw63gAGP7PvNjsjam7VNTwJT2b0wIU4q%2Blvo06huuYq7cf7pj4ElJOkVwGu27MKEqD4%3D&valid_date=aJMra%2Fmaf%2B8uQNkmHsgWr04LDEITFUD2zho2dgjShq7FC9O%2BjqQFNm%2F7lbznB95grcPEJ2AWfJj2lLxroa2mB%2BKaJUDwx3aBLyyOgXcepnzfAkMawk9ZOOsTI52RsnB%2FfQhKPSmtbinw3JqDzUwx%2FjLWOZUCf6qojnJ9fD1PdnI%3D&cvv2=AcW%2FanOCOxAxOn5evN4tQnEcqJm15FmBmyXTD3cZm%2ByhGEkq0PG7eV58eRWjac%2BWH8RqVjICOg0qbdFJXi1Xa6uC1CMvAB%2FYj5%2BaXw7vWYHP2iq3xDukK5k3LNme%2FRbvUuUJQNK%2Bxl7iGu2CVf1V5RhQgxX2l26crjhc%2FUwyLpY%3D&sign_type=RSA&sign=rlmM%2F2BbpeJjlqlnajbuB4q7%2FXxsE8xgQvrSwer6rMcuEtVY1byBSrVKQSA5fA5xYLlGlTqG9kxjHTFoTsDmIZjkrAEb960aKmvnx2k4Z2KigdhmsTiZHJOMOlWAPLKdVHMbQ%2FnP3cdNq0JKVYbj%2F6eBKop3IRdjB0SRan5pfeQ%3D
+[2017-11-07 20:29:20.852] [INFO] default - Status: 200
+[2017-11-07 20:29:20.857] [INFO] default - 验签通过
+[2017-11-07 20:30:41.348] [INFO] default - =====信用卡直连======
+[2017-11-07 20:30:41.353] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:30:41.378] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:30:41.378] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072030',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'JxrKHDciqQ2BFC6ViIck9Y6QO/I7VWXfeJvR5eiszY3FdYHk5szjf0Kxh9Nk+oyAApis+t9dDKx/IO31u7DL8Vu5tf2MFl1ZMPaHNnxRlUpYoR9DjWp8pZMdPDsf3NlpQZaRCSJg7yIHRg2tVowP3m4kHbp8m3jcS8SuBqXkYhQ=',
+  valid_date: 'p/UwJBj0wYHm+Jfn9YQuTvuNF4BO9kua7zRyK6Xt5/3jlcfYHFu3/cwfz2BtpJTtDJJMXSQlGWU6y7QoSEj1QFMoTtotqp3qAiC5c36QPv85ViS4mcxdkxwz8fIywK8D46imsqefHlGqsaFY9U9xq1zTWloh+noPuz26QSfa1/g=',
+  cvv2: 'bvlKqZbLlaZ7pMBEWYXRvOYIJyv+ybF/pn9sTkHDEskiKPDBTfjQLylBmH2eGTiEM6XC/iBOpnrio+Zx24Zhh9pvPMoqDEZP+u2qiwrq2mcsC945hYuacJTjL/J0ucR4PK01MAh9tZL4GLkIGIleMoZArW358N/nduUVWhd6Pzk=' }
+[2017-11-07 20:30:41.382] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:30:41.382] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:30:41.382] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072030',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'JxrKHDciqQ2BFC6ViIck9Y6QO/I7VWXfeJvR5eiszY3FdYHk5szjf0Kxh9Nk+oyAApis+t9dDKx/IO31u7DL8Vu5tf2MFl1ZMPaHNnxRlUpYoR9DjWp8pZMdPDsf3NlpQZaRCSJg7yIHRg2tVowP3m4kHbp8m3jcS8SuBqXkYhQ=',
+  valid_date: 'p/UwJBj0wYHm+Jfn9YQuTvuNF4BO9kua7zRyK6Xt5/3jlcfYHFu3/cwfz2BtpJTtDJJMXSQlGWU6y7QoSEj1QFMoTtotqp3qAiC5c36QPv85ViS4mcxdkxwz8fIywK8D46imsqefHlGqsaFY9U9xq1zTWloh+noPuz26QSfa1/g=',
+  cvv2: 'bvlKqZbLlaZ7pMBEWYXRvOYIJyv+ybF/pn9sTkHDEskiKPDBTfjQLylBmH2eGTiEM6XC/iBOpnrio+Zx24Zhh9pvPMoqDEZP+u2qiwrq2mcsC945hYuacJTjL/J0ucR4PK01MAh9tZL4GLkIGIleMoZArW358N/nduUVWhd6Pzk=',
+  sign_type: 'RSA',
+  sign: 'l7jYoeVxfbpizUpnrH+RW07tkHHKWXpPT44DW8z4iwzUHd1gNIevRPbt3B/DxabSoQADEIXEzvlQPi0HIE7XpH2I2baBtZncaQ32f/DayZH/o7FskMIodsvm3/oYrH8XOXS3Z7E7gZFEF0TqXDimeQVLupGD1QPwwvQCr/LIX1w=' }
+[2017-11-07 20:30:41.387] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:30:41.387] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072030&mer_date=20171107&amount=1&card_id=JxrKHDciqQ2BFC6ViIck9Y6QO%2FI7VWXfeJvR5eiszY3FdYHk5szjf0Kxh9Nk%2BoyAApis%2Bt9dDKx%2FIO31u7DL8Vu5tf2MFl1ZMPaHNnxRlUpYoR9DjWp8pZMdPDsf3NlpQZaRCSJg7yIHRg2tVowP3m4kHbp8m3jcS8SuBqXkYhQ%3D&valid_date=p%2FUwJBj0wYHm%2BJfn9YQuTvuNF4BO9kua7zRyK6Xt5%2F3jlcfYHFu3%2Fcwfz2BtpJTtDJJMXSQlGWU6y7QoSEj1QFMoTtotqp3qAiC5c36QPv85ViS4mcxdkxwz8fIywK8D46imsqefHlGqsaFY9U9xq1zTWloh%2BnoPuz26QSfa1%2Fg%3D&cvv2=bvlKqZbLlaZ7pMBEWYXRvOYIJyv%2BybF%2Fpn9sTkHDEskiKPDBTfjQLylBmH2eGTiEM6XC%2FiBOpnrio%2BZx24Zhh9pvPMoqDEZP%2Bu2qiwrq2mcsC945hYuacJTjL%2FJ0ucR4PK01MAh9tZL4GLkIGIleMoZArW358N%2FnduUVWhd6Pzk%3D&sign_type=RSA&sign=l7jYoeVxfbpizUpnrH%2BRW07tkHHKWXpPT44DW8z4iwzUHd1gNIevRPbt3B%2FDxabSoQADEIXEzvlQPi0HIE7XpH2I2baBtZncaQ32f%2FDayZH%2Fo7FskMIodsvm3%2FoYrH8XOXS3Z7E7gZFEF0TqXDimeQVLupGD1QPwwvQCr%2FLIX1w%3D
+[2017-11-07 20:30:41.570] [INFO] default - Status: 200
+[2017-11-07 20:30:41.576] [INFO] default - 验签通过
+[2017-11-07 20:31:14.284] [INFO] default - =====信用卡直连======
+[2017-11-07 20:31:14.288] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:31:14.315] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:31:14.315] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'dJ+Ac0gyxNDiL6tkTPHy6LH0bOuPtJCsueXrPNT3AQNXmhmic6GA9uJgQKL7lZD+DdBCOBe73SUou6kRLYsbOhh3HlGgY+w4N3UYUU6EiaQiOGcYmwOf3v6ttBLzxFxW65s6QFCO3razRVPh5LeAS/gYMNSt9hhWCwRIxooVKOk=',
+  valid_date: 'j8x3afhH33u/ngMns15Z/LZdXgSaBvJabPbKzpKn11nUvDkA6UjHEL2+49tR5ugNrvZcTEGxIC/RAN1hvTM/xyipbuUmXS1RsPs5mpNTTiju2Wqcu8yam5P1t/Rz2C7JG4QUpg9afKXmKmtwQGlRYL0JriOonw170C9N0HaNJCk=',
+  cvv2: 'rVKL8fudf0jCRagEEggm97f4d+Dv8zxmIar9oXcKYncwgREYMWJJaoSrgHIt3sYnZ3iPBFQSRwp0PkRZDZ3sDudFztM49clDqiZxnrjPWhjORXeCc21MhjH8c11etN0a/dGbQgY0IZHKURC+Fqdn7OAX77FybjYL1HIS2PS5B5E=' }
+[2017-11-07 20:31:14.319] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:31:14.319] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:31:14.320] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'dJ+Ac0gyxNDiL6tkTPHy6LH0bOuPtJCsueXrPNT3AQNXmhmic6GA9uJgQKL7lZD+DdBCOBe73SUou6kRLYsbOhh3HlGgY+w4N3UYUU6EiaQiOGcYmwOf3v6ttBLzxFxW65s6QFCO3razRVPh5LeAS/gYMNSt9hhWCwRIxooVKOk=',
+  valid_date: 'j8x3afhH33u/ngMns15Z/LZdXgSaBvJabPbKzpKn11nUvDkA6UjHEL2+49tR5ugNrvZcTEGxIC/RAN1hvTM/xyipbuUmXS1RsPs5mpNTTiju2Wqcu8yam5P1t/Rz2C7JG4QUpg9afKXmKmtwQGlRYL0JriOonw170C9N0HaNJCk=',
+  cvv2: 'rVKL8fudf0jCRagEEggm97f4d+Dv8zxmIar9oXcKYncwgREYMWJJaoSrgHIt3sYnZ3iPBFQSRwp0PkRZDZ3sDudFztM49clDqiZxnrjPWhjORXeCc21MhjH8c11etN0a/dGbQgY0IZHKURC+Fqdn7OAX77FybjYL1HIS2PS5B5E=',
+  sign_type: 'RSA',
+  sign: 'hPIBQNY3tKYet8lqAnGQEj6HBinRdcBOs39mQhXBsKVaJpQ6x+vd55PZtLuNlLIv4Y8F07gulVpIXSSSzaORkEYnIT4og0jMAttRRlrsCy06n4XBvoLw+H0VnTxrUJ/gUAvXNr+zM5cPg9drUOa6Kbcauh5wz/PTadFUJgiy4Zk=' }
+[2017-11-07 20:31:14.321] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:31:14.322] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072031&mer_date=20171107&amount=1&card_id=dJ%2BAc0gyxNDiL6tkTPHy6LH0bOuPtJCsueXrPNT3AQNXmhmic6GA9uJgQKL7lZD%2BDdBCOBe73SUou6kRLYsbOhh3HlGgY%2Bw4N3UYUU6EiaQiOGcYmwOf3v6ttBLzxFxW65s6QFCO3razRVPh5LeAS%2FgYMNSt9hhWCwRIxooVKOk%3D&valid_date=j8x3afhH33u%2FngMns15Z%2FLZdXgSaBvJabPbKzpKn11nUvDkA6UjHEL2%2B49tR5ugNrvZcTEGxIC%2FRAN1hvTM%2FxyipbuUmXS1RsPs5mpNTTiju2Wqcu8yam5P1t%2FRz2C7JG4QUpg9afKXmKmtwQGlRYL0JriOonw170C9N0HaNJCk%3D&cvv2=rVKL8fudf0jCRagEEggm97f4d%2BDv8zxmIar9oXcKYncwgREYMWJJaoSrgHIt3sYnZ3iPBFQSRwp0PkRZDZ3sDudFztM49clDqiZxnrjPWhjORXeCc21MhjH8c11etN0a%2FdGbQgY0IZHKURC%2BFqdn7OAX77FybjYL1HIS2PS5B5E%3D&sign_type=RSA&sign=hPIBQNY3tKYet8lqAnGQEj6HBinRdcBOs39mQhXBsKVaJpQ6x%2Bvd55PZtLuNlLIv4Y8F07gulVpIXSSSzaORkEYnIT4og0jMAttRRlrsCy06n4XBvoLw%2BH0VnTxrUJ%2FgUAvXNr%2BzM5cPg9drUOa6Kbcauh5wz%2FPTadFUJgiy4Zk%3D
+[2017-11-07 20:31:14.846] [INFO] default - Status: 200
+[2017-11-07 20:31:24.952] [INFO] default - 验签通过
+[2017-11-07 20:31:26.589] [INFO] default - =====信用卡直连======
+[2017-11-07 20:31:26.593] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:31:26.610] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:31:26.610] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'Rp2ghk5p81/Qw4DeqAmvRpLD99Ctk3kYGCKvbjJYDXtfGR6OT6bjED/JR+vWqmfcEjyyfCUvHWKG3uX8kFAjjRjla6+MleLHhzRqTy9yACbVhT+yxzCB+sPoLKvCAVU4pVJ/9KUGL+kvRkFtzs64aMem/q/sEwL6jkKsd36PYRg=',
+  valid_date: 'ihoaRX35WWBtLTGc1j4FRUv+WADo9OXaQ4t2g9jusy+DsOFnpNVHEX8vn3rRihz5fQGxiBHWHOvJHHZBCtMi+0V/ONmzu3CbGcEPCVUXANnxvIY50yeMaXYrbII6IID+Qpk6reQ5JWXoE9Nhp47BgMwVQSPLHrP7vS1rU05yJuI=',
+  cvv2: 'YCveOPyrEu/Nhw9DfAUcwOtRM4MX0r9N0eDqag7d7K8QUxCbzWoy2YSQXeu6ggoMxO+fwzCMzCFmaQHRiq5R+NJ5WoAFsxEuxZYSijYx1yPfDMRBlSq8YQ5KW+wLv7Ebzqt1grhW16hXX4Nqt0T+AqLNP59mXx/qqbBZY7VABS0=' }
+[2017-11-07 20:31:26.614] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:31:26.614] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:31:26.614] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'Rp2ghk5p81/Qw4DeqAmvRpLD99Ctk3kYGCKvbjJYDXtfGR6OT6bjED/JR+vWqmfcEjyyfCUvHWKG3uX8kFAjjRjla6+MleLHhzRqTy9yACbVhT+yxzCB+sPoLKvCAVU4pVJ/9KUGL+kvRkFtzs64aMem/q/sEwL6jkKsd36PYRg=',
+  valid_date: 'ihoaRX35WWBtLTGc1j4FRUv+WADo9OXaQ4t2g9jusy+DsOFnpNVHEX8vn3rRihz5fQGxiBHWHOvJHHZBCtMi+0V/ONmzu3CbGcEPCVUXANnxvIY50yeMaXYrbII6IID+Qpk6reQ5JWXoE9Nhp47BgMwVQSPLHrP7vS1rU05yJuI=',
+  cvv2: 'YCveOPyrEu/Nhw9DfAUcwOtRM4MX0r9N0eDqag7d7K8QUxCbzWoy2YSQXeu6ggoMxO+fwzCMzCFmaQHRiq5R+NJ5WoAFsxEuxZYSijYx1yPfDMRBlSq8YQ5KW+wLv7Ebzqt1grhW16hXX4Nqt0T+AqLNP59mXx/qqbBZY7VABS0=',
+  sign_type: 'RSA',
+  sign: 'bOdNrkBbPa3uzVUEWc/F0J07YDUxuArFQDa4lH/FlzmsY+QsrFBZeXN7aNGGpc/0vx4wY6VmUzveSw2SzbDT0LV2etrDbod3RfK1yVwTyr50jgcoYL3QGPZlWdp+Rl+Tj1yH0I7iCr86HmD7vYn3EJkeRdM0B5YG/GKqwTVY+lY=' }
+[2017-11-07 20:31:26.616] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:31:26.616] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072031&mer_date=20171107&amount=1&card_id=Rp2ghk5p81%2FQw4DeqAmvRpLD99Ctk3kYGCKvbjJYDXtfGR6OT6bjED%2FJR%2BvWqmfcEjyyfCUvHWKG3uX8kFAjjRjla6%2BMleLHhzRqTy9yACbVhT%2ByxzCB%2BsPoLKvCAVU4pVJ%2F9KUGL%2BkvRkFtzs64aMem%2Fq%2FsEwL6jkKsd36PYRg%3D&valid_date=ihoaRX35WWBtLTGc1j4FRUv%2BWADo9OXaQ4t2g9jusy%2BDsOFnpNVHEX8vn3rRihz5fQGxiBHWHOvJHHZBCtMi%2B0V%2FONmzu3CbGcEPCVUXANnxvIY50yeMaXYrbII6IID%2BQpk6reQ5JWXoE9Nhp47BgMwVQSPLHrP7vS1rU05yJuI%3D&cvv2=YCveOPyrEu%2FNhw9DfAUcwOtRM4MX0r9N0eDqag7d7K8QUxCbzWoy2YSQXeu6ggoMxO%2BfwzCMzCFmaQHRiq5R%2BNJ5WoAFsxEuxZYSijYx1yPfDMRBlSq8YQ5KW%2BwLv7Ebzqt1grhW16hXX4Nqt0T%2BAqLNP59mXx%2FqqbBZY7VABS0%3D&sign_type=RSA&sign=bOdNrkBbPa3uzVUEWc%2FF0J07YDUxuArFQDa4lH%2FFlzmsY%2BQsrFBZeXN7aNGGpc%2F0vx4wY6VmUzveSw2SzbDT0LV2etrDbod3RfK1yVwTyr50jgcoYL3QGPZlWdp%2BRl%2BTj1yH0I7iCr86HmD7vYn3EJkeRdM0B5YG%2FGKqwTVY%2BlY%3D
+[2017-11-07 20:31:26.844] [INFO] default - Status: 200
+[2017-11-07 20:31:26.853] [INFO] default - 验签通过
+[2017-11-07 20:31:57.991] [INFO] default - =====信用卡直连======
+[2017-11-07 20:31:57.994] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:31:58.011] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:31:58.011] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'oPCHBdUkhU75M9eNmDdDzRGVWX+7pNM8l78efvOPS9GFXmXSUfqxpn/vpuYXvNv9yAOIZ/bcgko30PqOUZZiPk9IcnJQ7+FGxRfl+UZMutAbq5kr4pkIRFjNPfULbUDrdwYA7AEruKLvbW0gQm0A1COZ3usyDzxhQ/OwZ8MzvfY=',
+  valid_date: 'pZv6PVx/uj/tqslPqsc8CamaYmT+E4kZuRGIWQstYlvh5+0FQiRAy7oJoS8Dj34ztNS00AY6AgmbSJ9RnkJMTN7Lx20JF2t3MhPwBK9lIFRNYyBsXUu2wknwIEweC8s9mRmAPeCiLacv4YTl/nylocf1ziNIkQmdri5Ar90EdJc=',
+  cvv2: 'W60ZkKv/xqxlIqf8CTi3hOzD/sLm2P1YBshekCa4WCykt39R655aAJgljfz5XWNDo0HqinDHSueZmdLtGY78MGhacQh2C6jPUvYWD6+njnepFDa2y8MgeSU7Mlv7VRX8Uci3o5TdZepux5YkzwCFdgOxabSFa7jqgZbJMCkZSz4=' }
+[2017-11-07 20:31:58.018] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:31:58.018] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:31:58.018] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'credit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'CREDITCARD',
+  order_id: '201711072031',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'oPCHBdUkhU75M9eNmDdDzRGVWX+7pNM8l78efvOPS9GFXmXSUfqxpn/vpuYXvNv9yAOIZ/bcgko30PqOUZZiPk9IcnJQ7+FGxRfl+UZMutAbq5kr4pkIRFjNPfULbUDrdwYA7AEruKLvbW0gQm0A1COZ3usyDzxhQ/OwZ8MzvfY=',
+  valid_date: 'pZv6PVx/uj/tqslPqsc8CamaYmT+E4kZuRGIWQstYlvh5+0FQiRAy7oJoS8Dj34ztNS00AY6AgmbSJ9RnkJMTN7Lx20JF2t3MhPwBK9lIFRNYyBsXUu2wknwIEweC8s9mRmAPeCiLacv4YTl/nylocf1ziNIkQmdri5Ar90EdJc=',
+  cvv2: 'W60ZkKv/xqxlIqf8CTi3hOzD/sLm2P1YBshekCa4WCykt39R655aAJgljfz5XWNDo0HqinDHSueZmdLtGY78MGhacQh2C6jPUvYWD6+njnepFDa2y8MgeSU7Mlv7VRX8Uci3o5TdZepux5YkzwCFdgOxabSFa7jqgZbJMCkZSz4=',
+  sign_type: 'RSA',
+  sign: 'V58oQzazpr/Nc0QLFjaBNBpiNra+Ni3lmLfYzOcrrDMJ1Rfxlb3VlpTffQrpCV22izIn6QCUIbZn0yfsDcwrk46AjQmtSZWF1gnldnJ6Cuyu/rQYiUJpVU5f/zF3s9fsTXPLlCOqu/y2WY13ssh/9KiflBW0CK5X+F7pAPE150U=' }
+[2017-11-07 20:31:58.020] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:31:58.020] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=credit_direct_pay&amt_type=RMB&pay_type=CREDITCARD&order_id=201711072031&mer_date=20171107&amount=1&card_id=oPCHBdUkhU75M9eNmDdDzRGVWX%2B7pNM8l78efvOPS9GFXmXSUfqxpn%2FvpuYXvNv9yAOIZ%2Fbcgko30PqOUZZiPk9IcnJQ7%2BFGxRfl%2BUZMutAbq5kr4pkIRFjNPfULbUDrdwYA7AEruKLvbW0gQm0A1COZ3usyDzxhQ%2FOwZ8MzvfY%3D&valid_date=pZv6PVx%2Fuj%2FtqslPqsc8CamaYmT%2BE4kZuRGIWQstYlvh5%2B0FQiRAy7oJoS8Dj34ztNS00AY6AgmbSJ9RnkJMTN7Lx20JF2t3MhPwBK9lIFRNYyBsXUu2wknwIEweC8s9mRmAPeCiLacv4YTl%2Fnylocf1ziNIkQmdri5Ar90EdJc%3D&cvv2=W60ZkKv%2FxqxlIqf8CTi3hOzD%2FsLm2P1YBshekCa4WCykt39R655aAJgljfz5XWNDo0HqinDHSueZmdLtGY78MGhacQh2C6jPUvYWD6%2BnjnepFDa2y8MgeSU7Mlv7VRX8Uci3o5TdZepux5YkzwCFdgOxabSFa7jqgZbJMCkZSz4%3D&sign_type=RSA&sign=V58oQzazpr%2FNc0QLFjaBNBpiNra%2BNi3lmLfYzOcrrDMJ1Rfxlb3VlpTffQrpCV22izIn6QCUIbZn0yfsDcwrk46AjQmtSZWF1gnldnJ6Cuyu%2FrQYiUJpVU5f%2FzF3s9fsTXPLlCOqu%2Fy2WY13ssh%2F9KiflBW0CK5X%2BF7pAPE150U%3D
+[2017-11-07 20:31:58.131] [INFO] default - Status: 200
+[2017-11-07 20:31:58.134] [INFO] default - 验签通过
+[2017-11-07 20:32:21.605] [INFO] default - =====借记卡直连======
+[2017-11-07 20:32:21.608] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:32:21.628] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:32:21.628] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072032',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'hD7GJGTD4ivhondyTj2pmEdFGuL/tizfDFpqO/sBcbbt33nsP3ksZGSgYQb7t3H8bUzA/1Pnc93U+Hba19LmeJvAAgLH2pWXQoVGZJ81kS0U0ivnRTGlM0p/vl0fFpkT61S1tBdYw4V6uQKFl4hHjgZvlidIdvoHTe4rMg9VEXI=',
+  identity_type: '1',
+  identity_code: 'rzO8cZYFSRG6ZiqqqXZdQQnqhSSkcmgu4wFqhIQ7uA1oKCVsnvAVGB9JBwL57QID6aZwQZHVdh/3D7QsYO4tl1FwREaXeA+XOfgtC8eZ1L+HeAPAQx73YaTmZx9o/d0AqfNDOwT/D19mGN4p2uxyu1fBj0J8kqKLHXDcIBGdlyE=',
+  card_holder: 'N+kPEebzhob0K2kJDXNhtq5aHDBhczNejZ2ippcu8zJPorlqmXFfU/X6biwhClB05QaDGWldKPs5G48l0vWl+KqOII6347jzidJYSlD5L/qhfJSSbT/3eYBqrbNfWMyj3NUdbGPFw0mHw7hLcbR/AkjZN1qpz4Duifi5hmmuFhM=' }
+[2017-11-07 20:32:21.635] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:32:21.635] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:32:21.635] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'debit_direct_pay',
+  amt_type: 'RMB',
+  pay_type: 'DEBITCARD',
+  order_id: '201711072032',
+  mer_date: '20171107',
+  amount: '1',
+  card_id: 'hD7GJGTD4ivhondyTj2pmEdFGuL/tizfDFpqO/sBcbbt33nsP3ksZGSgYQb7t3H8bUzA/1Pnc93U+Hba19LmeJvAAgLH2pWXQoVGZJ81kS0U0ivnRTGlM0p/vl0fFpkT61S1tBdYw4V6uQKFl4hHjgZvlidIdvoHTe4rMg9VEXI=',
+  identity_type: '1',
+  identity_code: 'rzO8cZYFSRG6ZiqqqXZdQQnqhSSkcmgu4wFqhIQ7uA1oKCVsnvAVGB9JBwL57QID6aZwQZHVdh/3D7QsYO4tl1FwREaXeA+XOfgtC8eZ1L+HeAPAQx73YaTmZx9o/d0AqfNDOwT/D19mGN4p2uxyu1fBj0J8kqKLHXDcIBGdlyE=',
+  card_holder: 'N+kPEebzhob0K2kJDXNhtq5aHDBhczNejZ2ippcu8zJPorlqmXFfU/X6biwhClB05QaDGWldKPs5G48l0vWl+KqOII6347jzidJYSlD5L/qhfJSSbT/3eYBqrbNfWMyj3NUdbGPFw0mHw7hLcbR/AkjZN1qpz4Duifi5hmmuFhM=',
+  sign_type: 'RSA',
+  sign: 'UuzjbCQ3pMoeZDWWrWKYVLHPljgFIe4rggds8kdIeI4WFuKnivI/MT+WImUZLs3pORokPqb1WBRI5z6k5TQJHe5Uu3aGMDjf4qba8a7DDycMpYGAIunBYhX1yh4lrkmnNTy5lBQ3UzKfAsED50L3j3TK6lGJQV+bkltUQt2WfuM=' }
+[2017-11-07 20:32:21.638] [INFO] default - 网络请求的参数为：
+[2017-11-07 20:32:21.638] [INFO] default - charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=debit_direct_pay&amt_type=RMB&pay_type=DEBITCARD&order_id=201711072032&mer_date=20171107&amount=1&card_id=hD7GJGTD4ivhondyTj2pmEdFGuL%2FtizfDFpqO%2FsBcbbt33nsP3ksZGSgYQb7t3H8bUzA%2F1Pnc93U%2BHba19LmeJvAAgLH2pWXQoVGZJ81kS0U0ivnRTGlM0p%2Fvl0fFpkT61S1tBdYw4V6uQKFl4hHjgZvlidIdvoHTe4rMg9VEXI%3D&identity_type=1&identity_code=rzO8cZYFSRG6ZiqqqXZdQQnqhSSkcmgu4wFqhIQ7uA1oKCVsnvAVGB9JBwL57QID6aZwQZHVdh%2F3D7QsYO4tl1FwREaXeA%2BXOfgtC8eZ1L%2BHeAPAQx73YaTmZx9o%2Fd0AqfNDOwT%2FD19mGN4p2uxyu1fBj0J8kqKLHXDcIBGdlyE%3D&card_holder=N%2BkPEebzhob0K2kJDXNhtq5aHDBhczNejZ2ippcu8zJPorlqmXFfU%2FX6biwhClB05QaDGWldKPs5G48l0vWl%2BKqOII6347jzidJYSlD5L%2FqhfJSSbT%2F3eYBqrbNfWMyj3NUdbGPFw0mHw7hLcbR%2FAkjZN1qpz4Duifi5hmmuFhM%3D&sign_type=RSA&sign=UuzjbCQ3pMoeZDWWrWKYVLHPljgFIe4rggds8kdIeI4WFuKnivI%2FMT%2BWImUZLs3pORokPqb1WBRI5z6k5TQJHe5Uu3aGMDjf4qba8a7DDycMpYGAIunBYhX1yh4lrkmnNTy5lBQ3UzKfAsED50L3j3TK6lGJQV%2BbkltUQt2WfuM%3D
+[2017-11-07 20:32:21.985] [INFO] default - Status: 200
+[2017-11-07 20:32:21.988] [INFO] default - 验签通过
+[2017-11-07 20:32:42.935] [INFO] default - =====网银直连======
+[2017-11-07 20:32:42.951] [INFO] default - [UMF SDK] 商户请求数据必填字段校验通过
+[2017-11-07 20:32:42.954] [INFO] default - 【UMF SDK】签名原始数据:plain=
+[2017-11-07 20:32:42.954] [INFO] default - { charset: 'UTF-8',
+  sign_type: 'RSA',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711072032',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB' }
+[2017-11-07 20:32:42.958] [INFO] default - [UMF SDK] 商户请求校验规则正确
+[2017-11-07 20:32:42.958] [INFO] default - [UMF SDK] 商户请求返回的map为:
+[2017-11-07 20:32:42.958] [INFO] default - { charset: 'UTF-8',
+  res_format: 'HTML',
+  version: '4.0',
+  mer_id: '60000100',
+  service: 'pay_req_split_direct',
+  amt_type: 'RMB',
+  order_id: '201711072032',
+  mer_date: '20171107',
+  amount: '1',
+  pay_type: 'B2BBANK',
+  gate_id: 'CCB',
+  sign_type: 'RSA',
+  sign: 'dBsj7NaggHKHqsFwvxAJiI3LooYjuO2h3qBokYyP11X7g2s1wwOgt7ZB2nbPGi7TLeGATfyV5/m4WpA/q0YJSgf/kPbTuO99Sq+zOuh2fxYDV1SPQVi7/UEfqDryap1tBfQZwFksqCOb4hYDgaFI1doUrS8r8iKtGCHCygjAZtk=' }
+[2017-11-07 20:32:42.959] [INFO] default - 获得的URL为：http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&res_format=HTML&version=4.0&mer_id=60000100&service=pay_req_split_direct&amt_type=RMB&order_id=201711072032&mer_date=20171107&amount=1&pay_type=B2BBANK&gate_id=CCB&sign_type=RSA&sign=dBsj7NaggHKHqsFwvxAJiI3LooYjuO2h3qBokYyP11X7g2s1wwOgt7ZB2nbPGi7TLeGATfyV5%2Fm4WpA%2Fq0YJSgf%2FkPbTuO99Sq%2BzOuh2fxYDV1SPQVi7%2FUEfqDryap1tBfQZwFksqCOb4hYDgaFI1doUrS8r8iKtGCHCygjAZtk%3D

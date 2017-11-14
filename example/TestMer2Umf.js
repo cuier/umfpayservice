@@ -7,20 +7,20 @@
  ************************************************************************
  */
 
-var service = require('umfpayservice')
-// var service = require('../lib/service/umfService')
+// var service = require('umfpayservice')
+var service = require('../lib/service/umfService')
 var testMer2Umf = new TestMer2Umf()
 var umfService = new service()
 var umfService1 = new service()
 
 //初始化
 umfService.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem", true)
-umfService1.umfService("60000100", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60000100_.key.pem", true)
+umfService1.umfService("60038402", "/Users/MYFILE/Documents/Cuilijuan/SAAS_SDK/Node.JS/60000100_key/60038402_.key.pem", true)
 
 // testMer2Umf.prepareWebFrontPagePayMap()   //web收银台
 // testMer2Umf.prepareH5FrontPageMap()   //h5收银台
 // testMer2Umf.preparePublicPaymentMap()   //公众号支付
-testMer2Umf.prepareMobileOrderMap()    // APP支付下单
+// testMer2Umf.prepareMobileOrderMap()    // APP支付下单
 // testMer2Umf.prepareAppSign()    //APP生成签名
 // testMer2Umf.prepareShortcut()       //快捷下单
 // testMer2Umf.prepareScanMap("WECHAT")   //主扫下单
@@ -46,6 +46,16 @@ testMer2Umf.prepareMobileOrderMap()    // APP支付下单
 // testMer2Umf.prepareGetToken()    //获取token
 // testMer2Umf.prepareAddChildMerMap()     //子商户入网
 // testMer2Umf.prepareUploadChildFile()    //子商户入网资质上传
+// testMer2Umf.prepareChangeChildRebut()    //驳回后商户信息修改
+// testMer2Umf.prepareSelectChildMerState()   //子商户审核状态查询
+// testMer2Umf.prepareChildDoGet()    //子商户异步通知
+// testMer2Umf.prepareSplitStateMap()   //分账-分账状态查询
+testMer2Umf.prepareSplitRefundMap()  //分账-分账退费
+// testMer2Umf.prepareSplitFileDownloadMap() //分账文件下
+// testMer2Umf.preparePBankDirectMap()    // 网银直连
+// testMer2Umf.preparedebit()   //借记卡直连
+// testMer2Umf.preparecreditDirectMap()   //信用卡直连
+// testMer2Umf.prepareSplitReqMap()   //延时分账
 
 
 function TestMer2Umf() {
@@ -69,10 +79,19 @@ function TestMer2Umf() {
         reqMap["ret_url"] = "http://xxx.xxx.com"
         reqMap["order_id"] = this.orderid
         reqMap["mer_date"] = this.merdate
-        reqMap["amount"] = "1"
+        reqMap["amount"] = "2"
         reqMap["goods_inf"] = "商品描述"
         reqMap["interface_type"] = "01"
-        var web_pay_get_url = umfService.WebFrontPagePayMap(reqMap)
+        // reqMap["comamt_type"] = "1"
+        // reqMap["split_category"] = "2"
+        // reqMap["split_type"] = "21"
+        // reqMap["split_data"] = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+        //     "<split_data><split><split_mer_id>60038400</split_mer_id>" +
+        //     "<split_order_id>17092012</split_order_id><split_amount>1</split_amount>" +
+        //     "</split><split><split_mer_id>20000000</split_mer_id><split_order_id>17092013</split_order_id>" +
+        //     "<split_amount>1</split_amount></split></split_data>"
+
+        var web_pay_get_url = umfService1.WebFrontPagePayMap(reqMap)
         console.log("url为：" + web_pay_get_url)
         return web_pay_get_url
     }
@@ -95,6 +114,53 @@ function TestMer2Umf() {
     }
 
     /**
+     * 网银直连
+     */
+    this.preparePBankDirectMap = function () {
+        var reqMap = {}
+        reqMap["order_id"] = this.orderid
+        reqMap["mer_date"] = this.merdate
+        reqMap["amount"] = "1"
+        reqMap["pay_type"] = "B2BBANK"
+        reqMap["gate_id"] = "CCB"
+        let bank_get_url = umfService.pBankDirectMap(reqMap)
+        return bank_get_url
+    }
+    /**
+     * 借记卡直连
+     */
+    this.preparedebit = function () {
+        var reqMap = {}
+        reqMap["order_id"] = this.orderid
+        reqMap["mer_date"] = this.merdate
+        reqMap["amount"] = "1"
+        reqMap["card_id"] = "xxxxxxxxxxxxxxxxxxx"
+        reqMap["identity_type"] = "1"
+        reqMap["identity_code"] = "xxxxxxxxxxxxxxxxx"
+        reqMap["card_holder"] = "张三"
+        umfService.debitDirectMap(reqMap,(res) => {
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+    /**
+     * 信用卡直连
+     */
+    this.preparecreditDirectMap = function () {
+        var reqMap = {}
+        reqMap["order_id"] = this.orderid
+        reqMap["mer_date"] = this.merdate
+        reqMap["amount"] = "1"
+        reqMap["card_id"] = "xxxxxxxxxxxxxxxxxxx"
+        reqMap["valid_date"] = "mmyy"
+        reqMap["cvv2"] = "xxx"
+        umfService.creditDirectMap(reqMap,(res) => {
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+
+     /**
      * 公众号支付–生成get后的请求参数，商户只需要拼接URL进行get请求即可
      */
 
@@ -438,7 +504,7 @@ function TestMer2Umf() {
         })
     }
 
-    //准备贷记卡实名认证  --无用
+    //准备贷记卡实名认证  --暂时不用
     this.prepareCreditCardAuthentication = function () {
         let reqMap = {}
         reqMap["order_id"] = this.orderid
@@ -525,16 +591,18 @@ function TestMer2Umf() {
     }
     /**增加商户*/
     this.prepareAddChildMerMap = function () {
-        let token = "3ab743bcfbcdb26695cb2f857069257ebf16669376c2a6ec08273cd7f56290e6"
+        let token = "881df2f8a736e8db48484e23c7d84bd8e5b3558fe088e2702413f19985156172"
         let reqMap = {}
         reqMap["bankAccount"] = "4638792345247569"  //银行卡号
         reqMap["merId"] = "60038402"
-        reqMap["merName"] = "王俊"
+        // reqMap["merId"] = "60144402"
+        reqMap["merName"] = "杜甫"
         reqMap["merType"] = "1"
-        reqMap["contActsName"] = "崔立娟"
+        reqMap["contActsName"] = "白居易"
         reqMap["mobileNo"] = "13911698741"
         reqMap["licenseType"] = "1"
-        reqMap["licenseNo"] = "91140106643546792F"
+        // reqMap["licenseNo"] = "91140106643546792F"
+        reqMap["licenseNo"] = "92140106643546792C"
         reqMap["organizationId"] = ""//组织机构代码证号
         reqMap["taxPayerNum"] = ""    //税务登记证号
         reqMap["lawyer"] = "李白"
@@ -542,6 +610,8 @@ function TestMer2Umf() {
         reqMap["bankName"] = "招商银行"
         reqMap["province"] = "010"
         reqMap["areaCode"] = "010"
+        reqMap["pubPriFlag"] = "1"
+        reqMap["bankBrhName"] = "中国工商银行股份有限公司张家界官黎坪支行"
         reqMap["merNotifyUrl"] = "http://xxx.xxx.com"
         umfService.addChildMerInfo(token, reqMap, (res) => {
 
@@ -550,28 +620,34 @@ function TestMer2Umf() {
     }
     /**上传资质*/
     this.prepareUploadChildFile = function () {
-        let token = "873df0382008599dae59af38f7ceba0991aac2245c4701add52a2660523c0028"
+        let token = "100ef981afa94d6d54741446bcc206802e787da20e71f4ece4f89ea2ce209c63"
 
         let reqMap = {}
-        reqMap["licenseNo"] = "91140106643546792F"
-        reqMap["merId"] = "60038402"
-        reqMap["file0"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/APPLY_TABLE.jpg"
+        reqMap["licenseNo"] = "91140106643546792F"//生产
+        // reqMap["licenseNo"] = "91140100743546701z"// 测试
+        // reqMap["licenseNo"] = "91140100743546792S"// 开发
+        reqMap["merId"] = "60038402" //生产
+        // reqMap["merId"] = "60144402" // 测试
+        // reqMap["merId"] = "60188102" // 开发
         reqMap["file1"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/BANK_ACCOUNT_LICENCE.jpg"
-        reqMap["file2"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/BUSSINESS_LICENSE.jepg"
+        reqMap["file2"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/BUSSINESS_LICENSE.jpg"
         reqMap["file3"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/ID_CARD_BACK.jpg"
         reqMap["file4"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/ID_CARD_FRONT.jpg"
-        umfService.uploadChildFile(token,reqMap,(res)=>{})
+        reqMap["file5"] = "/Users/MYFILE/Documents/Cuilijuan/nodejs/testImg/APPLY_TABLE.jpg"
+        umfService.uploadChildFile(token,reqMap,(res)=>{
+            console.log(res)
+        })
     }
 
     /**驳回状态下商户信息修改（修改后需重新上传资质）*/
     this.prepareChangeChildRebut = function () {
-        let token = "873df0382008599dae59af38f7ceba0991aac2245c4701add52a2660523c0028"
+        let token = "8e2f4217534b92c377886ffcee12f4f4a8df613264a58f9c31dd3cef6be7ec51"
         let reqMap = {}
         reqMap["bankAccount"] = "4638792345247569"  //银行卡号
         reqMap["merId"] = "60038402"
-        reqMap["merName"] = "王俊"
+        reqMap["merName"] = "杜甫"
         reqMap["merType"] = "1"
-        reqMap["contActsName"] = "崔立娟"
+        reqMap["contActsName"] = "白居易"
         reqMap["mobileNo"] = "13911698741"
         reqMap["licenseType"] = "1"
         reqMap["licenseNo"] = "91140106643546792F"
@@ -582,18 +658,94 @@ function TestMer2Umf() {
         reqMap["bankName"] = "招商银行"
         reqMap["province"] = "010"
         reqMap["areaCode"] = "010"
+        reqMap["pubPriFlag"] = "1"
+        reqMap["bankBrhName"] = "中国工商银行股份有限公司张家界官黎坪支行"
         reqMap["merNotifyUrl"] = "http://xxx.xxx.com"
 
-        umfService.changeChildRebut(token,reqMap,(res)=>{})
+        umfService.changeChildRebut(token,reqMap,(res)=>{
+            console.log(res)
+        })
     }
     /**子商户审核状态查询*/
     this.prepareSelectChildMerState = function () {
-        let token = "873df0382008599dae59af38f7ceba0991aac2245c4701add52a2660523c0028"
+        let token = "adfba6d0b6514a6b9e1cae15c0ddc23716d8fe47b974a1f48ee1adf0112322c6"
         let reqMap = {}
         reqMap["merId"] = "60038402"
+        // reqMap["merId"] = "60144402"
         reqMap["licenseNo"] = "91140106643546792F"
+        // reqMap["licenseNo"] = "91140100074354601z"
 
         umfService.selectChildMerState(token,reqMap,(res)=>{})
+    }
+    /**
+     * 子商户入网--异步通知
+     */
+    this.prepareChildDoGet = function () {
+        let notifyChildParamsStr = "checkState=3&licenseNo=91140100743546792Z&" +
+            "merId=60188102&noPassInfo=lawyer:111&" +
+            "sign=ZQs/bzZ6ozPBdCgctU84M8kSmrk6U8n3M07/Ha2EDj29O99k7MJmM7N/IpglogpB7X0fXY8JD6D287DF+BSyUfhaktiHsFnXXpGBfcIP4z6eoj267T/Wi8Z+fg2Pwi1kEPPSSe/Ry3uGOS7OYIttMBsT2uMLUn9JrM5OLlOeu3A="
+        let array = umfService.notifyChildParserMap(notifyChildParamsStr)
+        let mer2UmfPlatStr = umfService.responseChildNotifyMap(array)
+        console.log("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">");
+        console.log("<HTML>");
+        console.log(" <HEAD><META NAME=\"MobilePayPlatform\" CONTENT=" + mer2UmfPlatStr + " /></HEAD>");
+        console.log(" <BODY>");
+        console.log("</BODY>");
+        console.log("</HTML>");
+    }
+
+    //----------------------------------------
+    // 分账部分
+    //----------------------------------------
+    /**
+     * 分账—分账请求针对标准分账的延时分账
+     */
+    this.prepareSplitReqMap = function () {
+        let reqMap = {}
+        reqMap["order_id"] = "201711131944"
+        reqMap["mer_date"] = "20171113"
+        umfService1.splitReqMap(reqMap, (res) => {
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+    /**
+     * 分账---分账状态查询
+     */
+    this.prepareSplitStateMap = function () {
+        let reqMap = {}
+        reqMap["order_id"] = "201711131944"
+        reqMap["mer_date"] = "20171113"
+        umfService1.splitStateMap(reqMap, (res) => {
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+    /**
+     * 分账---分账退费
+     */
+    this.prepareSplitRefundMap = function () {
+        let reqMap = {}
+        reqMap["refund_no"] = "171114100238" + Math.floor(Math.random() * 9999)  //“YYMMDDHHMMSS+4位序列数”
+        reqMap["order_id"] = "201711131944"
+        reqMap["mer_date"] = "20171113"
+        reqMap["org_amount"] = "2"
+        umfService1.splitRefundMap(reqMap, (res) => {
+            console.log("网络请求返回的数据：")
+            console.log(res)
+        })
+    }
+    /**
+     * 分账---分账文件下载
+     */
+    this.prepareSplitFileDownloadMap = function () {
+        let reqMap = {}
+        // reqMap["mer_id"] = "60038402"
+        reqMap["settle_date"] = "20171024"
+        reqMap["settle_path"] = "/Users/MYFILE/Desktop/"
+        reqMap["settle_type"] = "SPLITDETAIL"
+
+        umfService1.splitFileDownloadMap(reqMap)
     }
 
 }
